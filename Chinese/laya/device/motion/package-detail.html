@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><title>laya.device.motion Summary</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'laya.device.motion package - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?laya/device/motion/package-detail.html&amp;laya/device/motion/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">laya.device.motion</td><td class="titleTableSubNav" id="subNav" align="right"><a href="package-detail.html#classSummary">Classes</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("laya.device.motion"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false	,false,false,false,true,false);}	
+				-->
+			</script><div class="MainContent"><br><br><hr><a name="classSummary"></a><div class="summaryTableTitle">Classes</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AccelerationInfo.html">AccelerationInfo</a></td><td class="summaryTableLastCol">
+	 加速度x/y/z的单位均为m/s²。
+	 在硬件（陀螺仪）不支持的情况下，alpha、beta和gamma值为null。
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Accelerator.html">Accelerator</a></td><td class="summaryTableLastCol">
+	 Accelerator.instance获取唯一的Accelerator引用，请勿调用构造函数。
+	 
+	 
+	 listen()的回调处理器接受四个参数：
+	 
+	 acceleration: 表示用户给予设备的加速度。
+	 accelerationIncludingGravity: 设备受到的总加速度（包含重力）。
+	 rotationRate: 设备的自转速率。
+	 interval: 加速度获取的时间间隔（毫秒）。
+	 
+	 
+	 
+	 NOTE
+	 如，rotationRate的alpha在apple和moz文档中都是z轴旋转角度，但是实测是x轴旋转角度。为了使各属性表示的值与文档所述相同，实际值与其他属性进行了对调。
+	 其中：
+	 
+	 alpha使用gamma值。
+	 beta使用alpha值。
+	 gamma使用beta。
+	 
+	 目前孰是孰非尚未可知，以此为注。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Gyroscope.html">Gyroscope</a></td><td class="summaryTableLastCol">
+	 使用Gyroscope.instance获取唯一的Gyroscope引用，请勿调用构造函数。
+	 
+	 
+	 listen()的回调处理器接受两个参数：
+	 function onOrientationChange(absolute:Boolean, info:RotationInfo):void
+	 
+	 absolute: 指示设备是否可以提供绝对方位数据（指向地球坐标系），或者设备决定的任意坐标系。关于坐标系参见https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained。
+	 info: RotationInfo类型参数，保存设备的旋转值。
+	 
+	 
+	 
+	 
+	 浏览器兼容性参见：http://caniuse.com/#search=deviceorientation
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RotationInfo.html">RotationInfo</a></td><td class="summaryTableLastCol">
+	 保存旋转信息的类。请勿修改本类的属性。
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Fri Sep 29 2017, 06:34 PM +08:00  </center></div></div></body></html><!--<br/>Fri Sep 29 2017, 06:34 PM +08:00  -->

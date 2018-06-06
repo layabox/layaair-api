@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="RotationInfo,laya.device.motion.RotationInfo,absolute,alpha,beta,compassAccuracy,gamma,instance,instance,x,y,z"><title>laya.device.motion.RotationInfo</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'RotationInfo - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?laya/device/motion/RotationInfo.html&amp;laya/device/motion/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">RotationInfo</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("RotationInfo"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">laya.device.motion</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  RotationInfo</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">RotationInfo  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	 保存旋转信息的类。请勿修改本类的属性。
+	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#absolute" class="signatureLink">absolute</a> : Boolean<div class="summaryTableDescription">
+		 
+		 指示设备是否可以提供绝对方位数据（指向地球坐标系），或者设备决定的任意坐标系。
+		 关于坐标系参见https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained。
+		 
+		 需要注意的是，IOS环境下，该值始终为false。即使如此，你依旧可以从alpha中取得正确的值。
+		 </div></td><td class="summaryTableOwnerCol">RotationInfo</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#alpha" class="signatureLink">alpha</a> : Number<div class="summaryTableDescription">
+		 Z轴旋转角度，其值范围从0至360。
+		 若absolute为true或者在IOS中，alpha值是从北方到当前设备方向的角度值。
+		 </div></td><td class="summaryTableOwnerCol">RotationInfo</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#beta" class="signatureLink">beta</a> : Number<div class="summaryTableDescription">
+		 X轴旋转角度, 其值范围从-180至180。代表设备从前至后的运动。
+		 </div></td><td class="summaryTableOwnerCol">RotationInfo</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#compassAccuracy" class="signatureLink">compassAccuracy</a> : Number<div class="summaryTableDescription">
+		 罗盘数据的精确度（角度）。仅IOS可用。
+		 </div></td><td class="summaryTableOwnerCol">RotationInfo</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#gamma" class="signatureLink">gamma</a> : Number<div class="summaryTableDescription">
+		 Y轴旋转角度，其值范围从-90至90。代表设备从左至右的运动。
+		 </div></td><td class="summaryTableOwnerCol">RotationInfo</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#RotationInfo()" class="signatureLink">RotationInfo</a>()</div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">RotationInfo</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="absolute"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">absolute</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public var absolute:Boolean</code><p></p><p></p><p>
+		 <p>
+		 指示设备是否可以提供绝对方位数据（指向地球坐标系），或者设备决定的任意坐标系。
+		 关于坐标系参见<i>https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Orientation_and_motion_data_explained</i>。
+		 </p>
+		 需要注意的是，IOS环境下，该值始终为false。即使如此，你依旧可以从<code>alpha</code>中取得正确的值。
+		 </p></div><a name="propertyDetail"></a><a name="alpha"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">alpha</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var alpha:Number</code><p></p><p></p><p>
+		 Z轴旋转角度，其值范围从0至360。
+		 若<code>absolute</code>为true或者在IOS中，alpha值是从北方到当前设备方向的角度值。
+		 </p></div><a name="propertyDetail"></a><a name="beta"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">beta</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var beta:Number</code><p></p><p></p><p>
+		 X轴旋转角度, 其值范围从-180至180。代表设备从前至后的运动。
+		 </p></div><a name="propertyDetail"></a><a name="compassAccuracy"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">compassAccuracy</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var compassAccuracy:Number</code><p></p><p></p><p>
+		 罗盘数据的精确度（角度）。仅IOS可用。
+		 </p></div><a name="propertyDetail"></a><a name="gamma"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">gamma</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var gamma:Number</code><p></p><p></p><p>
+		 Y轴旋转角度，其值范围从-90至90。代表设备从左至右的运动。
+		 </p></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="RotationInfo()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">RotationInfo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function RotationInfo()</code><p></p><br/><br/></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Fri Sep 29 2017, 06:34 PM +08:00  </center></div></body></html><!--<br/>Fri Sep 29 2017, 06:34 PM +08:00  -->

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,Chrome=1;"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="description"
+          content="Layabox是免费开源的HTML5引擎解决方案，产品家族中包括LayaAir引擎、LayaFlash引擎、LayaOpen开放平台、LayaMarket SDK、LayaStore嵌入式游戏商店、LayaPlayer运行器。核心引擎LayaAir性能全球领先，支持2D、3D、VR开发，支持AS3、JavaScript、TypeScript三种开发语言、LayaAirIDE让项目开发更高效。">
+    <meta name="keywords"
+          content="HTML5游戏引擎,Layabox,官方网站, 免费开源,H5引擎,HTML5引擎,性能最高,3D,VR,AS3,JavaScript,TypeScript,开发语言,LayaFlash,LayaPlayer,LayaAir,LayaOpen,LayaMarket,LayaStore,游戏引擎，工具链">
+    <meta name="author" content="ldc.layabox.com">
+
+    <title>
+        LAYA_API
+    </title>
+
+    <!--CSS-->
+    <link rel="shortcut icon" href="https://official.layabox.com/public/img/favicon.ico"/>
+    <link rel="bookmark" href="https://official.layabox.com/public/img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="https://official.layabox.com/public/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="https://official.layabox.com/public/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="https://official.layabox.com/public/css/animate.min.css"/>
+    <!--CSS laya-->
+    <link rel="stylesheet" type="text/css"
+          href="https://official.layabox.com/public/css/LAYA_HF.css?v=20170727"/>
+    <!--CSS main-->
+    <link rel="stylesheet" type="text/css"
+          href="css/style.css?v=20170727">
+    <link rel="stylesheet" type="text/css"
+          href="css/Layaapi.css?v=20170727">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="syntaxHighlighter/shCoreDefault.css">
+
+    <!--JS-->
+    <!--IE 兼容-->
+    <!--[IF LTE IE 9]>
+    <script type="text/javascript" charset="utf-8" src="https://official.layabox.com/public/js/html5.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://official.layabox.com/public/js/respond.min.js"></script>
+    <![ENDIF]-->
+    <script type="text/javascript" charset="utf-8" src="https://official.layabox.com/public/js/jquery.js"></script>
+    <!--[IF LTE IE 8]>
+    <script type="text/javascript" charset="utf-8"
+            src="https://official.layabox.com/public/js/jquery.ie8.min.js"></script>
+    <![ENDIF]-->
+    <script type="text/javascript" charset="utf-8" src="https://official.layabox.com/public/js/bootstrap.js"></script>
+    <!--JS laya-->
+    <script type="text/javascript" charset="utf-8"
+            src="https://official.layabox.com/public/js/LAYA_HF.js?v=20170727"></script>
+    <!--JS main-->
+    <script language="javascript" type="text/javascript" src="asdoc.js"></script>
+    <script language="javascript" type="text/javascript" src="help.js"></script>
+    <script language="javascript" type="text/javascript" src="cookies.js"></script>
+
+    <!--WOW-->
+    <script type="text/javascript" charset="utf-8" src="https://official.layabox.com/public/js/wow.js"></script>
+    <script type="text/javascript">
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+            new WOW().init();
+        }
+        //初始化页面
+        $(window).ready(function () {
+            laya_nav('layaair');
+            onLR();
+            api_resize();
+        });
+        $(window).resize(function () {
+            onLR();
+            api_resize();
+        });
+    </script>
+</head>
+<body data-spy="srcoll" data-target="#laya-siderbar">
+<section id="laya_content">
+    <div class="classnav">
+        <div class="sider-content siderbarldc slider-nav" id="laya-siderbar">
+            <div class="slider-body">
+                <div>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active" id="categoryRadio">
+                            <input type="radio" name="options" autocomplete="off" checked>分类</label>
+                        <label class="btn btn-primary" id="classIndexRadio">
+                            <input type="radio" name="options" autocomplete="off">类索引</label>
+                    </div>
+                    <!-- Tab panes -->
+                    <div id="category">
+                        <div class="slider-info">
+                            <div class="part">
+                                <div class="packageCon">
+                                    <div class="nav-content">
+                                        <div class="part-01">
+                                            <ul id="packageGroup"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="classCon">
+                                <div class="search">
+                                    <input type="text" id="classSearch" class="form-control"/>
+                                    <img id="sousuo1" src="images/search_icon.png"/>
+                                </div>
+                                <div class="classCon classCon01">
+                                    <div class="nav-content">
+                                        <div class="part-02">
+                                            <ul id="classGroup"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="classIndex" class="tab-pane" role="tabpanel">
+                        <div class="search" style="border-bottom:1px solid #E3E6E5;">
+                            <input type="text" id="searchAllClass" class="form-control"/>
+                            <img src="images/search_icon.png" id="sousuo2"/>
+                        </div>
+                        <div class="allclassesDiv">
+                            <ul id="allClassList"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="classbox">
+        <div id="ldc_content">
+            <div class="row">
+                <div class="content right-part"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $(".text-content img").addClass("img-responsive img-rounded");
+    $(document).ready(function () {
+        var docHeight = $(window).height();
+        var docWidth = $(window).width();
+        if (!history.pushState) {
+            history.pushState = function (state, title, url) {
+                location.hash = '?' + url;
+            }
+        }
+        if (location.hash.indexOf('http') > 0) {
+            $.get(location.hash.substr(2) + '&ajax=1', function (data) {
+                $("#ldc_content").html(data);
+                $('#ldc_content').scrollTop(0);
+                if (typeof SyntaxHighlighter !== undefined) {
+                    SyntaxHighlighter.setCode(data);
+                }
+            });
+        }
+        $('a').on('click', function () {
+            var url = $(this).attr('href');
+            if (url.indexOf('show') > 0) {
+                var title = $(this).attr('title');
+                $.get(url + '&ajax=1', function (data) {
+                    $("#ldc_content").html(data);
+                    $('#ldc_content').scrollTop(0);
+                    if (typeof SyntaxHighlighter !== undefined) {
+                        SyntaxHighlighter.setCode(data);
+                    }
+                    var stateObject = {};
+                    history.pushState(stateObject, title, url);
+                    document.title = title;
+                });
+                return false;
+            }
+        });
+        $(".list-item").click(function () {
+            $(".list-item").each(function () {
+                $(this).removeClass("cur");
+            });
+            $(this).addClass("cur");
+
+        });
+        $(".dropdown-menu a").on('click', function () {
+            $("#bs-example-navbar-collapse-1").removeClass('in');
+        });
+    });
+</script>
+<script type="text/javascript" src="script/script.js?v=7"></script>
+<script id="js" type="text/javascript" src="syntaxHighlighter/shCore.js"></script>
+<script id="js" type="text/javascript" src="syntaxHighlighter/shBrushJScript.js"></script>
+<script id="js" type="text/javascript" src="syntaxHighlighter/shBrushAS3.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.all();
+    SyntaxHighlighter.defaults['toolbar'] = false;
+    function api_resize() {
+        $("section").css("height", $(window).height() - 90);
+        $(".classnav").css("height", $(window).height() - 90);
+        $("#laya-siderbar").css("height", $(window).height() - 92);
+        $("#classGroup").css("height", $("#laya-siderbar").height() - 265);
+        $("#allClassList").css("height", $("#laya-siderbar").height() - 99);
+        $(".classbox").css("height", $(window).height() - 90);
+        $(".classbox").css("width", $(window).width() - 393);
+        $("#ldc_content").css("height", $(".classbox").height() - 10);
+        if ($(window).width() <= 767) {
+            $(".classnav").css("height", 460);
+            $("#laya-siderbar").css("height", 460);
+            $("#classGroup").css("height", 200);
+            $("#allClassList").css("height", 370);
+            $(".classbox").css("width", "100%");
+            $("#ldc_content").css("height", $(window).height() - 105);
+        }
+    }
+    $(window).on("resize", function () {
+        onLR();
+        api_resize();
+    });
+    $("#packageGroup li a").click(function () {
+        $("#packageGroup li").removeClass("swich");
+        $(this).parent("li").addClass("swich");
+    });
+</script>
+</body>
+</html>

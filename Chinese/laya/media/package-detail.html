@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><title>laya.media Summary</title></head><body><script language="javascript" type="text/javascript" src="../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../help.js"></script><script language="javascript" type="text/javascript" src="../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'laya.media package - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../package-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../class-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../all-index-A.html" onclick="loadClassListFrame('../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../index.html?laya/media/package-detail.html&amp;laya/media/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">laya.media</td><td class="titleTableSubNav" id="subNav" align="right"><a href="package-detail.html#classSummary">Classes</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("laya.media"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false	,false,false,false,true,false);}	
+				-->
+			</script><div class="MainContent"><br><br><hr><a name="classSummary"></a><div class="summaryTableTitle">Classes</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Sound.html">Sound</a></td><td class="summaryTableLastCol">
+	 Sound 类是用来播放控制声音的类。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SoundChannel.html">SoundChannel</a></td><td class="summaryTableLastCol">
+	  SoundChannel 用来控制程序中的声音。每个声音均分配给一个声道，而且应用程序可以具有混合在一起的多个声道。
+	  SoundChannel 类包含控制声音的播放、暂停、停止、音量的方法，以及获取声音的播放状态、总时间、当前播放时间、总循环次数、播放地址等信息的方法。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="SoundManager.html">SoundManager</a></td><td class="summaryTableLastCol">
+	 SoundManager 是一个声音管理类。提供了对背景音乐、音效的播放控制方法。
+	 引擎默认有两套声音方案：WebAudio和H5Audio
+	 播放音效，优先使用WebAudio播放声音，如果WebAudio不可用，则用H5Audio播放，H5Audio在部分机器上有兼容问题（比如不能混音，播放有延迟等）。
+	 播放背景音乐，则使用H5Audio播放（使用WebAudio会增加特别大的内存，并且要等加载完毕后才能播放，有延迟）
+	 建议背景音乐用mp3类型，音效用wav或者mp3类型（如果打包为app，音效只能用wav格式）。
+	 详细教程及声音格式请参考：http://ldc.layabox.com/doc/?nav=ch-as-1-7-0
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Fri Sep 29 2017, 06:34 PM +08:00  </center></div></div></body></html><!--<br/>Fri Sep 29 2017, 06:34 PM +08:00  -->

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><title>laya.events Summary</title></head><body><script language="javascript" type="text/javascript" src="../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../help.js"></script><script language="javascript" type="text/javascript" src="../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'laya.events package - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../package-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../class-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../all-index-A.html" onclick="loadClassListFrame('../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../index.html?laya/events/package-detail.html&amp;laya/events/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">laya.events</td><td class="titleTableSubNav" id="subNav" align="right"><a href="package-detail.html#classSummary">Classes</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("laya.events"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false	,false,false,false,true,false);}	
+				-->
+			</script><div class="MainContent"><br><br><hr><a name="classSummary"></a><div class="summaryTableTitle">Classes</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Event.html">Event</a></td><td class="summaryTableLastCol">
+	 Event 是事件类型的集合。一般当发生事件时，Event 对象将作为参数传递给事件侦听器。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="EventDispatcher.html">EventDispatcher</a></td><td class="summaryTableLastCol">
+	 EventDispatcher 类是可调度事件的所有类的基类。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Keyboard.html">Keyboard</a></td><td class="summaryTableLastCol">
+	 Keyboard 类的属性是一些常数，这些常数表示控制游戏时最常用的键。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="KeyBoardManager.html">KeyBoardManager</a></td><td class="summaryTableLastCol">
+	 KeyBoardManager 是键盘事件管理类。该类从浏览器中接收键盘事件，并派发该事件。
+	 派发事件时若 Stage.focus 为空则只从 Stage 上派发该事件，否则将从 Stage.focus 对象开始一直冒泡派发该事件。所以在 Laya.stage 上监听键盘事件一定能够收到，如果在其他地方监听，则必须处在Stage.focus的冒泡链上才能收到该事件。
+	 用户可以通过代码 Laya.stage.focus=someNode 的方式来设置focus对象。
+	 用户可统一的根据事件对象中 e.keyCode 来判断按键类型，该属性兼容了不同浏览器的实现。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="KeyLocation.html">KeyLocation</a></td><td class="summaryTableLastCol">
+	 KeyLocation 类包含表示在键盘或类似键盘的输入设备上按键位置的常量。
+	 KeyLocation 常数用在键盘事件对象的 keyLocation 属性中。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MouseManager.html">MouseManager</a></td><td class="summaryTableLastCol">
+	 MouseManager 是鼠标、触摸交互管理器。
+	 鼠标事件流包括捕获阶段、目标阶段、冒泡阶段。
+	 捕获阶段：此阶段引擎会从stage开始递归检测stage及其子对象，直到找到命中的目标对象或者未命中任何对象；
+	 目标阶段：找到命中的目标对象；
+	 冒泡阶段：事件离开目标对象，按节点层级向上逐层通知，直到到达舞台的过程。
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Fri Sep 29 2017, 06:34 PM +08:00  </center></div></div></body></html><!--<br/>Fri Sep 29 2017, 06:34 PM +08:00  -->

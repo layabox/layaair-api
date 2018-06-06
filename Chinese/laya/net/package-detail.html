@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><title>laya.net Summary</title></head><body><script language="javascript" type="text/javascript" src="../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../help.js"></script><script language="javascript" type="text/javascript" src="../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'laya.net package - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../package-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../class-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../all-index-A.html" onclick="loadClassListFrame('../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../index.html?laya/net/package-detail.html&amp;laya/net/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">laya.net</td><td class="titleTableSubNav" id="subNav" align="right"><a href="package-detail.html#classSummary">Classes</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("laya.net"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false	,false,false,false,true,false);}	
+				-->
+			</script><div class="MainContent"><br><br><hr><a name="classSummary"></a><div class="summaryTableTitle">Classes</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HttpRequest.html">HttpRequest</a></td><td class="summaryTableLastCol">
+	  HttpRequest 通过封装 HTML XMLHttpRequest 对象提供了对 HTTP 协议的完全的访问，包括做出 POST 和 HEAD 请求以及普通的 GET 请求的能力。 HttpRequest 只提供以异步的形式返回 Web 服务器的响应，并且能够以文本或者二进制的形式返回内容。
+	 注意：建议每次请求都使用新的 HttpRequest 对象，因为每次调用该对象的send方法时，都会清空之前设置的数据，并重置 HTTP 请求的状态，这会导致之前还未返回响应的请求被重置，从而得不到之前请求的响应结果。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Loader.html">Loader</a></td><td class="summaryTableLastCol">
+	 Loader 类可用来加载文本、JSON、XML、二进制、图像等资源。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LoaderManager.html">LoaderManager</a></td><td class="summaryTableLastCol">
+	  LoaderManager 类用于用于批量加载资源。此类是单例，不要手动实例化此类，请通过Laya.loader访问。
+	 全部队列加载完成，会派发 Event.COMPLETE 事件；如果队列中任意一个加载失败，会派发 Event.ERROR 事件，事件回调参数值为加载出错的资源地址。
+	  LoaderManager 类提供了以下几种功能：
+	 多线程：默认5个加载线程，可以通过maxLoader属性修改线程数量；
+	 多优先级：有0-4共5个优先级，优先级高的优先加载。0最高，4最低；
+	 重复过滤：自动过滤重复加载（不会有多个相同地址的资源同时加载）以及复用缓存资源，防止重复加载；
+	 错误重试：资源加载失败后，会重试加载（以最低优先级插入加载队列），retryNum设定加载失败后重试次数，retryDelay设定加载重试的时间间隔。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LocalStorage.html">LocalStorage</a></td><td class="summaryTableLastCol">
+	  LocalStorage 类用于没有时间限制的数据存储。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ResourceVersion.html">ResourceVersion</a></td><td class="summaryTableLastCol">
+	 资源版本的生成由layacmd或IDE完成，使用 ResourceVersion 简化使用过程。
+	 调用 enable 启用资源版本管理。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Socket.html">Socket</a></td><td class="summaryTableLastCol">
+	  Socket 封装了 HTML5 WebSocket ，允许服务器端与客户端进行全双工（full-duplex）的实时通信，并且允许跨域通信。在建立连接后，服务器和 Browser/Client Agent 都能主动的向对方发送或接收文本和二进制数据。
+	 要使用 Socket 类的方法，请先使用构造函数 new Socket 创建一个 Socket 对象。 Socket 以异步方式传输和接收数据。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="URL.html">URL</a></td><td class="summaryTableLastCol">
+	  URL 类用于定义地址信息。
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Fri Sep 29 2017, 06:34 PM +08:00  </center></div></div></body></html><!--<br/>Fri Sep 29 2017, 06:34 PM +08:00  -->

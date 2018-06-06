@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../override.css" type="text/css"><title>laya.ui Summary</title></head><body><script language="javascript" type="text/javascript" src="../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../help.js"></script><script language="javascript" type="text/javascript" src="../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'laya.ui package - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../package-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../class-summary.html" onclick="loadClassListFrame('../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../all-index-A.html" onclick="loadClassListFrame('../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../index.html?laya/ui/package-detail.html&amp;laya/ui/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">laya.ui</td><td class="titleTableSubNav" id="subNav" align="right"><a href="package-detail.html#interfaceSummary"> Interfaces </a>&nbsp;| <a href="package-detail.html#classSummary">Classes</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("laya.ui"); titleBar_setSubNav(false,false,false,false,false,false,false,false,false,false,false	,false,false,true,true,false);}	
+				-->
+			</script><div class="MainContent"><br><br><hr><a name="interfaceSummary"></a><div class="summaryTableTitle">Interfaces</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Interface</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IBox.html">IBox</a></i></td><td class="summaryTableLastCol">容器接口，实现了编辑器容器类型。</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IComponent.html">IComponent</a></i></td><td class="summaryTableLastCol">组件接口，实现了编辑器组件类型。</td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IItem.html">IItem</a></i></td><td class="summaryTableLastCol">
+	 Item接口。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="IRender.html">IRender</a></i></td><td class="summaryTableLastCol">
+	 IRender 接口，实现设置项的渲染类型。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><i><a href="ISelect.html">ISelect</a></i></td><td class="summaryTableLastCol">
+	 ISelect 接口，实现对象的 selected 属性和 clickHandler 选择回调函数处理器。
+	 </td></tr></table><a name="classSummary"></a><div class="summaryTableTitle">Classes</div><table cellpadding="3" cellspacing="0" class="summaryTable"><tr><th>&nbsp;</th><th width="30%">Class</th><th width="70%">Description</th></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AsynDialog.html">AsynDialog</a></td><td class="summaryTableLastCol">
+	 异步Dialog的生命周期:show或者popup > onCreate(如果没有创建过) > onOpen > onClose > onDestroy(如果销毁)
+	 onCreate在页面未创建时执行一次，再次打开页面不会再执行，适合写一些只执行一次的逻辑，比如资源加载，节点事件监听
+	 onOpen在页面每次打开都会执行，适合做一些每次都需要处理的事情，比如消息请求，根据数据初始化页面
+	 onClose在每次关闭的时候调用，适合关闭时停止动画，网络消息监听等逻辑
+	 onDestroy在页面被销毁的时候调用，适合置空引用对象
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="AutoBitmap.html">AutoBitmap</a></td><td class="summaryTableLastCol">
+	 AutoBitmap 类是用于表示位图图像或绘制图形的显示对象。
+	 封装了位置，宽高及九宫格的处理，供UI组件使用。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Box.html">Box</a></td><td class="summaryTableLastCol">
+	 Box 类是一个控件容器类。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Button.html">Button</a></td><td class="summaryTableLastCol">
+	 Button 组件用来表示常用的多态按钮。 Button 组件可显示文本标签、图标或同时显示两者。	 
+	 可以是单态，两态和三态，默认三态(up,over,down)。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="CheckBox.html">CheckBox</a></td><td class="summaryTableLastCol">
+	 CheckBox 组件显示一个小方框，该方框内可以有选中标记。
+	 CheckBox 组件还可以显示可选的文本标签，默认该标签位于 CheckBox 右侧。
+	 CheckBox 使用 dataSource赋值时的的默认属性是：selected。
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Clip.html">Clip</a></td><td class="summaryTableLastCol">
+	  Clip 类是位图切片动画。
+	  Clip 可将一张图片，按横向分割数量 clipX 、竖向分割数量 clipY ，
+	 或横向分割每个切片的宽度 clipWidth 、竖向分割每个切片的高度 clipHeight ，
+	 从左向右，从上到下，分割组合为一个切片动画。
+	 Image和Clip组件是唯一支持异步加载的两个组件，比如clip.skin = "abc/xxx.png"，其他UI组件均不支持异步加载。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ColorPicker.html">ColorPicker</a></td><td class="summaryTableLastCol">
+	 ColorPicker 组件将显示包含多个颜色样本的列表，用户可以从中选择颜色。
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ComboBox.html">ComboBox</a></td><td class="summaryTableLastCol">
+	 ComboBox 组件包含一个下拉列表，用户可以从该列表中选择单个值。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Component.html">Component</a></td><td class="summaryTableLastCol">
+	 Component 是ui控件类的基类。
+	 生命周期：preinitialize > createChildren > initialize > 组件构造函数
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Dialog.html">Dialog</a></td><td class="summaryTableLastCol">
+	 Dialog 组件是一个弹出对话框，实现对话框弹出，拖动，模式窗口功能。
+	 可以通过UIConfig设置弹出框背景透明度，模式窗口点击边缘是否关闭等
+	 通过设置zOrder属性，可以更改弹出的层次
+	 通过设置popupEffect和closeEffect可以设置弹出效果和关闭效果，如果不想有任何弹出关闭效果，可以设置前述属性为空
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="DialogManager.html">DialogManager</a></td><td class="summaryTableLastCol">
+	 DialogManager 对话框管理容器，所有的对话框都在该容器内，并且受管理器管理。
+	 任意对话框打开和关闭，都会出发管理类的open和close事件
+	 可以通过UIConfig设置弹出框背景透明度，模式窗口点击边缘是否关闭，点击窗口是否切换层次等
+	 通过设置对话框的zOrder属性，可以更改弹出的层次
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FontClip.html">FontClip</a></td><td class="summaryTableLastCol">
+	 字体切片，简化版的位图字体，只需设置一个切片图片和文字内容即可使用，效果同位图字体
+	 使用方式：设置位图字体皮肤skin，设置皮肤对应的字体内容sheet（如果多行，可以使用空格换行），示例：
+	 fontClip.skin = "font1.png";//设置皮肤
+	 fontClip.sheet = "abc123 456";//设置皮肤对应的内容，空格换行。此皮肤为2行5列（显示时skin会被等分为2行5列），第一行对应的文字为"abc123"，第二行为"456"
+	 fontClip.value = "a1326";//显示"a1326"文字
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HBox.html">HBox</a></td><td class="summaryTableLastCol">
+	 HBox 是一个水平布局容器类。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HScrollBar.html">HScrollBar</a></td><td class="summaryTableLastCol">
+	 使用 HScrollBar （水平 ScrollBar ）控件，可以在因数据太多而不能在显示区域完全显示时控制显示的数据部分。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HSlider.html">HSlider</a></td><td class="summaryTableLastCol">
+	 使用 HSlider 控件，用户可以通过在滑块轨道的终点之间移动滑块来选择值。
+	  HSlider 控件采用水平方向。滑块轨道从左向右扩展，而标签位于轨道的顶部或底部。
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Image.html">Image</a></td><td class="summaryTableLastCol">
+	 Image 类是用于表示位图图像或绘制图形的显示对象。
+	 Image和Clip组件是唯一支持异步加载的两个组件，比如img.skin = "abc/xxx.png"，其他UI组件均不支持异步加载。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Label.html">Label</a></td><td class="summaryTableLastCol">
+	  Label 类用于创建显示对象以显示文本。
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LayoutBox.html">LayoutBox</a></td><td class="summaryTableLastCol">
+	 LayoutBox 是一个布局容器类。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="LayoutStyle.html">LayoutStyle</a></td><td class="summaryTableLastCol">
+	 LayoutStyle 是一个布局样式类。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="List.html">List</a></td><td class="summaryTableLastCol">
+	 List 控件可显示项目列表。默认为垂直方向列表。可通过UI编辑器自定义列表。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Panel.html">Panel</a></td><td class="summaryTableLastCol">
+	 Panel 是一个面板容器类。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ProgressBar.html">ProgressBar</a></td><td class="summaryTableLastCol">
+	 ProgressBar 组件显示内容的加载进度。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Radio.html">Radio</a></td><td class="summaryTableLastCol">
+	 Radio 控件使用户可在一组互相排斥的选择中做出一种选择。
+	 用户一次只能选择 Radio 组中的一个成员。选择未选中的组成员将取消选择该组中当前所选的 Radio 控件。 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="RadioGroup.html">RadioGroup</a></td><td class="summaryTableLastCol">
+	 RadioGroup 控件定义一组 Radio 控件，这些控件相互排斥；
+	 因此，用户每次只能选择一个 Radio 控件。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ScrollBar.html">ScrollBar</a></td><td class="summaryTableLastCol">
+	 ScrollBar 组件是一个滚动条组件。
+	 当数据太多以至于显示区域无法容纳时，最终用户可以使用 ScrollBar 组件控制所显示的数据部分。
+	  滚动条由四部分组成：两个箭头按钮、一个轨道和一个滑块。 	 
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Slider.html">Slider</a></td><td class="summaryTableLastCol">
+	 使用 Slider 控件，用户可以通过在滑块轨道的终点之间移动滑块来选择值。
+	 滑块的当前值由滑块端点（对应于滑块的最小值和最大值）之间滑块的相对位置确定。
+	 滑块允许最小值和最大值之间特定间隔内的值。滑块还可以使用数据提示显示其当前值。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Styles.html">Styles</a></td><td class="summaryTableLastCol">
+	 Styles 定义了组件常用的样式属性。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Tab.html">Tab</a></td><td class="summaryTableLastCol">
+	 Tab 组件用来定义选项卡按钮组。	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextArea.html">TextArea</a></td><td class="summaryTableLastCol">
+	 TextArea 类用于创建显示对象以显示和输入文本。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TextInput.html">TextInput</a></td><td class="summaryTableLastCol">
+	 TextInput 类用于创建显示对象以显示和输入文本。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="TipManager.html">TipManager</a></td><td class="summaryTableLastCol">鼠标提示管理类</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Tree.html">Tree</a></td><td class="summaryTableLastCol">
+	 Tree 控件使用户可以查看排列为可扩展树的层次结构数据。
+	 
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UIEvent.html">UIEvent</a></td><td class="summaryTableLastCol">
+	 UIEvent 类用来定义UI组件类的事件类型。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UIGroup.html">UIGroup</a></td><td class="summaryTableLastCol">
+	 Group 是一个可以自动布局的项集合控件。
+	  Group 的默认项对象为 Button 类实例。
+	 Group 是 Tab 和 RadioGroup 的基类。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="UIUtils.html">UIUtils</a></td><td class="summaryTableLastCol">
+	 UIUtils 是文本工具集。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VBox.html">VBox</a></td><td class="summaryTableLastCol">
+	 VBox 是一个垂直布局容器类。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="View.html">View</a></td><td class="summaryTableLastCol">
+	 View 是一个视图类。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ViewStack.html">ViewStack</a></td><td class="summaryTableLastCol">
+	 ViewStack 类用于视图堆栈类，用于视图的显示等设置处理。
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VScrollBar.html">VScrollBar</a></td><td class="summaryTableLastCol">
+	 
+	 使用 VScrollBar （垂直 ScrollBar ）控件，可以在因数据太多而不能在显示区域完全显示时控制显示的数据部分。
+	 
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="VSlider.html">VSlider</a></td><td class="summaryTableLastCol">
+	 使用 VSlider 控件，用户可以通过在滑块轨道的终点之间移动滑块来选择值。
+	  VSlider 控件采用垂直方向。滑块轨道从下往上扩展，而标签位于轨道的左右两侧。
+	 
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Fri Sep 29 2017, 06:34 PM +08:00  </center></div></div></body></html><!--<br/>Fri Sep 29 2017, 06:34 PM +08:00  -->
