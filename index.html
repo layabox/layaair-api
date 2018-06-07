@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <script>
+        // 兼容非现代浏览器
+        if (typeof String.prototype.startsWith != 'function') {
+            String.prototype.startsWith = function (prefix){
+                return this.slice(0, prefix.length) === prefix;
+            };
+        }
+        if (typeof String.prototype.endsWith != 'function') {
+           String.prototype.endsWith = function(suffix) {
+             return this.indexOf(suffix, this.length - suffix.length) !== -1;
+           };
+        }
+
+        var href = location.href,
+            isChinese = navigator.language.indexOf('zh') !== -1,
+            langFolderName = isChinese ? 'Chinese' : 'English';
+            isLocal = location.protocol.startsWith('file'),
+            isSuffix = href.endsWith('/'),
+            sep = isSuffix ? '' : '/';
+        var jumpLink = '';
+        if (isLocal) {
+            var _href = href.replace(/index.html$/, '');
+            jumpLink = _href + langFolderName + '/index.html';
+        } else {
+            jumpLink = href + sep + langFolderName;
+        }
+        location.href = jumpLink;
+    </script>
+</body>
+</html>

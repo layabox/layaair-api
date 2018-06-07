@@ -433,8 +433,8 @@ function laya_nav(laya) {
                             "en": "Chinese"
                         },
                         "url": {
-                            "zh": laya_http + "ldc.layabox.com/" + laya_zh,
-                            "en": laya_http + "ldc.layabox.com/" + laya_zh
+                            "zh": location.href.replace(/Chinese|English/, 'Chinese'),
+                            "en": location.href.replace(/Chinese|English/, 'Chinese')
                         },
                         "visual": {
                             "zh": 1,
@@ -448,12 +448,12 @@ function laya_nav(laya) {
                             "en": "English"
                         },
                         "url": {
-                            "zh": laya_http + "ldc.layabox.com/" + laya_en,
-                            "en": laya_http + "ldc.layabox.com/" + laya_en
+                            "zh": location.href.replace(/Chinese|English/, 'English'),
+                            "en": location.href.replace(/Chinese|English/, 'English')
                         },
                         "visual": {
-                            "zh": 0,
-                            "en": 0
+                            "zh": 1,
+                            "en": 1
                         },
                         "blank": "0"
                     }
@@ -496,7 +496,7 @@ function laya_nav(laya) {
     var navbarH = '<div class="navbar-header"></div>';
     var navbarH_button = '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#laya_nav_collapse"></button>';
     var navbarH_button_span = '<span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>';
-    var navbarH_a = '<a class="navbar-brand" href="' + laya_http + 'www.layabox.com/"><img src="' + laya_config.domainName + '/public/img/LAYABOX_Logo.png"/></a>';
+    var navbarH_a = '<a class="navbar-brand" href="' + laya_http + 'www.layabox.com/"><img src="img/LAYABOX_Logo.png"/></a>';
     $(nav).prependTo("body");
     $(navbarH).prependTo("#laya_nav .container");
     $(navbarH_button).prependTo("#laya_nav .navbar-header");
