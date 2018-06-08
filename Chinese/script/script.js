@@ -107,6 +107,17 @@ function navToClass(classFullName, memberName) {
             },
             error: function (error) {
                 console.log(error.text);
+                // 如果不是本地打开，return
+                if (location.protocol.indexOf('file') == -1) {
+                    return;
+                }
+                // 获取本地资源出错
+                // 可能得情况: 1) 没有使用本地服务器 2)直接打开并别没有关闭浏览器的安全限制
+                if (typeof language !== 'undefined' && language == 'en') {
+                    alert('Please turn off browser security restrictions or use local server access!');
+                } else {
+                    alert('请关闭浏览器的安全限制或使用本地服务器访问！');
+                }
             }
         });
 }
