@@ -1,4 +1,4 @@
-# LayaAir API
+# LayaAir Offline API
 
 [Chinese language](https://github.com/layabox/layaair-api/tree/master/Chinese)
 
