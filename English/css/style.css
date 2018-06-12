@@ -1,0 +1,335 @@
+﻿@charset "utf-8";
+html {
+	font-size: 14px;
+	font-family: "arial", "sans-serif", "微软雅黑", "宋体", "Microsoft YaHei";
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: "arial", "sans-serif", "微软雅黑", "宋体", "Microsoft YaHei";
+}
+
+.img-responsive {
+	display: inline;
+}
+
+.syntaxhighlighter>table>tbody>tr>.code {
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.syntaxhighlighter>table>tbody>tr>.code>.container {
+	width: 1px;
+}
+
+
+/*---------------------------------------------------------------------siderbar begin---------------------------------*/
+
+.header {
+	background: #05a9d6;
+}
+
+.ldc {
+	padding: 0;
+	margin: 0;
+}
+
+.siderbar-header {}
+
+.first {
+	height: 205px;
+}
+
+.header-content {
+	color: #ffffff;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.blog-title {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid 1px #ffffff;
+	text-align: center;
+}
+
+.blog-title:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.byline {
+	margin: 15px auto;
+}
+
+.byline a {
+	font-size: 1em;
+	text-align: center;
+	margin: 15px auto;
+	color: #ffffff;
+}
+
+.slider-nav {
+	background: #3B3B3B;
+	overflow: hidden;
+}
+
+.slider-nav .cur {
+	color: #05a9d6;
+}
+
+.slider-nav ul {
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.slider-nav ul li {
+	list-style: none;
+	width: 50%;
+	float: left;
+	padding-left: 10%;
+}
+
+.slider-nav ul li a {
+	color: #dcdddd;
+	font-family: "微软雅黑";
+	font-size: 1.14em;
+	line-height: 35px;
+}
+
+.slider-nav ul li a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.btn-group {
+	width: 100%;
+}
+
+.btn-primary {
+	width: 50%;
+}
+
+.part {
+	border-bottom: 1px solid transparent;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+	border-color: #101010;
+}
+
+.line {
+	border-bottom: 1px solid transparent;
+	border-color: #C0C0C0;
+}
+
+.part-01 {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.part-02 {
+	padding-top: 0px;
+	padding-bottom: 30px;
+}
+
+.part-01 h2 {
+	font-family: "微软雅黑";
+	color: #05a9d6;
+}
+
+#classSearch,
+#searchAllClass {
+	margin: 15px auto;
+	width: 270px;
+	margin-left: -16px;
+}
+
+#classGroup li {
+	width: 100%;
+}
+
+.classCon01 {
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+.part {
+	height: 160px;
+	border-bottom: 1px solid white;
+}
+
+.col-md-2 {
+	width: 300px;
+}
+
+
+/*-----------------------------------------------content begin-----------------------------------------*/
+
+.content {
+	height: 800px;
+}
+
+.content .text-title {
+	font-family: "微软雅黑";
+	font-size: 2.2em;
+	font-weight: 400;
+	padding-top: 30px;
+}
+
+.content .date {
+	font-size: 1.28em;
+	margin: 10px 0;
+}
+
+.text-content {
+	max-width: 700px;
+	height: auto;
+	overflow: hidden;
+}
+
+.col-md-offset-2 {
+	overflow-y: auto;
+}
+
+
+/*--------------搜索页-------------*/
+
+.text-content ul {
+	list-style: none;
+}
+
+#search {
+	margin: auto;
+	width: 80%;
+}
+
+.search {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#ldc_content {
+	overflow: auto;
+}
+
+.allclassesDiv {
+	height: 100%;
+	clear: both;
+}
+
+.allclassesDiv ul li {
+	width: 100%;
+}
+
+#packageGroup li a {
+	font-size: 16px;
+}
+
+
+/*小火箭*/
+
+#rocket-to-top div {
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 149px;
+}
+
+#rocket-to-top .level-2 {
+	background: url("../../images/laya/rocket_button_up.png") no-repeat scroll -149px 0 transparent;
+	display: none;
+	height: 150px;
+	opacity: 0;
+	z-index: 1;
+}
+
+#rocket-to-top .level-3 {
+	background: none repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	height: 150px;
+	z-index: 2;
+}
+
+#rocket-to-top {
+	background: url("../../images/laya/rocket_button_up.png") no-repeat scroll 0 0 transparent;
+	cursor: default;
+	display: block;
+	height: 150px;
+	margin: -125px 0 0;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	right: 0;
+	top: 80%;
+	width: 149px;
+	z-index: 11;
+}
+
+
+/*小火箭end*/
+
+@media (max-width: 480px) {
+	body {
+		padding-top: 50px;
+	}
+	#search {
+		margin-top: 15px;
+	}
+	.header-content {
+		padding-top: 40px;
+	}
+	.blog-title {
+		font-size: 2em;
+	}
+	.byline {
+		font-size: 1em;
+		margin: 5px auto;
+	}
+	.content .text-title {
+		font-size: 1.6em;
+		line-height: 30px;
+	}
+}
+
+@media (min-width: 768px) {
+	#laya-siderbar {
+		overflow-x: hidden;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.blog-title {
+		font-size: 18px;
+	}
+	.byline a {
+		font-size: 1em;
+	}
+}

@@ -1,3 +1,47 @@
+<?php
+/*LAYA服务器参数*/
+$laya_server_name = $_SERVER['SERVER_NAME'];
+$laya_server = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')) ? 'https://' : 'http://';
+//official.layabox.com
+$laya_data = $laya_server . "official.layabox.com";
+$version = "?v=laya_20170727";
+if (gethostbyname($_SERVER['SERVER_NAME']) == "49.51.9.179") {
+    $laya_server_ip = md5(gethostbyname($_SERVER['SERVER_NAME']));
+} else {
+    $laya_server_ip = "";
+}
+$language = $_GET['language'];
+if ($language !== "zh" && $language !== "en") {
+    if ($laya_server_ip == "2ad3a2ae3de46790d168e044c19be03d") {
+        $language = "en";
+        $language_name = "English";
+        $lang_param = "?language=" . $language;
+        $lang_andparam = "language=" . $language . "&";
+    } else {
+        $language = "zh";
+        $language_name = "Chinese";
+        $lang_param = "";
+        $lang_andparam = "";
+    }
+} else {
+    if ($language == "zh") {
+        $lang_param = "";
+        $lang_andparam = "";
+    } elseif ($language == "en") {
+        $lang_param = "?language=" . $language;
+        $lang_andparam = "language=" . $language . "&";
+    }
+}
+if (isset($tr_url)) {
+    $text_data = [];
+    $num = 0;
+    $tr_url = json_decode(file_get_contents($tr_url), true);
+    foreach ($tr_url as $K => $V) {
+        $text_data[$num] = $V[$language];
+        $num++;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -6,55 +50,72 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <meta name="description"
-          content="Layabox是免费开源的HTML5引擎解决方案，产品家族中包括LayaAir引擎、LayaFlash引擎、LayaOpen开放平台、LayaMarket SDK、LayaStore嵌入式游戏商店、LayaPlayer运行器。核心引擎LayaAir性能全球领先，支持2D、3D、VR开发，支持AS3、JavaScript、TypeScript三种开发语言、LayaAirIDE让项目开发更高效。">
+          content="Layabox是免费开源的HTML5引擎解决方案，产品家族中包括LayaAir引擎、LayaFlash引擎、LayaOpen开放平台、LayaMarket SDK、LayaStore嵌入式游戏商店、LayaPlayer运行器。核心引擎LayaAir性能全球领先，支持2D、3D、VR开发，支持AS3、JavaScript、TypeScript三种开发语言、LayaAirIDE让项目开发更高效。"/>
     <meta name="keywords"
-          content="HTML5游戏引擎,Layabox,官方网站, 免费开源,H5引擎,HTML5引擎,性能最高,3D,VR,AS3,JavaScript,TypeScript,开发语言,LayaFlash,LayaPlayer,LayaAir,LayaOpen,LayaMarket,LayaStore,游戏引擎，工具链">
-    <meta name="author" content="ldc.layabox.com">
+          content="HTML5游戏引擎,Layabox,官方网站, 免费开源,H5引擎,HTML5引擎,性能最高,3D,VR,AS3,JavaScript,TypeScript,开发语言,LayaFlash,LayaPlayer,LayaAir,LayaOpen,LayaMarket,LayaStore,游戏引擎，工具链"/>
+    <meta name="author" content="ldc.layabox.com"/>
+    <script type="text/javascript">
+        var overseas = "<?php echo $laya_server_ip; ?>";
+    </script>
 
     <title>
         LAYA_API
     </title>
 
     <!--CSS-->
-    <link rel="shortcut icon" href="https://official.layabox.com/public/img/favicon.ico"/>
-    <link rel="bookmark" href="https://official.layabox.com/public/img/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+    <link rel="shortcut icon" href="<?php echo $laya_data ?>/public/img/favicon.ico"/>
+    <link rel="bookmark" href="<?php echo $laya_data ?>/public/img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $laya_data ?>/public/css/bootstrap.css<?php echo $version; ?>"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $laya_data ?>/public/css/bootstrap-theme.css<?php echo $version; ?>"/>
+    <link rel="stylesheet" type="text/css"
+          href="<?php echo $laya_data ?>/public/css/animate.min.css<?php echo $version; ?>"/>
     <!--CSS laya-->
     <link rel="stylesheet" type="text/css"
-          href="css/LAYA_HF.css?v=20170727"/>
+          href="<?php echo $laya_data ?>/public/css/LAYA_HF.css<?php echo $version; ?>"/>
     <!--CSS main-->
     <link rel="stylesheet" type="text/css"
-          href="css/style.css?v=20170727">
+          href="css/style.css<?php echo $version; ?>"/>
     <link rel="stylesheet" type="text/css"
-          href="css/Layaapi.css?v=20170727">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="print.css" media="print">
-    <link rel="stylesheet" type="text/css" href="syntaxHighlighter/shCoreDefault.css">
+          href="css/Layaapi.css<?php echo $version; ?>"/>
+    <link rel="stylesheet" type="text/css" href="style.css<?php echo $version; ?>" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="print.css<?php echo $version; ?>" media="print"/>
+    <link rel="stylesheet" type="text/css" href="syntaxHighlighter/shCoreDefault.css<?php echo $version; ?>"/>
+    <?php if ($language == "en") { ?>
+        <style>
+            #laya_nav .container {
+                width: 100%;
+            }
+        </style>
+    <?php } ?>
 
     <!--JS-->
     <!--IE 兼容-->
     <!--[IF LTE IE 9]>
-    <script type="text/javascript" charset="utf-8" src="https://official.layabox.com/public/js/html5.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://official.layabox.com/public/js/respond.min.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="<?php echo $laya_data ?>/public/js/html5.min.js<?php echo $version; ?>"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="<?php echo $laya_data ?>/public/js/respond.min.js<?php echo $version; ?>"></script>
     <![ENDIF]-->
-    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="<?php echo $laya_data ?>/public/js/jquery.js<?php echo $version; ?>"></script>
     <!--[IF LTE IE 8]>
     <script type="text/javascript" charset="utf-8"
-            src="https://official.layabox.com/public/js/jquery.ie8.min.js"></script>
+            src="<?php echo $laya_data ?>/public/js/jquery.ie8.min.js<?php echo $version; ?>"></script>
     <![ENDIF]-->
-    <script type="text/javascript" charset="utf-8" src="js/bootstrap.js"></script>
+    <script type="text/javascript" charset="utf-8"
+            src="<?php echo $laya_data ?>/public/js/bootstrap.js<?php echo $version; ?>"></script>
     <!--JS laya-->
     <script type="text/javascript" charset="utf-8"
-            src="js/LAYA_HF.js?v=20170727"></script>
+            src="<?php echo $laya_data ?>/public/js/LAYA_HF.js<?php echo $version; ?>"></script>
     <!--JS main-->
-    <script language="javascript" type="text/javascript" src="asdoc.js"></script>
-    <script language="javascript" type="text/javascript" src="help.js"></script>
-    <script language="javascript" type="text/javascript" src="cookies.js"></script>
+    <script language="javascript" type="text/javascript" src="asdoc.js<?php echo $version; ?>"></script>
+    <script language="javascript" type="text/javascript" src="help.js<?php echo $version; ?>"></script>
+    <script language="javascript" type="text/javascript" src="cookies.js<?php echo $version; ?>"></script>
 
     <!--WOW-->
-    <script type="text/javascript" charset="utf-8" src="js/wow.js"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo $laya_data ?>/public/js/wow.js<?php echo $version; ?>"></script>
     <script type="text/javascript">
         if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
             new WOW().init();
@@ -194,7 +255,7 @@
         $("#allClassList").css("height", $("#laya-siderbar").height() - 99);
         $(".classbox").css("height", $(window).height() - 90);
         $(".classbox").css("width", $(window).width() - 393);
-        $("#ldc_content").css("height", $(".classbox").height() - 10);
+        $("#ldc_content").css("height", $(".classbox").height() - 24);
         if ($(window).width() <= 767) {
             $(".classnav").css("height", 460);
             $("#laya-siderbar").css("height", 460);
@@ -204,10 +265,6 @@
             $("#ldc_content").css("height", $(window).height() - 105);
         }
     }
-    $(window).on("resize", function () {
-        onLR();
-        api_resize();
-    });
     $("#packageGroup li a").click(function () {
         $("#packageGroup li").removeClass("swich");
         $(this).parent("li").addClass("swich");

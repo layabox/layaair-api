@@ -1,0 +1,271 @@
+#laya_content {
+    padding: 0 24px;
+}
+
+section .classnav {
+    width: 300px;
+    border: 1px solid #F5F5F5;
+    float: left;
+}
+
+section .classnav .sider-content {
+    background-color: white;
+}
+
+section .classnav .sider-content .slider-body {
+    background-color: white;
+}
+
+section .classnav .sider-content .slider-body .logo {
+    background-color: white;
+    width: 100%;
+    height: 90px;
+}
+
+section .classnav .sider-content .slider-body .logo p {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #474747;
+    margin: 0;
+    font-size: 16px;
+}
+
+section .classnav .sider-content .slider-body .logo h1 {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #474747;
+    margin: 10px 0 0;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing: -4px;
+}
+
+section .classnav .sider-content .slider-body .btn-group {
+    width: 100%;
+    background-color: #286090;
+}
+
+section .classnav .sider-content .slider-body .btn-group label {
+    width: 50%;
+    border-radius: 0;
+    border: none;
+}
+
+section .classbox {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    float: right;
+    padding: 0;
+    overflow: hidden;
+}
+
+section .classbox #ldc_content {
+    width: 100%;
+    margin-top: 15px;
+}
+
+section .classbox #ldc_content .row {
+    margin: 0;
+    color: #474747;
+}
+
+section .classbox #ldc_content .row .signatureLink {
+    color: #2B31CA;
+}
+
+section .classbox #ldc_content .row a {
+    font-weight: 600;
+    color: #D0254E;
+}
+
+section .classbox #ldc_content .row footer {
+    display: none;
+}
+
+#allClassList li a {
+    margin-right: 15px;
+}
+
+#packageGroup li {
+    width: 33.33%;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+#packageGroup .swich {
+    background-color: #F0F0F0;
+}
+
+#packageGroup li a {
+    color: #6090BC;
+}
+
+#packageGroup li:hover {
+    background-color: #F0F0F0;
+    opacity: 0.9;
+}
+
+#allClassList li a {
+    color: #474747;
+}
+
+#allClassList li:hover {
+    background-color: #FAFAFA;
+    opacity: 0.9;
+}
+
+#classSearch {
+    width: 270px;
+    margin: 15px auto;
+}
+
+.part-01 {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.classCon {
+    width: 100%;
+    border-top: 1px solid #E3E6E5;
+    overflow: hidden;
+}
+
+.classCon .search,
+#classIndex .search {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.classCon .search input,
+#classIndex .search input {
+    margin: 15px auto;
+    border: 1px solid #E3E6E5;
+}
+
+.part {
+    height: 160px;
+}
+
+#classGroup,
+#allClassList {
+    padding: 15px 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+#classGroup li a {
+    color: #555555;
+}
+
+#classGroup li:hover {
+    opacity: 0.9;
+    background-color: #FAFAFA;
+}
+
+#classGroup::-webkit-scrollbar,
+#allClassList::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+#classGroup::-webkit-scrollbar-track,
+#allClassList::-webkit-scrollbar-track {
+    border-radius: 0;
+}
+
+#classGroup::-webkit-scrollbar-thumb,
+#allClassList::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: #DCE4E6;
+}
+
+@media (min-width: 768px) and (max-width: 775px) {
+    section .classbox {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    #classGroup::-webkit-scrollbar,
+    #allClassList::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    #laya_content {
+        overflow: auto;
+        margin: 68px auto 0 auto;
+        padding: 0;
+    }
+
+    section {
+        margin-top: 640px;
+    }
+
+    section .classnav {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border: none;
+        border-bottom: 1px solid #F5F5F5;
+        margin-bottom: 15px;
+    }
+
+    section .classnav .classCon {
+        width: 100%;
+    }
+
+    section .classnav #classSearch,
+    section .classnav #searchAllClass {
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    section .classnav #packageGroup li {
+        text-align: center;
+    }
+
+    section .classbox {
+        margin: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    section {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+#sousuo1,
+#sousuo2 {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    #sousuo1,
+    #sousuo2 {
+        top: 18px;
+        right: 12%;
+    }
+}
+
+.part-02 {
+    padding: 0;
+}
