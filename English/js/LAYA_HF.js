@@ -329,7 +329,7 @@ function laya_nav(laya) {
             }, {
                 "title": {
                     "zh": "引擎下载",
-                    "en": "Engine Download"
+                    "en": "Download"
                 },
                 "url": {
                     "zh": "#",
