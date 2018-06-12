@@ -39,6 +39,9 @@ if (!retunOS(overseas)) {
         lang_andparam = "language=" + language + "&";
     }
 }
+// 英文文档模式下，强制设为英文
+language = 'en';
+
 if (language == "zh") {
     language_name = "Chinese"
 } else if (language == "en") {
