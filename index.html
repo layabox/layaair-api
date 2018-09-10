@@ -29,7 +29,8 @@
             var _href = href.replace(/index.html$/, '');
             jumpLink = _href + langFolderName + '/index.html';
         } else {
-            jumpLink = href + sep + langFolderName;
+            var _href = href.replace(/index.html$/, '');
+            jumpLink = _href + langFolderName + '/index.html';
         }
         location.href = jumpLink;
     </script>
