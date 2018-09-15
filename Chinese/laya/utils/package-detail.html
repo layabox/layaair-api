@@ -14,25 +14,25 @@
 	 Browser 是浏览器代理类。封装浏览器及原生 js 提供的一些功能。
 	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Byte.html">Byte</a></td><td class="summaryTableLastCol">
 	  Byte 类提供用于优化读取、写入以及处理二进制数据的方法和属性。
-	 注意： Byte 类适用于需要在字节层访问数据的高级开发人员。
+	  Byte 类适用于需要在字节层访问数据的高级开发人员。
 	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="ClassUtils.html">ClassUtils</a></td><td class="summaryTableLastCol">
 	 ClassUtils 是一个类工具类。
-	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Dictionary.html">Dictionary</a></td><td class="summaryTableLastCol">
-	 Dictionary 是一个字典型的数据存取类。
-	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Ease.html">Ease</a></td><td class="summaryTableLastCol">
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Ease.html">Ease</a></td><td class="summaryTableLastCol">
 	 Ease 类定义了缓动函数，以便实现 Tween 动画的缓动效果。
-	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Handler.html">Handler</a></td><td class="summaryTableLastCol">
+	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="FontInfo.html">FontInfo</a></td><td class="summaryTableLastCol">&nbsp;</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Handler.html">Handler</a></td><td class="summaryTableLastCol">
 	 Handler 是事件处理器类。
 	 推荐使用 Handler.create() 方法从对象池创建，减少对象创建消耗。创建的 Handler 对象不再使用后，可以使用 Handler.recover() 将其回收到对象池，回收后不要再使用此对象，否则会导致不可预料的错误。
 	 注意：由于鼠标事件也用本对象池，不正确的回收及调用，可能会影响鼠标事件的执行。
 	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="HitArea.html">HitArea</a></td><td class="summaryTableLastCol">
 	 鼠标点击区域，可以设置绘制一系列矢量图作为点击区域和非点击区域（目前只支持圆形，矩形，多边形）
+	 
 	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Log.html">Log</a></td><td class="summaryTableLastCol">
 	 Log 类用于在界面内显示日志记录信息。
+	 注意：在加速器内不可使用
 	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Mouse.html">Mouse</a></td><td class="summaryTableLastCol">
-	 Mouse 类用于控制鼠标光标。
-	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Pool.html">Pool</a></td><td class="summaryTableLastCol">
-	  Pool 是对象池类，用于对象的存贮、重复使用。
+	 Mouse 类用于控制鼠标光标样式。
+	 </td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PerfData.html">PerfData</a></td><td class="summaryTableLastCol">&nbsp;</td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="PerfHUD.html">PerfHUD</a></td><td class="summaryTableLastCol">&nbsp;</td></tr><tr class="prow0"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Pool.html">Pool</a></td><td class="summaryTableLastCol">
+	  Pool 是对象池类，用于对象的存储、重复使用。
 	 合理使用对象池，可以有效减少对象创建的开销，避免频繁的垃圾回收，从而优化游戏流畅度。
 	 </td></tr><tr class="prow1"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Stat.html">Stat</a></td><td class="summaryTableLastCol">
 	  Stat 是一个性能统计面板，可以实时更新相关的性能参数。
@@ -55,4 +55,4 @@
 	 封装弱引用WeakMap
 	 如果支持WeakMap，则使用WeakMap，如果不支持，则用Object代替
 	 注意：如果采用Object，为了防止内存泄漏，则采用定时清理缓存策略
-	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Fri Sep 29 2017, 06:34 PM +08:00  </center></div></div></body></html><!--<br/>Fri Sep 29 2017, 06:34 PM +08:00  -->
+	 </td></tr></table><p></p><div><p></p><center class="copyright"><footer></footer><br/>Fri Sep 14 2018, 11:13 AM +08:00  </center></div></div></body></html><!--<br/>Fri Sep 14 2018, 11:13 AM +08:00  -->

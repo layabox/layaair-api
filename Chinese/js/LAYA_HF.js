@@ -281,12 +281,12 @@ function laya_nav(laya) {
                 "blank": "1"
             }, {
                 "title": {
-                    "zh": "搜索",
-                    "en": "Search"
+                    "zh": "LayaCloud",
+                    "en": "LayaCloud"
                 },
                 "url": {
-                    "zh": laya_http + "sou.layabox.com/",
-                    "en": laya_http + "sou.layabox.com/"
+                    "zh": laya_http + "wiki.cloud.layabox.com/",
+                    "en": laya_http + "wiki.cloud.layabox.com/"
                 },
                 "visual": {
                     "zh": visual,

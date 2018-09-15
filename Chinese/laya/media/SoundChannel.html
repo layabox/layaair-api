@@ -18,15 +18,15 @@
 	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#completeHandler" class="signatureLink">completeHandler</a> : <a href="../../laya/utils/Handler.html">Handler</a><div class="summaryTableDescription">
 		 播放完成处理器。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#duration" class="signatureLink">duration</a> : Number<div class="summaryTableDescription">[read-only] 
-		 获取总时间。
+		 获取总时间，单位是秒。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isStopped" class="signatureLink">isStopped</a> : Boolean = false<div class="summaryTableDescription">
 		 表示声音是否已暂停。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#loops" class="signatureLink">loops</a> : int<div class="summaryTableDescription">
 		 循环次数。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#position" class="signatureLink">position</a> : Number<div class="summaryTableDescription">[read-only] 
-		 获取当前播放时间。
+		 获取当前播放时间，单位是秒。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#startTime" class="signatureLink">startTime</a> : Number<div class="summaryTableDescription">
-		 开始时间。
+		 播放声音开始时间。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#url" class="signatureLink">url</a> : String<div class="summaryTableDescription">
 		 声音地址。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#volume" class="signatureLink">volume</a> : Number<div class="summaryTableDescription">
@@ -41,18 +41,20 @@
 		 从 EventDispatcher 对象中删除侦听器。
 		 </div></td><td class="summaryTableOwnerCol"><a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../laya/events/EventDispatcher.html#offAll()" class="signatureLink">offAll</a>(type:String = null):<a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></div><div class="summaryTableDescription">
 		 从 EventDispatcher 对象中删除指定事件类型的所有侦听器。
+		 </div></td><td class="summaryTableOwnerCol"><a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../laya/events/EventDispatcher.html#offAllCaller()" class="signatureLink">offAllCaller</a>(caller:*):<a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></div><div class="summaryTableDescription">
+		 移除caller为target的所有事件监听
 		 </div></td><td class="summaryTableOwnerCol"><a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../laya/events/EventDispatcher.html#on()" class="signatureLink">on</a>(type:String, caller:*, listener:Function, args:Array = null):<a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></div><div class="summaryTableDescription">
 		 使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知。
 		 </div></td><td class="summaryTableOwnerCol"><a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../laya/events/EventDispatcher.html#once()" class="signatureLink">once</a>(type:String, caller:*, listener:Function, args:Array = null):<a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></div><div class="summaryTableDescription">
 		 使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知，此侦听事件响应一次后自动移除。
 		 </div></td><td class="summaryTableOwnerCol"><a href="../../laya/events/EventDispatcher.html">EventDispatcher</a></td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pause()" class="signatureLink">pause</a>():void</div><div class="summaryTableDescription">
-		 暂停。
+		 暂停播放。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#play()" class="signatureLink">play</a>():void</div><div class="summaryTableDescription">
-		 播放。
+		 播放声音。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#resume()" class="signatureLink">resume</a>():void</div><div class="summaryTableDescription">
 		 继续播放。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stop()" class="signatureLink">stop</a>():void</div><div class="summaryTableDescription">
-		 停止。
+		 停止播放。
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr></table></div><a name="protectedMethodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#__runComplete()" class="signatureLink">__runComplete</a>(handler:<a href="../../laya/utils/Handler.html">Handler</a>):void</div><div class="summaryTableDescription">
 		 private
 		 </div></td><td class="summaryTableOwnerCol">SoundChannel</td></tr></table></div><script language="javascript" type="text/javascript"><!--
@@ -60,15 +62,15 @@
 										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="completeHandler"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">completeHandler</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public var completeHandler:<a href="../../laya/utils/Handler.html">Handler</a></code><p></p><p></p><p>
 		 播放完成处理器。
 		 </p></div><a name="propertyDetail"></a><a name="duration"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">duration</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>duration:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
-		 获取总时间。
+		 获取总时间，单位是秒。
 		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get duration():Number</code><br/></div><a name="propertyDetail"></a><a name="isStopped"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isStopped</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var isStopped:Boolean = false</code><p></p><p></p><p>
 		 表示声音是否已暂停。
 		 </p></div><a name="propertyDetail"></a><a name="loops"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">loops</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var loops:int</code><p></p><p></p><p>
 		 循环次数。
 		 </p></div><a name="propertyDetail"></a><a name="position"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">position</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>position:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
-		 获取当前播放时间。
+		 获取当前播放时间，单位是秒。
 		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get position():Number</code><br/></div><a name="propertyDetail"></a><a name="startTime"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">startTime</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var startTime:Number</code><p></p><p></p><p>
-		 开始时间。
+		 播放声音开始时间。
 		 </p></div><a name="propertyDetail"></a><a name="url"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">url</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var url:String</code><p></p><p></p><p>
 		 声音地址。
 		 </p></div><a name="propertyDetail"></a><a name="volume"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">volume</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>volume:Number</code><p></p><p></p><p>
@@ -76,11 +78,11 @@
 		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get volume():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set volume(value:Number):void</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="__runComplete()"></a><a name="__runComplete(laya.utils.Handler)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">__runComplete</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> protected function __runComplete(handler:<a href="../../laya/utils/Handler.html">Handler</a>):void</code><p></p><p></p><p>
 		 private
 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">handler</span>:<a href="../../laya/utils/Handler.html">Handler</a></code></td></tr></table></p></div><a name="pause()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pause</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pause():void</code><p></p><p></p><p>
-		 暂停。
+		 暂停播放。
 		 </p></div><a name="play()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">play</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function play():void</code><p></p><p></p><p>
-		 播放。
+		 播放声音。
 		 </p></div><a name="resume()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">resume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function resume():void</code><p></p><p></p><p>
 		 继续播放。
 		 </p></div><a name="stop()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stop():void</code><p></p><p></p><p>
-		 停止。
-		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Fri Sep 29 2017, 06:34 PM +08:00  </center></div></body></html><!--<br/>Fri Sep 29 2017, 06:34 PM +08:00  -->
+		 停止播放。
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Fri Sep 14 2018, 11:13 AM +08:00  </center></div></body></html><!--<br/>Fri Sep 14 2018, 11:13 AM +08:00  -->
