@@ -218,8 +218,8 @@ function laya_nav(laya) {
                     "en": "Home"
                 },
                 "url": {
-                    "zh": laya_http + "ldc.layabox.com/" + lang_param,
-                    "en": laya_http + "ldc.layabox.com/" + lang_param
+                    "zh": laya_http + "ldc2.layabox.com/" + lang_param,
+                    "en": laya_http + "ldc2.layabox.com/" + lang_param
                 },
                 "visual": {
                     "zh": 1,
@@ -232,8 +232,8 @@ function laya_nav(laya) {
                     "en": "Example"
                 },
                 "url": {
-                    "zh": laya_http + "layaair.ldc.layabox.com/demo/?" + lang_andparam + "2d&Sprite&DisplayImage",
-                    "en": laya_http + "layaair.ldc.layabox.com/demo/?" + lang_andparam + "2d&Sprite&DisplayImage"
+                    "zh": laya_http + "layaair.ldc.layabox.com/demo2/?" + lang_andparam + "2d&Sprite&DisplayImage",
+                    "en": laya_http + "layaair.ldc.layabox.com/demo2/?" + lang_andparam + "2d&Sprite&DisplayImage"
                 },
                 "visual": {
                     "zh": 1,
@@ -246,8 +246,8 @@ function laya_nav(laya) {
                     "en": "Doc"
                 },
                 "url": {
-                    "zh": laya_http + "ldc.layabox.com/doc/" + lang_param,
-                    "en": laya_http + "ldc.layabox.com/doc/" + lang_param
+                    "zh": laya_http + "ldc2.layabox.com/doc/" + lang_param,
+                    "en": laya_http + "ldc2.layabox.com/doc/" + lang_param
                 },
                 "visual": {
                     "zh": 1,
@@ -260,8 +260,8 @@ function laya_nav(laya) {
                     "en": "API"
                 },
                 "url": {
-                    "zh": laya_http + "layaair.ldc.layabox.com/api/" + lang_param,
-                    "en": laya_http + "layaair.ldc.layabox.com/api/English/index.html" + lang_param
+                    "zh": laya_http + "layaair.ldc.layabox.com/api2/" + lang_param,
+                    "en": laya_http + "layaair.ldc.layabox.com/api2/English/index.html" + lang_param
                 },
                 "visual": {
                     "zh": 1,
@@ -346,8 +346,8 @@ function laya_nav(laya) {
                             "en": "LayaAir Engine Download"
                         },
                         "url": {
-                            "zh": laya_http + "ldc.layabox.com/layadownload/?" + lang_andparam + "type=layaair",
-                            "en": laya_http + "ldc.layabox.com/layadownload/?" + lang_andparam + "type=layaair"
+                            "zh": laya_http + "ldc2.layabox.com/layadownload/?" + lang_andparam + "type=layaair",
+                            "en": laya_http + "ldc2.layabox.com/layadownload/?" + lang_andparam + "type=layaair"
                         },
                         "visual": {
                             "zh": 1,
@@ -360,8 +360,8 @@ function laya_nav(laya) {
                             "en": "LayaAir IDE Download"
                         },
                         "url": {
-                            "zh": laya_http + "ldc.layabox.com/layadownload/?" + lang_andparam + "type=layaairide",
-                            "en": laya_http + "ldc.layabox.com/layadownload/?" + lang_andparam + "type=layaairide"
+                            "zh": laya_http + "ldc2.layabox.com/layadownload/?" + lang_andparam + "type=layaairide",
+                            "en": laya_http + "ldc2.layabox.com/layadownload/?" + lang_andparam + "type=layaairide"
                         },
                         "visual": {
                             "zh": 1,
@@ -374,8 +374,8 @@ function laya_nav(laya) {
                             "en": "LayaNative Download"
                         },
                         "url": {
-                            "zh": laya_http + "ldc.layabox.com/layadownload/?" + lang_andparam + "type=layaairnative",
-                            "en": laya_http + "ldc.layabox.com/layadownload/?" + lang_andparam + "type=layaairnative"
+                            "zh": laya_http + "ldc2.layabox.com/layadownload/?" + lang_andparam + "type=layaairnative",
+                            "en": laya_http + "ldc2.layabox.com/layadownload/?" + lang_andparam + "type=layaairnative"
                         },
                         "visual": {
                             "zh": 1,
