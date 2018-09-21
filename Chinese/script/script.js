@@ -11,7 +11,6 @@ classList["Bone"] = [
 ];
 classList["Core"] = [
     "laya.ani.AnimationPlayer",
-    "laya.ani.AnimationTemplet",
     "laya.ani.swf.MovieClip",
     "laya.components.Component",
     "laya.components.Prefab",
