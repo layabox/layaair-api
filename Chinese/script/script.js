@@ -29,13 +29,11 @@ classList["Core"] = [
     "laya.display.Text",
     "laya.display.cmd.AlphaCmd",
     "laya.display.cmd.ClipRectCmd",
-    "laya.display.cmd.DrawCanvasCmd",
     "laya.display.cmd.DrawCircleCmd",
     "laya.display.cmd.DrawCurvesCmd",
     "laya.display.cmd.DrawImageCmd",
     "laya.display.cmd.DrawLineCmd",
     "laya.display.cmd.DrawLinesCmd",
-    "laya.display.cmd.DrawParticleCmd",
     "laya.display.cmd.DrawPathCmd",
     "laya.display.cmd.DrawPieCmd",
     "laya.display.cmd.DrawPolyCmd",
@@ -44,10 +42,8 @@ classList["Core"] = [
     "laya.display.cmd.DrawTexturesCmd",
     "laya.display.cmd.DrawTrianglesCmd",
     "laya.display.cmd.FillBorderTextCmd",
-    "laya.display.cmd.FillBorderWordsCmd",
     "laya.display.cmd.FillTextCmd",
     "laya.display.cmd.FillTextureCmd",
-    "laya.display.cmd.FillWordsCmd",
     "laya.display.cmd.RestoreCmd",
     "laya.display.cmd.RotateCmd",
     "laya.display.cmd.SaveCmd",
@@ -133,7 +129,6 @@ classList["3D"] = [
     "laya.d3.core.Sprite3D",
     "laya.d3.core.TextureMode",
     "laya.d3.core.Transform3D",
-    "laya.d3.core.TransformUV",
     "laya.d3.core.light.DirectionLight",
     "laya.d3.core.light.LightSprite",
     "laya.d3.core.light.PointLight",
@@ -142,7 +137,6 @@ classList["3D"] = [
     "laya.d3.core.material.BlinnPhongMaterial",
     "laya.d3.core.material.EffectMaterial",
     "laya.d3.core.material.ExtendTerrainMaterial",
-    "laya.d3.core.material.PBRMaterial",
     "laya.d3.core.material.PBRSpecularMaterial",
     "laya.d3.core.material.PBRStandardMaterial",
     "laya.d3.core.material.RenderState",
@@ -359,6 +353,7 @@ classList["Physics"] = [
     "laya.physics.RigidBody",
     "laya.physics.joint.DistanceJoint",
     "laya.physics.joint.GearJoint",
+    "laya.physics.joint.JointBase",
     "laya.physics.joint.MotorJoint",
     "laya.physics.joint.MouseJoint",
     "laya.physics.joint.PrismaticJoint",
@@ -411,7 +406,8 @@ classList["UI"] = [
     "laya.ui.ViewStack",
     "laya.ui.VScrollBar",
     "laya.ui.VSlider",
-    "laya.ui.Widget"
+    "laya.ui.Widget",
+    "laya.ui.WXOpenDataViewer"
 ];
 excludeClassList["Core"] =
     [
