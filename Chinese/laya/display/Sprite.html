@@ -124,16 +124,14 @@
 		 绘制的结果可以当作图片源，再次绘制到其他Sprite里面，示例：
 		 
 		 var htmlCanvas:HTMLCanvas = sprite.drawToCanvas(100, 100, 0, 0);//把精灵绘制到canvas上面
-		 var texture:Texture = new Texture(htmlCanvas);//使用htmlCanvas创建Texture
-		 var sp:Sprite = new Sprite().pos(0, 200);//创建精灵并把它放倒200位置
-		 sp.graphics.drawImage(texture);//把截图绘制到精灵上
+		 var sp:Sprite = new Sprite();//创建精灵
+		 sp.graphics.drawTexture(htmlCanvas.getTexture());//把截图绘制到精灵上
 		 Laya.stage.addChild(sp);//把精灵显示到舞台
 		 
 		 也可以获取原始图片数据，分享到网上，从而实现截图效果，示例：
 		 
 		 var htmlCanvas:HTMLCanvas = sprite.drawToCanvas(100, 100, 0, 0);//把精灵绘制到canvas上面
-		 var canvas:= htmlCanvas.getCanvas();//获取原生的canvas对象
-		 trace(canvas.toDataURL("image/png"));//打印图片base64信息，可以发给服务器或者保存为图片
+		 htmlCanvas.toBase64("image/png",0.9,callBack);//打印图片base64信息，可以发给服务器或者保存为图片
 		 
 		 </div></td><td class="summaryTableOwnerCol">Sprite</td></tr><tr class="hideInheritedMethod"><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img src="../../images/inheritedSummary.gif" alt="Inherited" title="Inherited" class="inheritedSummaryImage"></td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="../../laya/events/EventDispatcher.html#event()" class="signatureLink">event</a>(type:String, data:* = null):Boolean</div><div class="summaryTableDescription">
 		 派发事件。
@@ -330,16 +328,14 @@
 		 <p>绘制的结果可以当作图片源，再次绘制到其他Sprite里面，示例：</p>
 		 
 		 var htmlCanvas:HTMLCanvas = sprite.drawToCanvas(100, 100, 0, 0);//把精灵绘制到canvas上面
-		 var texture:Texture = new Texture(htmlCanvas);//使用htmlCanvas创建Texture
-		 var sp:Sprite = new Sprite().pos(0, 200);//创建精灵并把它放倒200位置
-		 sp.graphics.drawImage(texture);//把截图绘制到精灵上
+		 var sp:Sprite = new Sprite();//创建精灵
+		 sp.graphics.drawTexture(htmlCanvas.getTexture());//把截图绘制到精灵上
 		 Laya.stage.addChild(sp);//把精灵显示到舞台
 		 
 		 <p>也可以获取原始图片数据，分享到网上，从而实现截图效果，示例：</p>
 		 
 		 var htmlCanvas:HTMLCanvas = sprite.drawToCanvas(100, 100, 0, 0);//把精灵绘制到canvas上面
-		 var canvas:= htmlCanvas.getCanvas();//获取原生的canvas对象
-		 trace(canvas.toDataURL("image/png"));//打印图片base64信息，可以发给服务器或者保存为图片
+		 htmlCanvas.toBase64("image/png",0.9,callBack);//打印图片base64信息，可以发给服务器或者保存为图片
 		 
 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">canvasWidth</span>:Number</code> &mdash; 画布宽度。
 		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">canvasHeight</span>:Number</code> &mdash; 画布高度。
@@ -467,4 +463,4 @@
 	 </p></div><a name="event:mouseout"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">mouseout</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../laya/events/Event.html"><code>laya.events.Event</code></a><br/><span class="label">Event.type property = </span><a href="../../Event.html#MOUSE_OUT"><code>Event.MOUSE_OUT</code></a><br/><p></p><p></p><p>鼠标离开对象后调度。
 	 </p></div><a name="event:mouseover"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">mouseover</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../laya/events/Event.html"><code>laya.events.Event</code></a><br/><span class="label">Event.type property = </span><a href="../../Event.html#MOUSE_OVER"><code>Event.MOUSE_OVER</code></a><br/><p></p><p></p><p>鼠标经过对象后调度。
 	 </p></div><a name="event:mouseup"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">mouseup</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../laya/events/Event.html"><code>laya.events.Event</code></a><br/><span class="label">Event.type property = </span><a href="../../Event.html#MOUSE_UP"><code>Event.MOUSE_UP</code></a><br/><p></p><p></p><p>在显示对象抬起后调度。
-	 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Fri Sep 21 2018, 04:44 PM +08:00  </center></div></body></html><!--<br/>Fri Sep 21 2018, 04:44 PM +08:00  -->
+	 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Sat Oct 13 2018, 02:18 PM +08:00  </center></div></body></html><!--<br/>Sat Oct 13 2018, 02:18 PM +08:00  -->
