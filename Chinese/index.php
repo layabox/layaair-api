@@ -1,7 +1,7 @@
 <?php
 /*LAYA服务器参数*/
 $laya_server_name = $_SERVER['SERVER_NAME'];
-$laya_server = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')) ? 'https://' : 'http://';
+$laya_server = "//";
 //official.layabox.com
 $laya_data = $laya_server . "official.layabox.com";
 $version = "?v=laya_20170727";
