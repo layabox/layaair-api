@@ -436,7 +436,7 @@ $("window").ready(function () {
 
     // 解析class
     var fullClassName = getFullClassName();
-    navToClass(fullClassName);
+    navToClass(fullClassName,"", 0);
 });
 
 // 显示指定分类对应的类列表
@@ -453,10 +453,31 @@ function navToCategory(packageName) {
 }
 
 
-function navToClass(classFullName, memberName) {
+function navToClass(classFullName, memberName, flags) {
     document.title = classFullName;
+    var classPath;
+    if(flags === 0){
+        var htmlName = "_" + classFullName.toLowerCase().replace(/\./g, "_") + "_.";
+        var classPaths = classFullName.split('.');
+        if(classPaths.length === 0){
+            return;
+        }
+        var className = classPaths[classPaths.length - 1];
+        htmlName += className;
+        classPath = baseUrl.replace(/index.html/, "") + "laya/classes/" + htmlName + ".html";
+        scrollTo(0);
+    }
+    else if(flags === 1){
+        classPath = baseUrl.replace(/index.html/, "")  + classFullName + ".html";
+        if(memberName != ""){
+            classPath += '#' + memberName;
+        }
+        else{
+            scrollTo(0);
+        }
+    }
 
-    var classPath = baseUrl.replace(/index.html/, "") + classFullName.replace(/\./g, "/") + ".html";
+    
 
     $.ajax(
         {
@@ -475,12 +496,14 @@ function navToClass(classFullName, memberName) {
                 createCodeTable();
 
                 translate();
-                removePackageHypelink();
-                removeSeeAlsoHypeLink();
-                replaceClassHypelink(".classHeaderTable tbody tr td a");
-                replaceClassHypelink(".summaryTable tbody tr td a");
-                replaceClassHypelink(".detailBody code a");
-                replaceClassHypelink(".detailBody a");
+                removeNodeByClass("tsd-page-toolbar");
+                removeNodeByClass("tsd-page-title");
+                removeNodeByClass("tsd-sources");
+                removeNodeByClass("tsd-navigation");
+
+                replaceClassHypelink(".tsd-hierarchy li a", 0);
+                replaceClassHypelink(".tsd-index-list li a", 1);
+
 
                 memberName || (memberName = location.hash.substr(1));
                 if (memberName) {
@@ -598,6 +621,21 @@ function translate() {
     // headerTableRows[3].firstChild.innerText = "子类"
 }
 
+
+function removeNodeByID(node){
+    var cmd = '#' + node;
+    var node = $(cmd);
+    if(node){
+        node.remove();
+    }
+}
+function removeNodeByClass(node){
+    var cmd = '.' + node;
+    var node = $(cmd);
+    if(node){
+        node.remove();
+    }
+}
 // 更改
 function removePackageHypelink() {
     var hypelinkContainer = $(".classHeaderTableLabel")[0].parentNode;
@@ -635,7 +673,7 @@ function removeSeeAlsoHypeLink() {
         if ($(e.target).attr("href") == "javascript:void(0)") {
             if (isClass(innerText)) // 目标是一个类
             {
-                navToClass(innerText);
+                navToClass(innerText,"", 0);
                 pushToHistory(getCategoryName(), innerText);
             }
             else // 目标是其他类成员
@@ -652,7 +690,7 @@ function removeSeeAlsoHypeLink() {
                     50);
 
                 if (targetClass) {
-                    navToClass(targetClass);
+                    navToClass(targetClass,"", 0);
                     pushToHistory(getCategoryName(), targetClass, memberName);
                 }
             }
@@ -662,7 +700,7 @@ function removeSeeAlsoHypeLink() {
 }
 // 把ASDoc生成的页面跳转链接改成页内加载
 // selector为JQuery的选择器
-function replaceClassHypelink(selector) {
+function replaceClassHypelink(selector, flags) {
     var elementList = $(selector);
     var element;
     for (var i = elementList.length - 1; i >= 0; i--) {
@@ -674,8 +712,10 @@ function replaceClassHypelink(selector) {
             element.onclick = function (e) {
                 var fullClassName = e.currentTarget.attributes.fullName.nodeValue;
                 var parts = fullClassName.split("#");
+                var className = "laya/classes/" + parts[0];
                 scrollTo(0);
-                navToClass(parts[0], parts[1]);
+                //navToClass(parts[0], parts[1]);
+                navToClass(className, parts[1], 1);
 
                 var categoryName = getClassCategary(fullClassName);
 
@@ -684,25 +724,30 @@ function replaceClassHypelink(selector) {
             element.href = "javascript:void(0)";
         }
         else {
-            // element.setAttribute("anchor", element.attributes.href.nodeValue.substring(1));
-            // element.addEventListener('click', function(e)
-            // {
-            // 	var anchor = e.target.attributes.anchor.nodeValue;
-            // 	var anchorElem = $('a[name="' + anchor + '"]');
-            // 	scrollTo(anchorElem.offset().top);
-            // });
+             /*element.setAttribute("anchor", element.attributes.href.nodeValue.substring(1));
+             element.addEventListener('click', function(e)
+            {
+             	var anchor = e.target.attributes.anchor.nodeValue;
+             	var anchorElem = $('a[name="' + anchor + '"]');
+             	scrollTo(anchorElem.offset().top);
+            });*/
         }
+
     }
 }
 
+
+
 // 选择包
 packageGroup.onclick = function (e) {
+    debugger;
     if (e.target.tagName != "A")
         return;
 
     // 导航至指定包
     var categoryName = e.target.innerText;
 
+    debugger;
     pushToHistory(categoryName, classList[categoryName][0]);
 
     navToCategory(categoryName);
@@ -722,7 +767,7 @@ classGroup.onclick = allClassList.onclick = function (e) {
         {}, "",
         baseUrl + "?category=" + categoryName + "&class=" + e.target.innerText);
 
-    navToClass(e.target.innerText);
+    navToClass(e.target.innerText, "", 0);
     scrollTo(0);
 }
 
@@ -854,7 +899,7 @@ function showSelectedCategory(categoryName) {
 
 // 用户执行前进或后退网页时 无刷跳转历史记录
 window.onpopstate = function () {
-    navToClass(getFullClassName());
+    navToClass(getFullClassName(),"", 0);
 }
 
 category.style.display = "block";
