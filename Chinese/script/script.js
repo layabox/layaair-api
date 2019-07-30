@@ -463,7 +463,7 @@ function navToClass(classFullName, memberName, flags) {
             return;
         }
         var className = classPaths[classPaths.length - 1];
-        htmlName += className;
+        htmlName += className.toLowerCase() ;
         classPath = baseUrl.replace(/index.html/, "") + "laya/classes/" + htmlName + ".html";
         scrollTo(0);
     }
