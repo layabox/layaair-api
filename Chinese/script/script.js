@@ -468,8 +468,15 @@ function navToClass(classFullName, memberName, flags) {
         scrollTo(0);
     }
     else if(flags === 1){
+        if(classFullName.indexOf("interfaces.") !== -1){
+            classFullName = classFullName.replace(/interfaces./, "");
+            classFullName = classFullName.replace(/classes/, "interfaces");
+        }
+        else if(classFullName.indexOf("classes.") !== -1){
+            classFullName = classFullName.replace(/classes\./, "");
+        }
         classPath = baseUrl.replace(/index.html/, "")  + classFullName + ".html";
-        if(memberName != ""){
+        if(memberName && memberName != ""){
             classPath += '#' + memberName;
         }
         else{
@@ -503,6 +510,8 @@ function navToClass(classFullName, memberName, flags) {
 
                 replaceClassHypelink(".tsd-hierarchy li a", 0);
                 replaceClassHypelink(".tsd-index-list li a", 1);
+                //这是属性的类型，点击会跳转
+                replaceClassHypelink(".tsd-signature-type", 0);
 
 
                 memberName || (memberName = location.hash.substr(1));
@@ -669,7 +678,6 @@ function removeSeeAlsoHypeLink() {
 
     seeAlsos.click(function (e) {
         var innerText = e.target.innerText;
-
         if ($(e.target).attr("href") == "javascript:void(0)") {
             if (isClass(innerText)) // 目标是一个类
             {
@@ -740,14 +748,12 @@ function replaceClassHypelink(selector, flags) {
 
 // 选择包
 packageGroup.onclick = function (e) {
-    debugger;
     if (e.target.tagName != "A")
         return;
 
     // 导航至指定包
     var categoryName = e.target.innerText;
 
-    debugger;
     pushToHistory(categoryName, classList[categoryName][0]);
 
     navToCategory(categoryName);
