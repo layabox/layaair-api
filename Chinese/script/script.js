@@ -507,11 +507,11 @@ function navToClass(classFullName, memberName, flags) {
                 removeNodeByClass("tsd-page-title");
                 removeNodeByClass("tsd-sources");
                 removeNodeByClass("tsd-navigation");
-
-                replaceClassHypelink(".tsd-hierarchy li a", 0);
+                //继承类和被继承类
+                replaceClassHypelink(".tsd-hierarchy li a", 1);
                 replaceClassHypelink(".tsd-index-list li a", 1);
                 //这是属性的类型，点击会跳转
-                replaceClassHypelink(".tsd-signature-type", 0);
+                replaceClassHypelink(".tsd-member-group a", 0);
 
 
                 memberName || (memberName = location.hash.substr(1));
@@ -718,6 +718,7 @@ function replaceClassHypelink(selector, flags) {
         if (element.attributes.href.nodeValue.charAt(0) != "#") {
             element.setAttribute("fullName", element.attributes.href.nodeValue.replace(".html", "").replace(/\//g, "."));
             element.onclick = function (e) {
+                e.preventDefault();
                 var fullClassName = e.currentTarget.attributes.fullName.nodeValue;
                 var parts = fullClassName.split("#");
                 var className = "laya/classes/" + parts[0];

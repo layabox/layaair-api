@@ -135,23 +135,23 @@
 								Laya.stage.bgColor = &quot;#efefef&quot;;//设置画布的背景颜色
 								var dialog;
 								Laya.loader.load(&quot;resource/ui/btn_close.png&quot;, laya.utils.Handler.create(this, loadComplete));//加载资源
-								(function (<em>super) {//新建一个类Dialog</em>Instance继承自laya.ui.Dialog。
+								(function (_super) {//新建一个类Dialog_Instance继承自laya.ui.Dialog。
 								function Dialog_Instance() {
-								Dialog_Instance.<em>_super.call(this);//初始化父类
-									var bg = new laya.ui.Image(&quot;resource/ui/bg.png&quot;);//新建一个 Image 类的实例 bg 。
-									bg.sizeGrid = &quot;10,40,10,5&quot;;//设置 bg 的网格信息。
-									bg.width = 150;//设置 bg 的宽度。
-									bg.height = 250;//设置 bg 的高度。
-									this.addChild(bg);//将 bg 添加到显示列表。
-									var image = new laya.ui.Image(&quot;resource/ui/image.png&quot;);//新建一个 Image 类的实例 image 。
-									this.addChild(image);//将 image 添加到显示列表。
-								var button = new laya.ui.Button(&quot;resource/ui/btn</em>close.png&quot;);//新建一个 Button 类的实例 bg 。
+								Dialog_Instance.__super.call(this);//初始化父类
+								var bg = new laya.ui.Image(&quot;resource/ui/bg.png&quot;);//新建一个 Image 类的实例 bg 。
+								bg.sizeGrid = &quot;10,40,10,5&quot;;//设置 bg 的网格信息。
+								bg.width = 150;//设置 bg 的宽度。
+								bg.height = 250;//设置 bg 的高度。
+								this.addChild(bg);//将 bg 添加到显示列表。
+								var image = new laya.ui.Image(&quot;resource/ui/image.png&quot;);//新建一个 Image 类的实例 image 。
+								this.addChild(image);//将 image 添加到显示列表。
+								var button = new laya.ui.Button(&quot;resource/ui/btn_close.png&quot;);//新建一个 Button 类的实例 bg 。
 								button.name = laya.ui.Dialog.CLOSE;//设置 button 的 name 属性值。
 								button.x = 0;//设置 button 对象的属性 x 的值，用于控制 button 对象的显示位置。
 								button.y = 0;//设置 button 对象的属性 y 的值，用于控制 button 对象的显示位置。
 								this.addChild(button);//将 button 添加到显示列表。
 								};
-								Laya.class(Dialog_Instance,&quot;mypackage.dialogExample.Dialog_Instance&quot;,<em>super);//注册类Dialog</em>Instance。
+								Laya.class(Dialog_Instance,&quot;mypackage.dialogExample.Dialog_Instance&quot;,_super);//注册类Dialog_Instance。
 								})(laya.ui.Dialog);
 								function loadComplete() {
 								console.log(&quot;资源加载完成！&quot;);
@@ -336,6 +336,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#cleartimer" class="tsd-kind-icon">clear<wbr>Timer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_laya_ui_dialog_.dialog.html#close-1" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#contains" class="tsd-kind-icon">contains</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#createglbuffer" class="tsd-kind-icon">createGLBuffer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private"><a href="_laya_ui_dialog_.dialog.html#createview" class="tsd-kind-icon">create<wbr>View</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#customrender" class="tsd-kind-icon">custom<wbr>Render</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_laya_ui_dialog_.dialog.html#destroy" class="tsd-kind-icon">destroy</a></li>
@@ -399,6 +400,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#removeself" class="tsd-kind-icon">remove<wbr>Self</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#render" class="tsd-kind-icon">render</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#repaint" class="tsd-kind-icon">repaint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#replacechild" class="tsd-kind-icon">replace<wbr>Child</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#runcalllater" class="tsd-kind-icon">run<wbr>Call<wbr>Later</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#scale" class="tsd-kind-icon">scale</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_ui_dialog_.dialog.html#setchildindex" class="tsd-kind-icon">set<wbr>Child<wbr>Index</a></li>
@@ -435,8 +437,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_ui_dialog_.dialog.html#open-1" class="tsd-kind-icon">open</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private tsd-is-static"><a href="_laya_ui_dialog_.dialog.html#regcomponent" class="tsd-kind-icon">reg<wbr>Component</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private tsd-is-static"><a href="_laya_ui_dialog_.dialog.html#regui" class="tsd-kind-icon">regUI</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private tsd-is-static"><a href="_laya_ui_dialog_.dialog.html#regviewruntime" class="tsd-kind-icon">reg<wbr>View<wbr>Runtime</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_ui_dialog_.dialog.html#setloadingpage" class="tsd-kind-icon">set<wbr>Loading<wbr>Page</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_ui_dialog_.dialog.html#setlockview" class="tsd-kind-icon">set<wbr>Lock<wbr>View</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_ui_dialog_.dialog.html#setuimap" class="tsd-kind-icon">setUIMap</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_ui_dialog_.dialog.html#showloadingpage" class="tsd-kind-icon">show<wbr>Loading<wbr>Page</a></li>
 							</ul>
 						</section>
@@ -462,7 +466,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L205">laya/ui/Dialog.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L205">laya/ui/Dialog.ts:205</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_ui_dialog_.dialog.html" class="tsd-signature-type">Dialog</a></h4>
@@ -479,7 +483,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#autodestroyatclosed">autoDestroyAtClosed</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L26">laya/display/Scene.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L27">laya/display/Scene.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -495,7 +499,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#autosize">autoSize</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L255">laya/display/Sprite.ts:255</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L254">laya/display/Sprite.ts:254</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -511,7 +515,7 @@
 					<div class="tsd-signature tsd-kind-icon">close<wbr>Effect<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L189">laya/ui/Dialog.ts:189</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L189">laya/ui/Dialog.ts:189</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -527,7 +531,7 @@
 					<div class="tsd-signature tsd-kind-icon">close<wbr>Handler<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L179">laya/ui/Dialog.ts:179</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L179">laya/ui/Dialog.ts:179</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -543,7 +547,7 @@
 					<div class="tsd-signature tsd-kind-icon">close<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L199">laya/ui/Dialog.ts:199</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L199">laya/ui/Dialog.ts:199</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -559,7 +563,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#destroyed">destroyed</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L53">laya/display/Node.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L53">laya/display/Node.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -574,7 +578,7 @@
 					<div class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L191">laya/ui/Dialog.ts:191</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L191">laya/ui/Dialog.ts:191</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -590,7 +594,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#hittestprior">hitTestPrior</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L263">laya/display/Sprite.ts:263</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L262">laya/display/Sprite.ts:262</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -613,7 +617,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Modal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L193">laya/ui/Dialog.ts:193</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L193">laya/ui/Dialog.ts:193</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -628,7 +632,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Popup<wbr>Center<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L197">laya/ui/Dialog.ts:197</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L197">laya/ui/Dialog.ts:197</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -643,7 +647,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Show<wbr>Effect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L195">laya/ui/Dialog.ts:195</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L195">laya/ui/Dialog.ts:195</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -659,7 +663,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#mousethrough">mouseThrough</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L250">laya/display/Sprite.ts:250</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L249">laya/display/Sprite.ts:249</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -682,7 +686,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L51">laya/display/Node.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L51">laya/display/Node.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -697,7 +701,7 @@
 					<div class="tsd-signature tsd-kind-icon">popup<wbr>Effect<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L184">laya/ui/Dialog.ts:184</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L184">laya/ui/Dialog.ts:184</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -714,7 +718,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#url">url</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L28">laya/display/Scene.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L29">laya/display/Scene.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -729,7 +733,7 @@
 					<div class="tsd-signature tsd-kind-icon">CANCEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;cancel&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L152">laya/ui/Dialog.ts:152</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L152">laya/ui/Dialog.ts:152</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -744,7 +748,7 @@
 					<div class="tsd-signature tsd-kind-icon">CLOSE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;close&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L150">laya/ui/Dialog.ts:150</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L150">laya/ui/Dialog.ts:150</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -759,7 +763,7 @@
 					<div class="tsd-signature tsd-kind-icon">NO<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;no&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L156">laya/ui/Dialog.ts:156</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L156">laya/ui/Dialog.ts:156</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -774,7 +778,7 @@
 					<div class="tsd-signature tsd-kind-icon">OK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;ok&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L160">laya/ui/Dialog.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L160">laya/ui/Dialog.ts:160</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -789,7 +793,7 @@
 					<div class="tsd-signature tsd-kind-icon">SURE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;sure&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L154">laya/ui/Dialog.ts:154</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L154">laya/ui/Dialog.ts:154</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -804,7 +808,7 @@
 					<div class="tsd-signature tsd-kind-icon">YES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;yes&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L158">laya/ui/Dialog.ts:158</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L158">laya/ui/Dialog.ts:158</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -820,7 +824,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#uimap">uiMap</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L46">laya/ui/View.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L46">laya/ui/View.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -833,7 +837,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#undestroyedscenes">unDestroyedScenes</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L19">laya/display/Scene.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L20">laya/display/Scene.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -857,7 +861,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#active">active</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L625">laya/display/Node.ts:625</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L624">laya/display/Node.ts:624</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -872,7 +876,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#active">active</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L633">laya/display/Node.ts:633</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L632">laya/display/Node.ts:632</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -906,7 +910,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#activeinhierarchy">activeInHierarchy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L659">laya/display/Node.ts:659</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L658">laya/display/Node.ts:658</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -931,7 +935,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#alpha">alpha</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L929">laya/display/Sprite.ts:929</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L912">laya/display/Sprite.ts:912</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -945,7 +949,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#alpha">alpha</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L933">laya/display/Sprite.ts:933</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L916">laya/display/Sprite.ts:916</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -975,7 +979,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#anchorx">anchorX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L199">laya/ui/View.ts:199</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L200">laya/ui/View.ts:200</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -989,7 +993,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#anchorx">anchorX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L203">laya/ui/View.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L204">laya/ui/View.ts:204</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1019,7 +1023,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#anchory">anchorY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L211">laya/ui/View.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L212">laya/ui/View.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1033,7 +1037,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#anchory">anchorY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L215">laya/ui/View.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L216">laya/ui/View.ts:216</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1063,7 +1067,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#blendmode">blendMode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L965">laya/display/Sprite.ts:965</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L947">laya/display/Sprite.ts:947</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1077,7 +1081,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#blendmode">blendMode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L969">laya/display/Sprite.ts:969</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L951">laya/display/Sprite.ts:951</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1107,7 +1111,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#bottom">bottom</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L136">laya/ui/View.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L137">laya/ui/View.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1121,7 +1125,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#bottom">bottom</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L140">laya/ui/View.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L141">laya/ui/View.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1151,7 +1155,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#cacheas">cacheAs</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L327">laya/display/Sprite.ts:327</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L325">laya/display/Sprite.ts:325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1171,7 +1175,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#cacheas">cacheAs</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L336">laya/display/Sprite.ts:336</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L334">laya/display/Sprite.ts:334</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1207,7 +1211,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#centerx">centerX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L175">laya/ui/View.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L176">laya/ui/View.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1221,7 +1225,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#centerx">centerX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L179">laya/ui/View.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L180">laya/ui/View.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1251,7 +1255,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#centery">centerY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L188">laya/ui/View.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L189">laya/ui/View.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1265,7 +1269,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#centery">centerY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L192">laya/ui/View.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L193">laya/ui/View.ts:193</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1294,7 +1298,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#customrenderenable">customRenderEnable</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L310">laya/display/Sprite.ts:310</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L308">laya/display/Sprite.ts:308</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1324,7 +1328,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#datasource">dataSource</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L251">laya/ui/View.ts:251</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L252">laya/ui/View.ts:252</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1340,7 +1344,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#datasource">dataSource</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L255">laya/ui/View.ts:255</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L256">laya/ui/View.ts:256</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1364,7 +1368,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#displayheight">displayHeight</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L516">laya/display/Sprite.ts:516</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L508">laya/display/Sprite.ts:508</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1387,7 +1391,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#displaywidth">displayWidth</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L509">laya/display/Sprite.ts:509</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L501">laya/display/Sprite.ts:501</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1410,7 +1414,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#displayedinstage">displayedInStage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L447">laya/display/Node.ts:447</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L446">laya/display/Node.ts:446</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1433,7 +1437,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L230">laya/ui/Dialog.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L230">laya/ui/Dialog.ts:230</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1453,7 +1457,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L235">laya/ui/Dialog.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L235">laya/ui/Dialog.ts:235</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1485,7 +1489,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#drawcalloptimize">drawCallOptimize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1912">laya/display/Sprite.ts:1912</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1889">laya/display/Sprite.ts:1889</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1494,7 +1498,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#drawcalloptimize">drawCallOptimize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1907">laya/display/Sprite.ts:1907</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1885">laya/display/Sprite.ts:1885</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1519,7 +1523,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#filters">filters</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1317">laya/display/Sprite.ts:1317</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1297">laya/display/Sprite.ts:1297</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1533,7 +1537,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#filters">filters</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1324">laya/display/Sprite.ts:1324</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1304">laya/display/Sprite.ts:1304</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1562,7 +1566,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#globalrotation">globalRotation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1768">laya/display/Sprite.ts:1768</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1746">laya/display/Sprite.ts:1746</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1585,7 +1589,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#globalscalex">globalScaleX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1754">laya/display/Sprite.ts:1754</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1732">laya/display/Sprite.ts:1732</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1608,7 +1612,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#globalscaley">globalScaleY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1782">laya/display/Sprite.ts:1782</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1760">laya/display/Sprite.ts:1760</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1632,7 +1636,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#graphics">graphics</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L979">laya/display/Sprite.ts:979</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L961">laya/display/Sprite.ts:961</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1646,7 +1650,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#graphics">graphics</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L998">laya/display/Sprite.ts:998</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L977">laya/display/Sprite.ts:977</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1677,7 +1681,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#height">height</a></p>
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#height">height</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L198">laya/display/Scene.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L213">laya/display/Scene.ts:213</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1695,7 +1699,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#height">height</a></p>
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#height">height</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L213">laya/display/Scene.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L228">laya/display/Scene.ts:228</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1728,7 +1732,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#hitarea">hitArea</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1643">laya/display/Sprite.ts:1643</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1623">laya/display/Sprite.ts:1623</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1743,7 +1747,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#hitarea">hitArea</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1647">laya/display/Sprite.ts:1647</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1627">laya/display/Sprite.ts:1627</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1772,7 +1776,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L330">laya/ui/Dialog.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L330">laya/ui/Dialog.ts:330</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1796,7 +1800,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#left">left</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L149">laya/ui/View.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L150">laya/ui/View.ts:150</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1810,7 +1814,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#left">left</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L153">laya/ui/View.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L154">laya/ui/View.ts:154</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1840,7 +1844,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#mask">mask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1661">laya/display/Sprite.ts:1661</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1640">laya/display/Sprite.ts:1640</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1855,7 +1859,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#mask">mask</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1665">laya/display/Sprite.ts:1665</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1644">laya/display/Sprite.ts:1644</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1886,7 +1890,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#mouseenabled">mouseEnabled</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1686">laya/display/Sprite.ts:1686</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1665">laya/display/Sprite.ts:1665</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1901,7 +1905,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#mouseenabled">mouseEnabled</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1690">laya/display/Sprite.ts:1690</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1669">laya/display/Sprite.ts:1669</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1931,7 +1935,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#mousex">mouseX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1796">laya/display/Sprite.ts:1796</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1774">laya/display/Sprite.ts:1774</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1954,7 +1958,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#mousey">mouseY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1803">laya/display/Sprite.ts:1803</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1781">laya/display/Sprite.ts:1781</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1977,7 +1981,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#numchildren">numChildren</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L413">laya/display/Node.ts:413</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L412">laya/display/Node.ts:412</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2000,7 +2004,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#parent">parent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L418">laya/display/Node.ts:418</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L417">laya/display/Node.ts:417</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2024,7 +2028,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#pivotx">pivotX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L889">laya/display/Sprite.ts:889</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L875">laya/display/Sprite.ts:875</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2038,7 +2042,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#pivotx">pivotX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L893">laya/display/Sprite.ts:893</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L879">laya/display/Sprite.ts:879</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2068,7 +2072,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#pivoty">pivotY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L899">laya/display/Sprite.ts:899</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L885">laya/display/Sprite.ts:885</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2082,7 +2086,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#pivoty">pivotY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L903">laya/display/Sprite.ts:903</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L889">laya/display/Sprite.ts:889</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2112,7 +2116,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#right">right</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L162">laya/ui/View.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L163">laya/ui/View.ts:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2126,7 +2130,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#right">right</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L166">laya/ui/View.ts:166</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L167">laya/ui/View.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2156,7 +2160,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#rotation">rotation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L733">laya/display/Sprite.ts:733</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L724">laya/display/Sprite.ts:724</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2170,7 +2174,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#rotation">rotation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L737">laya/display/Sprite.ts:737</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L728">laya/display/Sprite.ts:728</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2201,7 +2205,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#scalex">scaleX</a></p>
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#scalex">scaleX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L154">laya/display/Scene.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L169">laya/display/Scene.ts:169</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -2211,7 +2215,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#scalex">scaleX</a></p>
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#scalex">scaleX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L148">laya/display/Scene.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L163">laya/display/Scene.ts:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2245,7 +2249,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#scaley">scaleY</a></p>
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#scaley">scaleY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L167">laya/display/Scene.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L182">laya/display/Scene.ts:182</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -2255,7 +2259,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#scaley">scaleY</a></p>
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#scaley">scaleY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L161">laya/display/Scene.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L176">laya/display/Scene.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2287,7 +2291,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#scene">scene</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L617">laya/display/Node.ts:617</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L616">laya/display/Node.ts:616</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2312,7 +2316,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#scrollrect">scrollRect</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1018">laya/display/Sprite.ts:1018</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L997">laya/display/Sprite.ts:997</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2329,7 +2333,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#scrollrect">scrollRect</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1027">laya/display/Sprite.ts:1027</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1006">laya/display/Sprite.ts:1006</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2362,7 +2366,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#skewx">skewX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L751">laya/display/Sprite.ts:751</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L742">laya/display/Sprite.ts:742</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2376,7 +2380,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#skewx">skewX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L755">laya/display/Sprite.ts:755</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L746">laya/display/Sprite.ts:746</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2406,7 +2410,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#skewy">skewY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L769">laya/display/Sprite.ts:769</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L760">laya/display/Sprite.ts:760</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2420,7 +2424,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#skewy">skewY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L773">laya/display/Sprite.ts:773</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L764">laya/display/Sprite.ts:764</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2449,7 +2453,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#stage">stage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1635">laya/display/Sprite.ts:1635</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1615">laya/display/Sprite.ts:1615</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2473,7 +2477,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#staticcache">staticCache</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L369">laya/display/Sprite.ts:369</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L367">laya/display/Sprite.ts:367</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2487,7 +2491,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#staticcache">staticCache</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L373">laya/display/Sprite.ts:373</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L371">laya/display/Sprite.ts:371</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2517,7 +2521,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#texture">texture</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1827">laya/display/Sprite.ts:1827</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1805">laya/display/Sprite.ts:1805</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2533,7 +2537,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#texture">texture</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1836">laya/display/Sprite.ts:1836</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1814">laya/display/Sprite.ts:1814</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2566,7 +2570,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#timer">timer</a></p>
 								<p>Overrides <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#timer">timer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L244">laya/display/Scene.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L259">laya/display/Scene.ts:259</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2585,7 +2589,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#timer">timer</a></p>
 								<p>Overrides <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#timer">timer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L248">laya/display/Scene.ts:248</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L263">laya/display/Scene.ts:263</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2615,7 +2619,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#top">top</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L123">laya/ui/View.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L124">laya/ui/View.ts:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2629,7 +2633,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#top">top</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L127">laya/ui/View.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L128">laya/ui/View.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2659,7 +2663,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#transform">transform</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L831">laya/display/Sprite.ts:831</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L821">laya/display/Sprite.ts:821</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2674,7 +2678,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#transform">transform</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L835">laya/display/Sprite.ts:835</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L825">laya/display/Sprite.ts:825</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2705,7 +2709,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#viewport">viewport</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1860">laya/display/Sprite.ts:1860</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1838">laya/display/Sprite.ts:1838</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2727,7 +2731,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#viewport">viewport</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1864">laya/display/Sprite.ts:1864</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1842">laya/display/Sprite.ts:1842</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2760,7 +2764,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#visible">visible</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L939">laya/display/Sprite.ts:939</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L922">laya/display/Sprite.ts:922</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2774,7 +2778,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#visible">visible</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L943">laya/display/Sprite.ts:943</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L926">laya/display/Sprite.ts:926</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2805,7 +2809,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#width">width</a></p>
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#width">width</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L174">laya/display/Scene.ts:174</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L189">laya/display/Scene.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2823,7 +2827,7 @@
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#width">width</a></p>
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#width">width</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L189">laya/display/Scene.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L204">laya/display/Scene.ts:204</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2856,7 +2860,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#x">x</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L411">laya/display/Sprite.ts:411</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L405">laya/display/Sprite.ts:405</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2870,7 +2874,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#x">x</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L415">laya/display/Sprite.ts:415</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L409">laya/display/Sprite.ts:409</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2900,7 +2904,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#y">y</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L430">laya/display/Sprite.ts:430</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L423">laya/display/Sprite.ts:423</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2914,7 +2918,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#y">y</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L434">laya/display/Sprite.ts:434</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L427">laya/display/Sprite.ts:427</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2944,7 +2948,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#zorder">zOrder</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L343">laya/ui/Dialog.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L343">laya/ui/Dialog.ts:343</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -2953,7 +2957,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#zorder">zOrder</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L338">laya/ui/Dialog.ts:338</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L338">laya/ui/Dialog.ts:338</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2985,7 +2989,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L167">laya/ui/Dialog.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L167">laya/ui/Dialog.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2999,7 +3003,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L171">laya/ui/Dialog.ts:171</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L171">laya/ui/Dialog.ts:171</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3029,7 +3033,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#root">root</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L227">laya/display/Scene.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L242">laya/display/Scene.ts:242</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3055,7 +3059,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#addchild">addChild</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L184">laya/display/Node.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L183">laya/display/Node.ts:183</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3088,7 +3092,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#addchildat">addChildAt</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L241">laya/display/Node.ts:241</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L240">laya/display/Node.ts:240</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3127,7 +3131,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#addchildren">addChildren</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L228">laya/display/Node.ts:228</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L227">laya/display/Node.ts:227</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3149,14 +3153,14 @@
 					<a name="addcomponent" class="tsd-anchor"></a>
 					<h3>add<wbr>Component</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Component<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Component<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="_laya_components_component_.component.html" class="tsd-signature-type">Component</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#addcomponent">addComponent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L931">laya/display/Node.ts:931</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L930">laya/display/Node.ts:930</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3167,12 +3171,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">object</span></h5>
+									<h5>type: <a href="_laya_components_component_.component.html" class="tsd-signature-type">Component</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>组件类型。</p>
 									</div>
-									<ul class="tsd-parameters">
-									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -3191,7 +3193,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#addcomponentintance">addComponentIntance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L917">laya/display/Node.ts:917</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L916">laya/display/Node.ts:916</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3224,7 +3226,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#addinputchild">addInputChild</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L205">laya/display/Node.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L204">laya/display/Node.ts:204</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3248,7 +3250,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#calllater">callLater</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L589">laya/display/Node.ts:589</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L588">laya/display/Node.ts:588</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3292,7 +3294,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#capturemouseevent">captureMouseEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1898">laya/display/Sprite.ts:1898</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1876">laya/display/Sprite.ts:1876</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3318,7 +3320,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#changedata">changeData</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L111">laya/ui/View.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L112">laya/ui/View.ts:112</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3344,7 +3346,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#cleartimer">clearTimer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L576">laya/display/Node.ts:576</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L575">laya/display/Node.ts:575</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3382,7 +3384,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#close">close</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L286">laya/ui/Dialog.ts:286</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L286">laya/ui/Dialog.ts:286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3418,7 +3420,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#contains">contains</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L509">laya/display/Node.ts:509</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L508">laya/display/Node.ts:508</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3440,6 +3442,24 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="createglbuffer" class="tsd-anchor"></a>
+					<h3>createGLBuffer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">createGLBuffer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#createglbuffer">createGLBuffer</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L62">laya/display/Node.ts:62</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
 					<a name="createview" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>View</h3>
@@ -3451,7 +3471,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#createview">createView</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L81">laya/display/Scene.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L96">laya/display/Scene.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3477,7 +3497,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#customrender">customRender</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1302">laya/display/Sprite.ts:1302</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1282">laya/display/Sprite.ts:1282</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3522,7 +3542,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#destroy">destroy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L295">laya/ui/Dialog.ts:295</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L295">laya/ui/Dialog.ts:295</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3554,7 +3574,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#destroychildren">destroyChildren</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L169">laya/display/Node.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L168">laya/display/Node.ts:168</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3577,7 +3597,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#drawtocanvas">drawToCanvas</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1201">laya/display/Sprite.ts:1201</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1179">laya/display/Sprite.ts:1179</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3630,7 +3650,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#drawtotexture">drawToTexture</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1213">laya/display/Sprite.ts:1213</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1191">laya/display/Sprite.ts:1191</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3670,7 +3690,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#drawtotexture3d">drawToTexture3D</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1223">laya/display/Sprite.ts:1223</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1201">laya/display/Sprite.ts:1201</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3708,7 +3728,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#event">event</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L30">laya/events/EventDispatcher.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L30">laya/events/EventDispatcher.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3747,7 +3767,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#frameloop">frameLoop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L553">laya/display/Node.ts:553</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L552">laya/display/Node.ts:552</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3803,7 +3823,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#frameonce">frameOnce</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L566">laya/display/Node.ts:566</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L565">laya/display/Node.ts:565</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3859,7 +3879,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#fromparentpoint">fromParentPoint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1455">laya/display/Sprite.ts:1455</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1435">laya/display/Sprite.ts:1435</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3892,7 +3912,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#fromstagepoint">fromStagePoint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1478">laya/display/Sprite.ts:1478</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1458">laya/display/Sprite.ts:1458</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3925,7 +3945,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#getbounds">getBounds</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L533">laya/display/Sprite.ts:533</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L525">laya/display/Sprite.ts:525</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3950,7 +3970,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#getchildat">getChildAt</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L292">laya/display/Node.ts:292</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L291">laya/display/Node.ts:291</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3983,7 +4003,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#getchildbyname">getChildByName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L276">laya/display/Node.ts:276</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L275">laya/display/Node.ts:275</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4016,7 +4036,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#getchildindex">getChildIndex</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L267">laya/display/Node.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L266">laya/display/Node.ts:266</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4049,7 +4069,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#getcomponent">getComponent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L945">laya/display/Node.ts:945</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L944">laya/display/Node.ts:944</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4082,7 +4102,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#getcomponents">getComponents</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L961">laya/display/Node.ts:961</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L960">laya/display/Node.ts:960</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4115,7 +4135,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#getgraphicbounds">getGraphicBounds</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L601">laya/display/Sprite.ts:601</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L593">laya/display/Sprite.ts:593</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4148,7 +4168,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#getmousepoint">getMousePoint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1747">laya/display/Sprite.ts:1747</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1725">laya/display/Sprite.ts:1725</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4171,7 +4191,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#getnodebyid">getNodeByID</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L91">laya/display/Scene.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L106">laya/display/Scene.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4200,7 +4220,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#getrepaint">getRepaint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L384">laya/display/Sprite.ts:384</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L382">laya/display/Sprite.ts:382</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4218,7 +4238,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#getselfbounds">getSelfBounds</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L542">laya/display/Sprite.ts:542</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L534">laya/display/Sprite.ts:534</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4243,7 +4263,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#getstyle">getStyle</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L667">laya/display/Sprite.ts:667</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L658">laya/display/Sprite.ts:658</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4264,7 +4284,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#get_height">get_height</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L499">laya/display/Sprite.ts:499</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L491">laya/display/Sprite.ts:491</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4282,7 +4302,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#get_scalex">get_scaleX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L717">laya/display/Sprite.ts:717</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L708">laya/display/Sprite.ts:708</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4300,7 +4320,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#get_scaley">get_scaleY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L728">laya/display/Sprite.ts:728</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L719">laya/display/Sprite.ts:719</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4318,7 +4338,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#get_transform">get_transform</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L839">laya/display/Sprite.ts:839</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L829">laya/display/Sprite.ts:829</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -4336,7 +4356,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#get_visible">get_visible</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L947">laya/display/Sprite.ts:947</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L930">laya/display/Sprite.ts:930</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -4354,7 +4374,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#get_width">get_width</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L470">laya/display/Sprite.ts:470</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L462">laya/display/Sprite.ts:462</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -4372,7 +4392,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#globaltolocal">globalToLocal</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1406">laya/display/Sprite.ts:1406</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1386">laya/display/Sprite.ts:1386</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4417,7 +4437,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#haslistener">hasListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L19">laya/events/EventDispatcher.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L19">laya/events/EventDispatcher.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4450,7 +4470,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#hittestpoint">hitTestPoint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1738">laya/display/Sprite.ts:1738</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1716">laya/display/Sprite.ts:1716</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4489,7 +4509,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#ismouseevent">isMouseEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L190">laya/events/EventDispatcher.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L189">laya/events/EventDispatcher.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4522,7 +4542,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#loadimage">loadImage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1560">laya/display/Sprite.ts:1560</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1540">laya/display/Sprite.ts:1540</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4562,7 +4582,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#loadscene">loadScene</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L58">laya/display/Scene.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L73">laya/display/Scene.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4591,7 +4611,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#localtoglobal">localToGlobal</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1383">laya/display/Sprite.ts:1383</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1363">laya/display/Sprite.ts:1363</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4636,7 +4656,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L106">laya/events/EventDispatcher.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L106">laya/events/EventDispatcher.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4687,7 +4707,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#offall">offAll</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L143">laya/events/EventDispatcher.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L142">laya/events/EventDispatcher.ts:142</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4720,7 +4740,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#offallcaller">offAllCaller</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L162">laya/events/EventDispatcher.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L161">laya/events/EventDispatcher.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4753,7 +4773,7 @@
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#on">on</a></p>
 								<p>Overrides <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1493">laya/display/Sprite.ts:1493</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1473">laya/display/Sprite.ts:1473</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4809,7 +4829,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#onawake">onAwake</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L726">laya/display/Node.ts:726</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L725">laya/display/Node.ts:725</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4833,7 +4853,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#onclosed">onClosed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L126">laya/display/Scene.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L141">laya/display/Scene.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4865,7 +4885,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#ondestroy">onDestroy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L162">laya/display/Node.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L161">laya/display/Node.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4889,7 +4909,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#ondisable">onDisable</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L825">laya/display/Node.ts:825</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L824">laya/display/Node.ts:824</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4913,7 +4933,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#onenable">onEnable</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L734">laya/display/Node.ts:734</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L733">laya/display/Node.ts:733</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4937,7 +4957,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#onopened">onOpened</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L108">laya/display/Scene.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L123">laya/display/Scene.ts:123</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4967,7 +4987,7 @@
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#once">once</a></p>
 								<p>Overrides <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1516">laya/display/Sprite.ts:1516</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1496">laya/display/Sprite.ts:1496</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5023,7 +5043,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#open">open</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L274">laya/ui/Dialog.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L274">laya/ui/Dialog.ts:274</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5058,7 +5078,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#parentrepaint">parentRepaint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1626">laya/display/Sprite.ts:1626</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1606">laya/display/Sprite.ts:1606</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5087,7 +5107,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#pivot">pivot</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1075">laya/display/Sprite.ts:1075</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1053">laya/display/Sprite.ts:1053</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5126,7 +5146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L317">laya/ui/Dialog.ts:317</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L317">laya/ui/Dialog.ts:317</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5164,7 +5184,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#pos">pos</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1048">laya/display/Sprite.ts:1048</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1027">laya/display/Sprite.ts:1027</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5210,7 +5230,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#recache">reCache</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L379">laya/display/Sprite.ts:379</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L377">laya/display/Sprite.ts:377</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5233,7 +5253,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#releasemouseevent">releaseMouseEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1903">laya/display/Sprite.ts:1903</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1881">laya/display/Sprite.ts:1881</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5253,7 +5273,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#removechild">removeChild</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L330">laya/display/Node.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L329">laya/display/Node.ts:329</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5286,7 +5306,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#removechildat">removeChildAt</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L361">laya/display/Node.ts:361</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L360">laya/display/Node.ts:360</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5319,7 +5339,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#removechildbyname">removeChildByName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L350">laya/display/Node.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L349">laya/display/Node.ts:349</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5352,7 +5372,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#removechildren">removeChildren</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L376">laya/display/Node.ts:376</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L375">laya/display/Node.ts:375</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5391,7 +5411,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#removeinputchild">removeInputChild</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L217">laya/display/Node.ts:217</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L216">laya/display/Node.ts:216</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5415,7 +5435,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#removeself">removeSelf</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L340">laya/display/Node.ts:340</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L339">laya/display/Node.ts:339</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5439,7 +5459,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#render">render</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1137">laya/display/Sprite.ts:1137</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1115">laya/display/Sprite.ts:1115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5480,7 +5500,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#repaint">repaint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1594">laya/display/Sprite.ts:1594</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1574">laya/display/Sprite.ts:1574</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5499,6 +5519,46 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="replacechild" class="tsd-anchor"></a>
+					<h3>replace<wbr>Child</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">replace<wbr>Child<span class="tsd-signature-symbol">(</span>newNode<span class="tsd-signature-symbol">: </span><a href="_laya_display_node_.node.html" class="tsd-signature-type">Node</a>, oldNode<span class="tsd-signature-symbol">: </span><a href="_laya_display_node_.node.html" class="tsd-signature-type">Node</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_display_node_.node.html" class="tsd-signature-type">Node</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#replacechild">replaceChild</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L398">laya/display/Node.ts:398</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>替换子节点。
+									将传入的新节点对象替换到已有子节点索引位置处。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newNode: <a href="_laya_display_node_.node.html" class="tsd-signature-type">Node</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>新节点。</p>
+									</div>
+								</li>
+								<li>
+									<h5>oldNode: <a href="_laya_display_node_.node.html" class="tsd-signature-type">Node</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>老节点。</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_laya_display_node_.node.html" class="tsd-signature-type">Node</a></h4>
+							<p>返回新节点。</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="runcalllater" class="tsd-anchor"></a>
 					<h3>run<wbr>Call<wbr>Later</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -5509,7 +5569,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#runcalllater">runCallLater</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L599">laya/display/Node.ts:599</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L598">laya/display/Node.ts:598</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5546,7 +5606,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#scale">scale</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1102">laya/display/Sprite.ts:1102</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1080">laya/display/Sprite.ts:1080</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5592,7 +5652,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#setchildindex">setChildIndex</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L302">laya/display/Node.ts:302</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L301">laya/display/Node.ts:301</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5631,7 +5691,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#setselfbounds">setSelfBounds</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L524">laya/display/Sprite.ts:524</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L516">laya/display/Sprite.ts:516</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5663,7 +5723,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#setstyle">setStyle</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L677">laya/display/Sprite.ts:677</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L668">laya/display/Sprite.ts:668</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5692,7 +5752,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#set_height">set_height</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L491">laya/display/Sprite.ts:491</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L483">laya/display/Sprite.ts:483</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5716,7 +5776,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#set_scalex">set_scaleX</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L710">laya/display/Sprite.ts:710</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L701">laya/display/Sprite.ts:701</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5740,7 +5800,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#set_scaley">set_scaleY</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L721">laya/display/Sprite.ts:721</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L712">laya/display/Sprite.ts:712</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5764,7 +5824,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#set_transform">set_transform</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L843">laya/display/Sprite.ts:843</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L833">laya/display/Sprite.ts:833</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5788,7 +5848,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#set_visible">set_visible</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L951">laya/display/Sprite.ts:951</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L934">laya/display/Sprite.ts:934</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5812,7 +5872,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#set_width">set_width</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L462">laya/display/Sprite.ts:462</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L454">laya/display/Sprite.ts:454</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5835,7 +5895,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L308">laya/ui/Dialog.ts:308</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L308">laya/ui/Dialog.ts:308</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5873,7 +5933,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1088">laya/display/Sprite.ts:1088</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1066">laya/display/Sprite.ts:1066</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5910,7 +5970,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#skew">skew</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1125">laya/display/Sprite.ts:1125</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1103">laya/display/Sprite.ts:1103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5950,7 +6010,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#startdrag">startDrag</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1704">laya/display/Sprite.ts:1704</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1683">laya/display/Sprite.ts:1683</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6018,7 +6078,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#stopdrag">stopDrag</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1710">laya/display/Sprite.ts:1710</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1689">laya/display/Sprite.ts:1689</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6041,7 +6101,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#timerloop">timerLoop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L527">laya/display/Node.ts:527</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L526">laya/display/Node.ts:526</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6103,7 +6163,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_node_.node.html">Node</a>.<a href="_laya_display_node_.node.html#timeronce">timerOnce</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Node.ts#L540">laya/display/Node.ts:540</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Node.ts#L539">laya/display/Node.ts:539</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6159,7 +6219,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#toparentpoint">toParentPoint</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1433">laya/display/Sprite.ts:1433</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1413">laya/display/Sprite.ts:1413</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6192,7 +6252,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#updatezorder">updateZOrder</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L289">laya/display/Sprite.ts:289</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L288">laya/display/Sprite.ts:288</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6215,7 +6275,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#__init__">__init__</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L58">laya/ui/View.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L58">laya/ui/View.ts:58</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -6233,7 +6293,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#close-1">close</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L330">laya/display/Scene.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L345">laya/display/Scene.ts:345</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6272,7 +6332,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#closeall">closeAll</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L363">laya/ui/Dialog.ts:363</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L363">laya/ui/Dialog.ts:363</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6294,7 +6354,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L380">laya/ui/Dialog.ts:380</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L380">laya/ui/Dialog.ts:380</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6326,7 +6386,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#destroy-1">destroy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L362">laya/display/Scene.ts:362</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L377">laya/display/Scene.ts:377</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6365,9 +6425,11 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#drawtocanvas-1">drawToCanvas</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1232">laya/display/Sprite.ts:1232</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1210">laya/display/Sprite.ts:1210</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -6404,9 +6466,11 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#drawtotexture-1">drawToTexture</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1275">laya/display/Sprite.ts:1275</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1254">laya/display/Sprite.ts:1254</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -6443,7 +6507,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_sprite_.sprite.html">Sprite</a>.<a href="_laya_display_sprite_.sprite.html#fromimage">fromImage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Sprite.ts#L1589">laya/display/Sprite.ts:1589</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Sprite.ts#L1569">laya/display/Sprite.ts:1569</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6476,7 +6540,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#gc">gc</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L378">laya/display/Scene.ts:378</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L393">laya/display/Scene.ts:393</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6498,7 +6562,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L372">laya/ui/Dialog.ts:372</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L372">laya/ui/Dialog.ts:372</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6531,7 +6595,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#hideloadingpage">hideLoadingPage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L418">laya/display/Scene.ts:418</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L433">laya/display/Scene.ts:433</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6563,7 +6627,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#load">load</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L258">laya/display/Scene.ts:258</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L273">laya/display/Scene.ts:273</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6606,7 +6670,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L358">laya/ui/Dialog.ts:358</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L358">laya/ui/Dialog.ts:358</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6635,7 +6699,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#open-1">open</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L307">laya/display/Scene.ts:307</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L322">laya/display/Scene.ts:322</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6691,7 +6755,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#regcomponent">regComponent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L76">laya/ui/View.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L77">laya/ui/View.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6728,7 +6792,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#regui">regUI</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/View.ts#L97">laya/ui/View.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L98">laya/ui/View.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6752,6 +6816,43 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private tsd-is-static">
+					<a name="regviewruntime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> reg<wbr>View<wbr>Runtime</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">reg<wbr>View<wbr>Runtime<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, compClass<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_laya_ui_view_.view.html">View</a>.<a href="_laya_ui_view_.view.html#regviewruntime">regViewRuntime</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/View.ts#L88">laya/ui/View.ts:88</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>UI视图类的关键字。</p>
+									</div>
+								</li>
+								<li>
+									<h5>compClass: <span class="tsd-signature-type">object</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>UI视图类对应的逻辑处理类。</p>
+									</div>
+									<ul class="tsd-parameters">
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="setloadingpage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> set<wbr>Loading<wbr>Page</h3>
@@ -6763,7 +6864,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#setloadingpage">setLoadingPage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L386">laya/display/Scene.ts:386</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L401">laya/display/Scene.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6794,7 +6895,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/ui/Dialog.ts#L351">laya/ui/Dialog.ts:351</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/ui/Dialog.ts#L351">laya/ui/Dialog.ts:351</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6816,6 +6917,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="setuimap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> setUIMap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">setUIMap<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#setuimap">setUIMap</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L58">laya/display/Scene.ts:58</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>加载模式设置uimap</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>uimapJosn的url</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="showloadingpage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> show<wbr>Loading<wbr>Page</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
@@ -6826,7 +6959,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_display_scene_.scene.html">Scene</a>.<a href="_laya_display_scene_.scene.html#showloadingpage">showLoadingPage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/display/Scene.ts#L397">laya/display/Scene.ts:397</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/display/Scene.ts#L412">laya/display/Scene.ts:412</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6863,7 +6996,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#mouse_events">MOUSE_EVENTS</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -6874,7 +7007,7 @@
 						<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6884,7 +7017,7 @@
 						<div class="tsd-signature tsd-kind-icon">doubleclick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6894,7 +7027,7 @@
 						<div class="tsd-signature tsd-kind-icon">mousedown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6904,7 +7037,7 @@
 						<div class="tsd-signature tsd-kind-icon">mousemove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6914,7 +7047,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6924,7 +7057,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6934,7 +7067,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6944,7 +7077,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightclick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6954,7 +7087,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightmousedown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -6964,7 +7097,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightmouseup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -7265,6 +7398,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_laya_ui_dialog_.dialog.html#contains" class="tsd-kind-icon">contains</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_laya_ui_dialog_.dialog.html#createglbuffer" class="tsd-kind-icon">createGLBuffer</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
 								<a href="_laya_ui_dialog_.dialog.html#createview" class="tsd-kind-icon">create<wbr>View</a>
 							</li>
@@ -7455,6 +7591,9 @@
 								<a href="_laya_ui_dialog_.dialog.html#repaint" class="tsd-kind-icon">repaint</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_laya_ui_dialog_.dialog.html#replacechild" class="tsd-kind-icon">replace<wbr>Child</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_laya_ui_dialog_.dialog.html#runcalllater" class="tsd-kind-icon">run<wbr>Call<wbr>Later</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -7562,11 +7701,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private tsd-is-static">
 								<a href="_laya_ui_dialog_.dialog.html#regui" class="tsd-kind-icon">regUI</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private tsd-is-static">
+								<a href="_laya_ui_dialog_.dialog.html#regviewruntime" class="tsd-kind-icon">reg<wbr>View<wbr>Runtime</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_laya_ui_dialog_.dialog.html#setloadingpage" class="tsd-kind-icon">set<wbr>Loading<wbr>Page</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_ui_dialog_.dialog.html#setlockview" class="tsd-kind-icon">set<wbr>Lock<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_laya_ui_dialog_.dialog.html#setuimap" class="tsd-kind-icon">setUIMap</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_laya_ui_dialog_.dialog.html#showloadingpage" class="tsd-kind-icon">show<wbr>Loading<wbr>Page</a>

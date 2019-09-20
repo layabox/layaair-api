@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>//* <code>RenderTexture</code> 类用于创建渲染目标。</p>
+						<p><code>RenderTexture</code> 类用于创建渲染目标。</p>
 					</div>
 				</div>
 			</section>
@@ -125,6 +125,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_pvrtcrgba_4bppv" class="tsd-kind-icon">FORMAT_<wbr>PVRTCRGBA_<wbr>4BPPV</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_pvrtcrgb_2bppv" class="tsd-kind-icon">FORMAT_<wbr>PVRTCRGB_<wbr>2BPPV</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_pvrtcrgb_4bppv" class="tsd-kind-icon">FORMAT_<wbr>PVRTCRGB_<wbr>4BPPV</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_r32g32b32a32" class="tsd-kind-icon">FORMAT_<wbr><wbr>R32<wbr>G32<wbr>B32<wbr>A32</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_r8g8b8" class="tsd-kind-icon">FORMAT_<wbr><wbr>R8G8<wbr>B8</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_r8g8b8a8" class="tsd-kind-icon">FORMAT_<wbr><wbr>R8G8<wbr>B8A8</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_stencil_8" class="tsd-kind-icon">FORMAT_<wbr>STENCIL_<wbr>8</a></li>
@@ -161,6 +162,7 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#_setcreateurl" class="tsd-kind-icon">_set<wbr>CreateURL</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#event" class="tsd-kind-icon">event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_laya_d3_resource_rendertexture_.rendertexture.html#generatemipmap" class="tsd-kind-icon">generate<wbr>Mipmap</a></li>
@@ -194,14 +196,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Render<wbr>Texture<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, format<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, depthStencilFormat<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_resource_rendertexture_.rendertexture.html" class="tsd-signature-type">RenderTexture</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Render<wbr>Texture<span class="tsd-signature-symbol">(</span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, format<span class="tsd-signature-symbol">?: </span><a href="../enums/_laya_resource_rendertextureformat_.rendertextureformat.html" class="tsd-signature-type">RenderTextureFormat</a>, depthStencilFormat<span class="tsd-signature-symbol">?: </span><a href="../enums/_laya_resource_rendertextureformat_.rendertexturedepthformat.html" class="tsd-signature-type">RenderTextureDepthFormat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_resource_rendertexture_.rendertexture.html" class="tsd-signature-type">RenderTexture</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/d3/resource/RenderTexture.ts#L77">laya/d3/resource/RenderTexture.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/resource/RenderTexture.ts#L75">laya/d3/resource/RenderTexture.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,7 +227,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> format: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;BaseTexture.FORMAT_R8G8B8</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> format: <a href="../enums/_laya_resource_rendertextureformat_.rendertextureformat.html" class="tsd-signature-type">RenderTextureFormat</a><span class="tsd-signature-symbol"> =&nbsp;RenderTextureFormat.R8G8B8</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>纹理格式。</p>
@@ -233,7 +235,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> depthStencilFormat: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;BaseTexture.FORMAT_DEPTH_16</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> depthStencilFormat: <a href="../enums/_laya_resource_rendertextureformat_.rendertexturedepthformat.html" class="tsd-signature-type">RenderTextureDepthFormat</a><span class="tsd-signature-symbol"> =&nbsp;RenderTextureDepthFormat.DEPTH_16</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>深度格式。
@@ -256,7 +258,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#lock">lock</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L104">laya/resource/Resource.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L104">laya/resource/Resource.ts:104</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -272,7 +274,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L106">laya/resource/Resource.ts:106</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L106">laya/resource/Resource.ts:106</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -288,7 +290,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#filtermode_bilinear">FILTERMODE_BILINEAR</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L17">laya/resource/BaseTexture.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L17">laya/resource/BaseTexture.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -304,7 +306,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#filtermode_point">FILTERMODE_POINT</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L15">laya/resource/BaseTexture.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L15">laya/resource/BaseTexture.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -320,7 +322,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#filtermode_trilinear">FILTERMODE_TRILINEAR</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L19">laya/resource/BaseTexture.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L19">laya/resource/BaseTexture.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -336,12 +338,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_alpha8">FORMAT_ALPHA8</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L26">laya/resource/BaseTexture.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L341">laya/resource/BaseTexture.ts:341</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式_ALPHA8。</p>
+							<p>纹理格式_ALPHA8。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -352,12 +354,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_depthstencil_16_8">FORMAT_DEPTHSTENCIL_16_8</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L56">laya/resource/BaseTexture.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L367">laya/resource/BaseTexture.ts:367</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>深度格式<em>DEPTHSTENCIL</em>16_8。</p>
+							<p>深度格式_DEPTHSTENCIL_16_8。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -368,12 +370,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_depthstencil_none">FORMAT_DEPTHSTENCIL_NONE</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L58">laya/resource/BaseTexture.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L369">laya/resource/BaseTexture.ts:369</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>深度格式<em>DEPTHSTENCIL</em>NONE。</p>
+							<p>深度格式_DEPTHSTENCIL_NONE。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -384,12 +386,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_depth_16">FORMAT_DEPTH_16</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L52">laya/resource/BaseTexture.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L363">laya/resource/BaseTexture.ts:363</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>深度格式<em>DEPTH</em>16。</p>
+							<p>深度格式_DEPTH_16。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -400,12 +402,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_dxt1">FORMAT_DXT1</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L28">laya/resource/BaseTexture.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L343">laya/resource/BaseTexture.ts:343</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式_DXT1。</p>
+							<p>纹理格式_DXT1。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -416,12 +418,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_dxt5">FORMAT_DXT5</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L30">laya/resource/BaseTexture.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L345">laya/resource/BaseTexture.ts:345</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式_DXT5。</p>
+							<p>纹理格式_DXT5。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -432,12 +434,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_etc1rgb">FORMAT_ETC1RGB</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L32">laya/resource/BaseTexture.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L347">laya/resource/BaseTexture.ts:347</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式_ETC2RGB。</p>
+							<p>纹理格式_ETC2RGB。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -448,12 +450,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_pvrtcrgba_2bppv">FORMAT_PVRTCRGBA_2BPPV</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L42">laya/resource/BaseTexture.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L351">laya/resource/BaseTexture.ts:351</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式<em>PVRTCRGBA</em>2BPPV。</p>
+							<p>纹理格式_PVRTCRGBA_2BPPV。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -464,12 +466,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_pvrtcrgba_4bppv">FORMAT_PVRTCRGBA_4BPPV</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L46">laya/resource/BaseTexture.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L355">laya/resource/BaseTexture.ts:355</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式<em>PVRTCRGBA</em>4BPPV。</p>
+							<p>纹理格式_PVRTCRGBA_4BPPV。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -480,12 +482,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_pvrtcrgb_2bppv">FORMAT_PVRTCRGB_2BPPV</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L40">laya/resource/BaseTexture.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L349">laya/resource/BaseTexture.ts:349</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式<em>PVRTCRGB</em>2BPPV。</p>
+							<p>纹理格式_PVRTCRGB_2BPPV。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -496,12 +498,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_pvrtcrgb_4bppv">FORMAT_PVRTCRGB_4BPPV</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L44">laya/resource/BaseTexture.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L353">laya/resource/BaseTexture.ts:353</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式<em>PVRTCRGB</em>4BPPV。</p>
+							<p>纹理格式_PVRTCRGB_4BPPV。@deprecated</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="format_r32g32b32a32" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> FORMAT_<wbr><wbr>R32<wbr>G32<wbr>B32<wbr>A32</h3>
+					<div class="tsd-signature tsd-kind-icon">FORMAT_<wbr><wbr>R32<wbr>G32<wbr>B32<wbr>A32<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;15</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_r32g32b32a32">FORMAT_R32G32B32A32</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L360">laya/resource/BaseTexture.ts:360</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>RGBAd格式纹理,每个通道32位浮点数。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -512,12 +530,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_r8g8b8">FORMAT_R8G8B8</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L22">laya/resource/BaseTexture.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L337">laya/resource/BaseTexture.ts:337</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式_R8G8B8。</p>
+							<p>纹理格式_R8G8B8。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -528,12 +546,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_r8g8b8a8">FORMAT_R8G8B8A8</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L24">laya/resource/BaseTexture.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L339">laya/resource/BaseTexture.ts:339</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>纹理格式_R8G8B8A8。</p>
+							<p>纹理格式_R8G8B8A8。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -544,12 +562,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format_stencil_8">FORMAT_STENCIL_8</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L54">laya/resource/BaseTexture.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L365">laya/resource/BaseTexture.ts:365</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>深度格式<em>STENCIL</em>8。</p>
+							<p>深度格式_STENCIL_8。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -560,12 +578,12 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#rendertexture_format_rgba_half_float">RENDERTEXTURE_FORMAT_RGBA_HALF_FLOAT</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L49">laya/resource/BaseTexture.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L358">laya/resource/BaseTexture.ts:358</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>渲染纹理格式_16位半精度RGBA浮点格式。</p>
+							<p>渲染纹理格式_16位半精度RGBA浮点格式。@deprecated</p>
 						</div>
 					</div>
 				</section>
@@ -576,7 +594,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#warpmode_clamp">WARPMODE_CLAMP</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L12">laya/resource/BaseTexture.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L12">laya/resource/BaseTexture.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -587,7 +605,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#warpmode_repeat">WARPMODE_REPEAT</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L11">laya/resource/BaseTexture.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L11">laya/resource/BaseTexture.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -606,7 +624,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#anisolevel">anisoLevel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L149">laya/resource/BaseTexture.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L102">laya/resource/BaseTexture.ts:102</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -620,7 +638,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#anisolevel">anisoLevel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L156">laya/resource/BaseTexture.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L106">laya/resource/BaseTexture.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -649,7 +667,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#cpumemory">cpuMemory</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L126">laya/resource/Resource.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L126">laya/resource/Resource.ts:126</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -672,13 +690,11 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#defaultetexture">defaulteTexture</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/d3/resource/RenderTexture.ts#L75">laya/d3/resource/RenderTexture.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/resource/RenderTexture.ts#L73">laya/d3/resource/RenderTexture.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
 									<dt>override</dt>
 									<dd></dd>
 								</dl>
@@ -697,16 +713,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/d3/resource/RenderTexture.ts#L67">laya/d3/resource/RenderTexture.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/resource/RenderTexture.ts#L67">laya/d3/resource/RenderTexture.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取深度格式。</p>
+									<p>深度格式。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>深度格式。</p>
 						</li>
 					</ul>
 				</section>
@@ -721,7 +736,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#destroyed">destroyed</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L140">laya/resource/Resource.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L140">laya/resource/Resource.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -745,7 +760,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#filtermode">filterMode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L132">laya/resource/BaseTexture.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L88">laya/resource/BaseTexture.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -759,7 +774,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#filtermode">filterMode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L139">laya/resource/BaseTexture.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L92">laya/resource/BaseTexture.ts:92</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -788,7 +803,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#format">format</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L91">laya/resource/BaseTexture.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L53">laya/resource/BaseTexture.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -811,7 +826,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#gpumemory">gpuMemory</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L133">laya/resource/Resource.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L133">laya/resource/Resource.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -835,7 +850,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_bitmap_.bitmap.html">Bitmap</a>.<a href="_laya_resource_bitmap_.bitmap.html#height">height</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Bitmap.ts#L26">laya/resource/Bitmap.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Bitmap.ts#L26">laya/resource/Bitmap.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -849,7 +864,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_bitmap_.bitmap.html">Bitmap</a>.<a href="_laya_resource_bitmap_.bitmap.html#height">height</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Bitmap.ts#L30">laya/resource/Bitmap.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Bitmap.ts#L30">laya/resource/Bitmap.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -878,7 +893,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#id">id</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L111">laya/resource/Resource.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L111">laya/resource/Resource.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -901,7 +916,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#mipmap">mipmap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L84">laya/resource/BaseTexture.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L46">laya/resource/BaseTexture.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -924,7 +939,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#mipmapcount">mipmapCount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L167">laya/resource/BaseTexture.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L117">laya/resource/BaseTexture.ts:117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -947,7 +962,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#referencecount">referenceCount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L147">laya/resource/Resource.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L147">laya/resource/Resource.ts:147</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -970,7 +985,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#url">url</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L119">laya/resource/Resource.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L119">laya/resource/Resource.ts:119</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -995,7 +1010,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_bitmap_.bitmap.html">Bitmap</a>.<a href="_laya_resource_bitmap_.bitmap.html#width">width</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Bitmap.ts#L15">laya/resource/Bitmap.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Bitmap.ts#L15">laya/resource/Bitmap.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1009,7 +1024,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_bitmap_.bitmap.html">Bitmap</a>.<a href="_laya_resource_bitmap_.bitmap.html#width">width</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Bitmap.ts#L19">laya/resource/Bitmap.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Bitmap.ts#L19">laya/resource/Bitmap.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1039,12 +1054,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#wrapmodeu">wrapModeU</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L98">laya/resource/BaseTexture.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L60">laya/resource/BaseTexture.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取纹理横向循环模式。</p>
+									<p>纹理横向循环模式。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -1053,12 +1068,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#wrapmodeu">wrapModeU</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L105">laya/resource/BaseTexture.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L64">laya/resource/BaseTexture.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>设置纹理横向循环模式。</p>
+									<p>纹理横向循环模式。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1083,12 +1098,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#wrapmodev">wrapModeV</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L115">laya/resource/BaseTexture.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L74">laya/resource/BaseTexture.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取纹理纵向循环模式。</p>
+									<p>纹理纵向循环模式。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -1097,12 +1112,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#wrapmodev">wrapModeV</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L122">laya/resource/BaseTexture.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L78">laya/resource/BaseTexture.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>设置纹理纵向循环模式。</p>
+									<p>纹理纵向循环模式。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1126,7 +1141,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#cpumemory-1">cpuMemory</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L25">laya/resource/Resource.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L25">laya/resource/Resource.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1148,7 +1163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/d3/resource/RenderTexture.ts#L19">laya/d3/resource/RenderTexture.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/resource/RenderTexture.ts#L20">laya/d3/resource/RenderTexture.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1171,7 +1186,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#gpumemory-1">gpuMemory</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L32">laya/resource/Resource.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L32">laya/resource/Resource.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1186,6 +1201,33 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
+					<a name="_setcreateurl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _set<wbr>CreateURL</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_set<wbr>CreateURL<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_laya_resource_icreateresource_.icreateresource.html">ICreateResource</a>.<a href="../interfaces/_laya_resource_icreateresource_.icreateresource.html#_setcreateurl">_setCreateURL</a></p>
+								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#_setcreateurl">_setCreateURL</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L184">laya/resource/Resource.ts:184</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="destroy" class="tsd-anchor"></a>
 					<h3>destroy</h3>
@@ -1198,7 +1240,7 @@
 								<p>Implementation of <a href="../interfaces/_laya_resource_idestroy_.idestroy.html">IDestroy</a>.<a href="../interfaces/_laya_resource_idestroy_.idestroy.html#destroy">destroy</a></p>
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#destroy">destroy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L248">laya/resource/Resource.ts:248</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L248">laya/resource/Resource.ts:248</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1221,7 +1263,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#event">event</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L30">laya/events/EventDispatcher.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L30">laya/events/EventDispatcher.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1260,7 +1302,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_basetexture_.basetexture.html">BaseTexture</a>.<a href="_laya_resource_basetexture_.basetexture.html#generatemipmap">generateMipmap</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/BaseTexture.ts#L379">laya/resource/BaseTexture.ts:379</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/BaseTexture.ts#L330">laya/resource/BaseTexture.ts:330</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1282,7 +1324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/d3/resource/RenderTexture.ts#L196">laya/d3/resource/RenderTexture.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/resource/RenderTexture.ts#L194">laya/d3/resource/RenderTexture.ts:194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1336,7 +1378,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#haslistener">hasListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L19">laya/events/EventDispatcher.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L19">laya/events/EventDispatcher.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1369,7 +1411,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#ismouseevent">isMouseEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L190">laya/events/EventDispatcher.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L189">laya/events/EventDispatcher.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1402,7 +1444,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L106">laya/events/EventDispatcher.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L106">laya/events/EventDispatcher.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1453,7 +1495,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#offall">offAll</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L143">laya/events/EventDispatcher.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L142">laya/events/EventDispatcher.ts:142</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1486,7 +1528,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#offallcaller">offAllCaller</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L162">laya/events/EventDispatcher.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L161">laya/events/EventDispatcher.ts:161</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1518,7 +1560,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L63">laya/events/EventDispatcher.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L63">laya/events/EventDispatcher.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1569,7 +1611,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L75">laya/events/EventDispatcher.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L75">laya/events/EventDispatcher.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1619,7 +1661,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/d3/resource/RenderTexture.ts#L26">laya/d3/resource/RenderTexture.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/resource/RenderTexture.ts#L27">laya/d3/resource/RenderTexture.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1636,10 +1678,10 @@
 									<h5>height: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> format: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;BaseTexture.FORMAT_R8G8B8</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> format: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;RenderTextureFormat.R8G8B8</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> depthStencilFormat: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;BaseTexture.FORMAT_DEPTH_16</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> depthStencilFormat: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;RenderTextureDepthFormat.DEPTH_16</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> filterMode: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;BaseTexture.FILTERMODE_BILINEAR</span></h5>
@@ -1660,7 +1702,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#destroyunusedresources">destroyUnusedResources</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L81">laya/resource/Resource.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L81">laya/resource/Resource.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1683,7 +1725,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#getresourcebyid">getResourceByID</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L63">laya/resource/Resource.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L63">laya/resource/Resource.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1716,7 +1758,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_resource_resource_.resource.html">Resource</a>.<a href="_laya_resource_resource_.resource.html#getresourcebyurl">getResourceByURL</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/resource/Resource.ts#L73">laya/resource/Resource.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/resource/Resource.ts#L73">laya/resource/Resource.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1754,7 +1796,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/d3/resource/RenderTexture.ts#L47">laya/d3/resource/RenderTexture.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/resource/RenderTexture.ts#L48">laya/d3/resource/RenderTexture.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1782,7 +1824,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#mouse_events">MOUSE_EVENTS</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1793,7 +1835,7 @@
 						<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1803,7 +1845,7 @@
 						<div class="tsd-signature tsd-kind-icon">doubleclick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1813,7 +1855,7 @@
 						<div class="tsd-signature tsd-kind-icon">mousedown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1823,7 +1865,7 @@
 						<div class="tsd-signature tsd-kind-icon">mousemove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1833,7 +1875,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1843,7 +1885,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1853,7 +1895,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1863,7 +1905,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightclick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1873,7 +1915,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightmousedown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1883,7 +1925,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightmouseup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.layabox.com/10080/layaair/layaairTS/blob/3bd45ddc/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -1958,6 +2000,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_pvrtcrgb_4bppv" class="tsd-kind-icon">FORMAT_<wbr>PVRTCRGB_<wbr>4BPPV</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_r32g32b32a32" class="tsd-kind-icon">FORMAT_<wbr><wbr>R32<wbr>G32<wbr>B32<wbr>A32</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_laya_d3_resource_rendertexture_.rendertexture.html#format_r8g8b8" class="tsd-kind-icon">FORMAT_<wbr><wbr>R8G8<wbr>B8</a>
@@ -2036,6 +2081,9 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_laya_d3_resource_rendertexture_.rendertexture.html#gpumemory-1" class="tsd-kind-icon">gpu<wbr>Memory</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
+								<a href="_laya_d3_resource_rendertexture_.rendertexture.html#_setcreateurl" class="tsd-kind-icon">_set<wbr>CreateURL</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_laya_d3_resource_rendertexture_.rendertexture.html#destroy" class="tsd-kind-icon">destroy</a>
