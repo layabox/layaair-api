@@ -503,7 +503,8 @@ function navToClass(classFullName, memberName, flags) {
                 createCodeTable();
 
                 translate();
-                removeNodeByClass("tsd-page-toolbar");
+                removeNodeByClass("tsd-page-toolbar");//tsd-kind-method tsd-parent-kind-class tsd-is-inherited
+                removeNodeByClass("tsd-is-inherited");
                 removeNodeByClass("tsd-page-title");
                 removeNodeByClass("tsd-sources");
                 removeNodeByClass("tsd-navigation");
@@ -642,7 +643,16 @@ function removeNodeByClass(node){
     var cmd = '.' + node;
     var node = $(cmd);
     if(node){
-        node.remove();
+        if(node.length > 1){
+            for(var i = 0; i < node.length; ++i){
+                node[i].remove();
+            }
+        }
+        else{
+            node.remove();
+        }
+    }
+    else{
     }
 }
 // 更改
