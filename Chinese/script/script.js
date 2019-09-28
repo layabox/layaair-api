@@ -1,8 +1,7 @@
 var categories = ["TopLevel", "Core", "UI", "HTMLText", "TiledMap", "Particle", "Physics", "Bone", "Filter", "3D", "输入设备"];
 var classList = {};
 var excludeClassList = {};
-
-classList["TopLevel"] = ["Config", "Laya", "Laya3D", "UIConfig", "XmlDom"];
+classList["TopLevel"] = ["Config", "Config3D","Laya", "Laya3D", "UIConfig"];
 
 classList["Bone"] = [
     "laya.ani.bone.Skeleton",
@@ -98,7 +97,6 @@ classList["Core"] = [
     "laya.utils.WeakObject"
 ];
 classList["3D"] = [
-    "Laya3D",
     "laya.d3.CastShadowList",
     "laya.d3.Input3D",
     "laya.d3.Touch",
