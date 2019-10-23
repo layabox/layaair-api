@@ -794,20 +794,26 @@ function scrollTo(y) {
         }, 0);
 }
 
+// 获取路径参数值
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg); //匹配目标参数
+    if(r != null){
+        return decodeURIComponent(r[2]);
+    }
+    return null;//返回参数值
+}
+
 // 获取当前url的package参数
 function getCategoryName() {
-    var args = location.search.split("&");
-    if (args[0])
-        return args[0].substr(10);
-    return 'Core';
+    var category = getUrlParam("category") || 'Core';
+    return category;
 }
 
 // 获取当前url的class参数
 function getFullClassName() {
-    var args = location.search.split("&");
-    if (args[1])
-        return args[1].substr(6);
-    return 'Laya';
+    var classValue = getUrlParam('class') || 'Laya';
+    return classValue;
 }
 
 // 获取当前class

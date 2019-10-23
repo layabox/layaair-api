@@ -17,21 +17,15 @@
              return this.indexOf(suffix, this.length - suffix.length) !== -1;
            };
         }
-
-        var href = location.href,
+        var href = location.protocol + "//" + location.host + location.pathname,
             isChinese = navigator.language.indexOf('zh') !== -1,
             langFolderName = isChinese ? 'Chinese' : 'English';
             isLocal = location.protocol.startsWith('file'),
             isSuffix = href.endsWith('/'),
             sep = isSuffix ? '' : '/';
         var jumpLink = '';
-        if (isLocal) {
-            var _href = href.replace(/index.html$/, '');
-            jumpLink = _href + langFolderName + '/index.html';
-        } else {
-            var _href = href.replace(/index.html$/, '');
-            jumpLink = _href + langFolderName + '/index.html';
-        }
+        var _href = href.replace(/index.html$/, '');
+        jumpLink = _href + langFolderName + '/index.html' + location.search;
         location.href = jumpLink;
     </script>
 </head>
