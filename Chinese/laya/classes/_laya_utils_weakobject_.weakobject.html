@@ -76,6 +76,7 @@
 							如果支持WeakMap，则使用WeakMap，如果不支持，则用Object代替
 						注意：如果采用Object，为了防止内存泄漏，则采用定时清理缓存策略</p>
 					</div>
+					<p>这里的设计是错误的，为了兼容，先不删掉这个类，直接采用Object</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -129,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L40">laya/utils/WeakObject.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L37">laya/utils/WeakObject.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_utils_weakobject_.weakobject.html" class="tsd-signature-type">WeakObject</a></h4>
@@ -145,7 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">I<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_weakobject_.weakobject.html" class="tsd-signature-type">WeakObject</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L17">laya/utils/WeakObject.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L17">laya/utils/WeakObject.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -160,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">del<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10 * 60 * 1000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L15">laya/utils/WeakObject.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L15">laya/utils/WeakObject.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,10 +173,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="supportweakmap" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> support<wbr>Weak<wbr>Map</h3>
-					<div class="tsd-signature tsd-kind-icon">support<wbr>Weak<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;supportWeakMap</span></div>
+					<div class="tsd-signature tsd-kind-icon">support<wbr>Weak<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L13">laya/utils/WeakObject.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L13">laya/utils/WeakObject.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -197,7 +198,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L91">laya/utils/WeakObject.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L78">laya/utils/WeakObject.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,7 +226,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L75">laya/utils/WeakObject.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L66">laya/utils/WeakObject.ts:66</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -256,7 +257,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L107">laya/utils/WeakObject.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L90">laya/utils/WeakObject.ts:90</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -284,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L52">laya/utils/WeakObject.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L49">laya/utils/WeakObject.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,7 +322,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/utils/WeakObject.ts#L35">laya/utils/WeakObject.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/utils/WeakObject.ts#L32">laya/utils/WeakObject.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -384,9 +385,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_laya_utils_weakobject_.html#supportweakmap" class="tsd-kind-icon">support<wbr>Weak<wbr>Map</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -404,6 +402,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>

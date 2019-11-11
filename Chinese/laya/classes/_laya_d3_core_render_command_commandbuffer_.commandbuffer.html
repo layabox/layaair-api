@@ -116,7 +116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/core/render/command/CommandBuffer.ts#L18">laya/d3/core/render/command/CommandBuffer.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/d3/core/render/command/CommandBuffer.ts#L19">laya/d3/core/render/command/CommandBuffer.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -135,13 +135,13 @@
 					<a name="blitscreenquad" class="tsd-anchor"></a>
 					<h3>blit<wbr>Screen<wbr>Quad</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">blit<wbr>Screen<wbr>Quad<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="_laya_resource_basetexture_.basetexture.html" class="tsd-signature-type">BaseTexture</a>, dest<span class="tsd-signature-symbol">: </span><a href="_laya_d3_resource_rendertexture_.rendertexture.html" class="tsd-signature-type">RenderTexture</a>, shader<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_shader_shader3d_.shader3d.html" class="tsd-signature-type">Shader3D</a>, shaderData<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_shader_shaderdata_.shaderdata.html" class="tsd-signature-type">ShaderData</a>, subShader<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">blit<wbr>Screen<wbr>Quad<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="_laya_resource_basetexture_.basetexture.html" class="tsd-signature-type">BaseTexture</a>, dest<span class="tsd-signature-symbol">: </span><a href="_laya_d3_resource_rendertexture_.rendertexture.html" class="tsd-signature-type">RenderTexture</a>, offsetScale<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_math_vector4_.vector4.html" class="tsd-signature-type">Vector4</a>, shader<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_shader_shader3d_.shader3d.html" class="tsd-signature-type">Shader3D</a>, shaderData<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_shader_shaderdata_.shaderdata.html" class="tsd-signature-type">ShaderData</a>, subShader<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/core/render/command/CommandBuffer.ts#L50">laya/d3/core/render/command/CommandBuffer.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/d3/core/render/command/CommandBuffer.ts#L52">laya/d3/core/render/command/CommandBuffer.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -161,6 +161,12 @@
 									<h5>dest: <a href="_laya_d3_resource_rendertexture_.rendertexture.html" class="tsd-signature-type">RenderTexture</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>目标纹理。</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> offsetScale: <a href="_laya_d3_math_vector4_.vector4.html" class="tsd-signature-type">Vector4</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>偏移缩放。</p>
 									</div>
 								</li>
 								<li>
@@ -190,13 +196,13 @@
 					<a name="blitscreentriangle" class="tsd-anchor"></a>
 					<h3>blit<wbr>Screen<wbr>Triangle</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">blit<wbr>Screen<wbr>Triangle<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="_laya_resource_basetexture_.basetexture.html" class="tsd-signature-type">BaseTexture</a>, dest<span class="tsd-signature-symbol">: </span><a href="_laya_d3_resource_rendertexture_.rendertexture.html" class="tsd-signature-type">RenderTexture</a>, shader<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_shader_shader3d_.shader3d.html" class="tsd-signature-type">Shader3D</a>, shaderData<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_shader_shaderdata_.shaderdata.html" class="tsd-signature-type">ShaderData</a>, subShader<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">blit<wbr>Screen<wbr>Triangle<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="_laya_resource_basetexture_.basetexture.html" class="tsd-signature-type">BaseTexture</a>, dest<span class="tsd-signature-symbol">: </span><a href="_laya_d3_resource_rendertexture_.rendertexture.html" class="tsd-signature-type">RenderTexture</a>, offsetScale<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_math_vector4_.vector4.html" class="tsd-signature-type">Vector4</a>, shader<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_shader_shader3d_.shader3d.html" class="tsd-signature-type">Shader3D</a>, shaderData<span class="tsd-signature-symbol">?: </span><a href="_laya_d3_shader_shaderdata_.shaderdata.html" class="tsd-signature-type">ShaderData</a>, subShader<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/19095868/src/layaAir/laya/d3/core/render/command/CommandBuffer.ts#L62">laya/d3/core/render/command/CommandBuffer.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/98d4e6b3/src/layaAir/laya/d3/core/render/command/CommandBuffer.ts#L65">laya/d3/core/render/command/CommandBuffer.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -216,6 +222,12 @@
 									<h5>dest: <a href="_laya_d3_resource_rendertexture_.rendertexture.html" class="tsd-signature-type">RenderTexture</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>目标纹理。</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> offsetScale: <a href="_laya_d3_math_vector4_.vector4.html" class="tsd-signature-type">Vector4</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>偏移缩放。</p>
 									</div>
 								</li>
 								<li>
@@ -291,6 +303,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
