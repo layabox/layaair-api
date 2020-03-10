@@ -117,6 +117,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_math_boundfrustum_.boundfrustum.html#getcorners" class="tsd-kind-icon">get<wbr>Corners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_math_boundfrustum_.boundfrustum.html#getplane" class="tsd-kind-icon">get<wbr>Plane</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_math_boundfrustum_.boundfrustum.html#intersects" class="tsd-kind-icon">intersects</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_boundfrustum_.boundfrustum.html#get3planeinterpoint" class="tsd-kind-icon">get3<wbr>Plane<wbr>Inter<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_boundfrustum_.boundfrustum.html#getplanesfrommatrix" class="tsd-kind-icon">get<wbr>Planes<wbr>From<wbr>Matrix</a></li>
 							</ul>
 						</section>
 					</div>
@@ -134,7 +136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L42">laya/d3/math/BoundFrustum.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L135">laya/d3/math/BoundFrustum.ts:135</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -170,16 +172,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L120">laya/d3/math/BoundFrustum.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L202">laya/d3/math/BoundFrustum.ts:202</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取底平面。</p>
+									<p>底平面。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h4>
-							<p>底平面。</p>
 						</li>
 					</ul>
 				</section>
@@ -193,16 +194,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L88">laya/d3/math/BoundFrustum.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L174">laya/d3/math/BoundFrustum.ts:174</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取远平面。</p>
+									<p>远平面。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h4>
-							<p>远平面。</p>
 						</li>
 					</ul>
 				</section>
@@ -216,16 +216,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L96">laya/d3/math/BoundFrustum.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L181">laya/d3/math/BoundFrustum.ts:181</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取左平面。</p>
+									<p>左平面。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h4>
-							<p>左平面。</p>
 						</li>
 					</ul>
 				</section>
@@ -240,41 +239,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L63">laya/d3/math/BoundFrustum.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L155">laya/d3/math/BoundFrustum.ts:155</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取描述矩阵。</p>
+									<p>描述矩阵。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h4>
-							<p>描述矩阵。</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L71">laya/d3/math/BoundFrustum.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L159">laya/d3/math/BoundFrustum.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>设置描述矩阵。</p>
+									<p>描述矩阵。</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>matrix: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>描述矩阵。</p>
-										</div>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-							<p>描述矩阵。</p>
 						</li>
 					</ul>
 				</section>
@@ -288,16 +280,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L80">laya/d3/math/BoundFrustum.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L167">laya/d3/math/BoundFrustum.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取近平面。</p>
+									<p>近平面。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h4>
-							<p>近平面。</p>
 						</li>
 					</ul>
 				</section>
@@ -311,16 +302,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L104">laya/d3/math/BoundFrustum.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L188">laya/d3/math/BoundFrustum.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取右平面。</p>
+									<p>右平面。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h4>
-							<p>右平面。</p>
 						</li>
 					</ul>
 				</section>
@@ -334,16 +324,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L112">laya/d3/math/BoundFrustum.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L195">laya/d3/math/BoundFrustum.ts:195</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>获取顶平面。</p>
+									<p>顶平面。</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h4>
-							<p>顶平面。</p>
 						</li>
 					</ul>
 				</section>
@@ -360,7 +349,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L395">laya/d3/math/BoundFrustum.ts:395</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L394">laya/d3/math/BoundFrustum.ts:394</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -392,7 +381,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L440">laya/d3/math/BoundFrustum.ts:440</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L439">laya/d3/math/BoundFrustum.ts:439</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -424,7 +413,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L303">laya/d3/math/BoundFrustum.ts:303</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L302">laya/d3/math/BoundFrustum.ts:302</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -456,7 +445,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L128">laya/d3/math/BoundFrustum.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L210">laya/d3/math/BoundFrustum.ts:210</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -487,7 +476,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L136">laya/d3/math/BoundFrustum.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L218">laya/d3/math/BoundFrustum.ts:218</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,7 +507,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L286">laya/d3/math/BoundFrustum.ts:286</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L286">laya/d3/math/BoundFrustum.ts:286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -549,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L154">laya/d3/math/BoundFrustum.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L236">laya/d3/math/BoundFrustum.ts:236</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -586,7 +575,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/ea32da44/src/layaAir/laya/d3/math/BoundFrustum.ts#L352">laya/d3/math/BoundFrustum.ts:352</a></li>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L351">laya/d3/math/BoundFrustum.ts:351</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -608,6 +597,119 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="get3planeinterpoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get3<wbr>Plane<wbr>Inter<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get3<wbr>Plane<wbr>Inter<wbr>Point<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, p2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, p3<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L261">laya/d3/math/BoundFrustum.ts:261</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>锥截体三个相交平面的交点。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p1: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面1。</p>
+									</div>
+								</li>
+								<li>
+									<h5>p2: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面2。</p>
+									</div>
+								</li>
+								<li>
+									<h5>p3: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面3。</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getplanesfrommatrix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Planes<wbr>From<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Planes<wbr>From<wbr>Matrix<span class="tsd-signature-symbol">(</span>m<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a>, np<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, fp<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, lp<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, rp<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, tp<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, bp<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/math/BoundFrustum.ts#L54">laya/d3/math/BoundFrustum.ts:54</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>根据矩阵获取6个包围平面。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>m: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>描述矩阵。</p>
+									</div>
+								</li>
+								<li>
+									<h5>np: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>近平面。</p>
+									</div>
+								</li>
+								<li>
+									<h5>fp: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>远平面。</p>
+									</div>
+								</li>
+								<li>
+									<h5>lp: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>左平面。</p>
+									</div>
+								</li>
+								<li>
+									<h5>rp: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>右平面。</p>
+									</div>
+								</li>
+								<li>
+									<h5>tp: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>顶平面。</p>
+									</div>
+								</li>
+								<li>
+									<h5>bp: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>底平面。</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -623,6 +725,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_laya_d3_math_boundfrustum_.frustumcorner.html" class="tsd-kind-icon">Frustum<wbr>Corner</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
@@ -675,6 +780,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_laya_d3_math_boundfrustum_.boundfrustum.html#intersects" class="tsd-kind-icon">intersects</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_boundfrustum_.boundfrustum.html#get3planeinterpoint" class="tsd-kind-icon">get3<wbr>Plane<wbr>Inter<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_boundfrustum_.boundfrustum.html#getplanesfrommatrix" class="tsd-kind-icon">get<wbr>Planes<wbr>From<wbr>Matrix</a>
 							</li>
 						</ul>
 					</li>
