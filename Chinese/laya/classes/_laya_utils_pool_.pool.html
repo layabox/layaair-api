@@ -69,14 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p> <code>Pool</code> 是对象池类，用于对象的存储、重复使用。</p>
-						<p>合理使用对象池，可以有效减少对象创建的开销，避免频繁的垃圾回收，从而优化游戏流畅度。</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -93,9 +85,9 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_utils_pool_.pool.html#clearbysign" class="tsd-kind-icon">clear<wbr>BySign</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_utils_pool_.pool.html#createbyclass" class="tsd-kind-icon">create<wbr>ByClass</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="_laya_utils_pool_.pool.html#createbyclass" class="tsd-kind-icon">create<wbr>ByClass</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_utils_pool_.pool.html#getitem" class="tsd-kind-icon">get<wbr>Item</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_utils_pool_.pool.html#getitembyclass" class="tsd-kind-icon">get<wbr>Item<wbr>ByClass</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="_laya_utils_pool_.pool.html#getitembyclass" class="tsd-kind-icon">get<wbr>Item<wbr>ByClass</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_utils_pool_.pool.html#getitembycreatefun" class="tsd-kind-icon">get<wbr>Item<wbr>ByCreate<wbr>Fun</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_utils_pool_.pool.html#getpoolbysign" class="tsd-kind-icon">get<wbr>Pool<wbr>BySign</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_utils_pool_.pool.html#recover" class="tsd-kind-icon">recover</a></li>
@@ -117,45 +109,38 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/utils/Pool.ts#L26">laya/utils/Pool.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/utils/Pool.ts#L26">laya/utils/Pool.ts:26</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>清除对象池的对象。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>sign: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>对象类型标识字符。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
 					<a name="createbyclass" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>ByClass</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>ByClass<span class="tsd-signature-symbol">(</span>cls<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>ByClass&lt;T&gt;<span class="tsd-signature-symbol">(</span>cls<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/utils/Pool.ts#L68">laya/utils/Pool.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/utils/Pool.ts#L68">laya/utils/Pool.ts:68</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>根据类名回收类的实例</p>
-								</div>
-							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -164,7 +149,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -178,21 +163,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/utils/Pool.ts#L112">laya/utils/Pool.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/utils/Pool.ts#L112">laya/utils/Pool.ts:112</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>根据传入的对象类型标识字符，获取对象池中已存储的此类型的一个对象，如果对象池中无此类型的对象，则返回 null 。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>sign: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>对象类型标识字符。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -200,43 +177,37 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
 					<a name="getitembyclass" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Item<wbr>ByClass</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Item<wbr>ByClass<span class="tsd-signature-symbol">(</span>sign<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cls<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Item<wbr>ByClass&lt;T&gt;<span class="tsd-signature-symbol">(</span>sign<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cls<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/utils/Pool.ts#L79">laya/utils/Pool.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/utils/Pool.ts#L79">laya/utils/Pool.ts:79</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>根据传入的对象类型标识字符，获取对象池中此类型标识的一个对象实例。</p>
-									<p>当对象池中无此类型标识的对象时，则根据传入的类型，创建一个新的对象返回。</p>
-								</div>
-							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>sign: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>对象类型标识字符。</p>
-									</div>
 								</li>
 								<li>
 									<h5>cls: <span class="tsd-signature-type">object</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>用于创建该类型对象的类。</p>
-									</div>
 									<ul class="tsd-parameters">
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
 							<p>此类型标识的一个对象。</p>
 						</li>
 					</ul>
@@ -251,34 +222,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/utils/Pool.ts#L100">laya/utils/Pool.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/utils/Pool.ts#L100">laya/utils/Pool.ts:100</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>根据传入的对象类型标识字符，获取对象池中此类型标识的一个对象实例。</p>
-									<p>当对象池中无此类型标识的对象时，则使用传入的创建此类型对象的函数，新建一个对象返回。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>sign: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>对象类型标识字符。</p>
-									</div>
 								</li>
 								<li>
 									<h5>createFun: <span class="tsd-signature-type">Function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>用于创建该类型对象的方法。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> caller: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>this对象</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -296,21 +252,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/utils/Pool.ts#L18">laya/utils/Pool.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/utils/Pool.ts#L18">laya/utils/Pool.ts:18</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>根据对象类型标识字符，获取对象池。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>sign: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>对象类型标识字符。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -328,27 +276,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/utils/Pool.ts#L35">laya/utils/Pool.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/utils/Pool.ts#L35">laya/utils/Pool.ts:35</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将对象放到对应类型标识的对象池中。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>sign: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>对象类型标识字符。</p>
-									</div>
 								</li>
 								<li>
 									<h5>item: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>对象。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -365,21 +302,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/utils/Pool.ts#L45">laya/utils/Pool.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/utils/Pool.ts#L45">laya/utils/Pool.ts:45</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>根据类名进行回收，如果类有类名才进行回收，没有则不回收</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>instance: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>类的具体实例</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -409,13 +338,13 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_utils_pool_.pool.html#clearbysign" class="tsd-kind-icon">clear<wbr>BySign</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
 								<a href="_laya_utils_pool_.pool.html#createbyclass" class="tsd-kind-icon">create<wbr>ByClass</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_utils_pool_.pool.html#getitem" class="tsd-kind-icon">get<wbr>Item</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
 								<a href="_laya_utils_pool_.pool.html#getitembyclass" class="tsd-kind-icon">get<wbr>Item<wbr>ByClass</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">

@@ -69,13 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p><code>Rigidbody3D</code> 类用于创建刚体碰撞器。</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -122,6 +115,7 @@
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#angulardamping" class="tsd-kind-icon">angular<wbr>Damping</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#angularfactor" class="tsd-kind-icon">angular<wbr>Factor</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#angularvelocity" class="tsd-kind-icon">angular<wbr>Velocity</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#btcolliderobject" class="tsd-kind-icon">bt<wbr>Collider<wbr>Object</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#cancollidewith" class="tsd-kind-icon">can<wbr>Collide<wbr>With</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#ccdmotionthreshold" class="tsd-kind-icon">ccd<wbr>Motion<wbr>Threshold</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#ccdsweptsphereradius" class="tsd-kind-icon">ccd<wbr>Swept<wbr>Sphere<wbr>Radius</a></li>
@@ -185,31 +179,16 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_d3_physics_physicstriggercomponent_.physicstriggercomponent.html">PhysicsTriggerComponent</a>.<a href="_laya_d3_physics_physicstriggercomponent_.physicstriggercomponent.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L356">laya/d3/physics/Rigidbody3D.ts:356</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L389">laya/d3/physics/Rigidbody3D.ts:389</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>创建一个 <code>RigidBody3D</code> 实例。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_DEFAULTFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>所属碰撞组。</p>
-										</div>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> canCollideWith: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>可产生碰撞的碰撞组。</p>
-										</div>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html" class="tsd-signature-type">Rigidbody3D</a></h4>
@@ -226,14 +205,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#canscaleshape">canScaleShape</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L206">laya/d3/physics/PhysicsComponent.ts:206</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L206">laya/d3/physics/PhysicsComponent.ts:206</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>是否可以缩放Shape。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="owner" class="tsd-anchor"></a>
@@ -242,18 +216,9 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#owner">owner</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L27">laya/components/Component.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L27">laya/components/Component.ts:27</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>[只读]获取所属Node节点。</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>readonly</dt>
-							<dd></dd>
-						</dl>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="type_dynamic" class="tsd-anchor"></a>
@@ -261,7 +226,7 @@
 					<div class="tsd-signature tsd-kind-icon">TYPE_<wbr>DYNAMIC<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L25">laya/d3/physics/Rigidbody3D.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L26">laya/d3/physics/Rigidbody3D.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -271,7 +236,7 @@
 					<div class="tsd-signature tsd-kind-icon">TYPE_<wbr>KINEMATIC<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L31">laya/d3/physics/Rigidbody3D.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L32">laya/d3/physics/Rigidbody3D.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -281,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">TYPE_<wbr>STATIC<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L20">laya/d3/physics/Rigidbody3D.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L21">laya/d3/physics/Rigidbody3D.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -291,1169 +256,361 @@
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="angulardamping" class="tsd-anchor"></a>
 					<h3>angular<wbr>Damping</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> angularDamping<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> angularDamping<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L169">laya/d3/physics/Rigidbody3D.ts:169</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体的角阻力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L173">laya/d3/physics/Rigidbody3D.ts:173</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体的角阻力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">angular<wbr>Damping<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L173">laya/d3/physics/Rigidbody3D.ts:173</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L177">laya/d3/physics/Rigidbody3D.ts:177</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="angularfactor" class="tsd-anchor"></a>
 					<h3>angular<wbr>Factor</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> angularFactor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> angularFactor<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L263">laya/d3/physics/Rigidbody3D.ts:263</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>每个轴的角度运动缩放因子,如果某一轴的值为0表示冻结在该轴的角度运动。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L267">laya/d3/physics/Rigidbody3D.ts:267</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>每个轴的角度运动缩放因子,如果某一轴的值为0表示冻结在该轴的角度运动。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">angular<wbr>Factor<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L267">laya/d3/physics/Rigidbody3D.ts:267</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L271">laya/d3/physics/Rigidbody3D.ts:271</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="angularvelocity" class="tsd-anchor"></a>
 					<h3>angular<wbr>Velocity</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> angularVelocity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> angularVelocity<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L278">laya/d3/physics/Rigidbody3D.ts:278</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>角速度。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L284">laya/d3/physics/Rigidbody3D.ts:284</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>角速度。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">angular<wbr>Velocity<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L282">laya/d3/physics/Rigidbody3D.ts:282</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L288">laya/d3/physics/Rigidbody3D.ts:288</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="btcolliderobject" class="tsd-anchor"></a>
+					<h3>bt<wbr>Collider<wbr>Object</h3>
+					<div class="tsd-signature tsd-kind-icon">bt<wbr>Collider<wbr>Object<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L362">laya/d3/physics/Rigidbody3D.ts:362</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="cancollidewith" class="tsd-anchor"></a>
 					<h3>can<wbr>Collide<wbr>With</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> canCollideWith<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> canCollideWith<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#cancollidewith">canCollideWith</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L341">laya/d3/physics/PhysicsComponent.ts:341</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>可碰撞的碰撞组,基于位运算。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#cancollidewith">canCollideWith</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L345">laya/d3/physics/PhysicsComponent.ts:345</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>可碰撞的碰撞组,基于位运算。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">can<wbr>Collide<wbr>With<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#cancollidewith">canCollideWith</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L341">laya/d3/physics/PhysicsComponent.ts:341</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L345">laya/d3/physics/PhysicsComponent.ts:345</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="ccdmotionthreshold" class="tsd-anchor"></a>
 					<h3>ccd<wbr>Motion<wbr>Threshold</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ccdMotionThreshold<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> ccdMotionThreshold<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#ccdmotionthreshold">ccdMotionThreshold</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L247">laya/d3/physics/PhysicsComponent.ts:247</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>用于连续碰撞检测(CCD)的速度阈值,当物体移动速度小于该值时不进行CCD检测,防止快速移动物体(例如:子弹)错误的穿过其它物体,0表示禁止。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#ccdmotionthreshold">ccdMotionThreshold</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L251">laya/d3/physics/PhysicsComponent.ts:251</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>用于连续碰撞检测(CCD)的速度阈值,当物体移动速度小于该值时不进行CCD检测,防止快速移动物体(例如:子弹)错误的穿过其它物体,0表示禁止。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">ccd<wbr>Motion<wbr>Threshold<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#ccdmotionthreshold">ccdMotionThreshold</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L247">laya/d3/physics/PhysicsComponent.ts:247</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L251">laya/d3/physics/PhysicsComponent.ts:251</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="ccdsweptsphereradius" class="tsd-anchor"></a>
 					<h3>ccd<wbr>Swept<wbr>Sphere<wbr>Radius</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> ccdSweptSphereRadius<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> ccdSweptSphereRadius<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#ccdsweptsphereradius">ccdSweptSphereRadius</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L259">laya/d3/physics/PhysicsComponent.ts:259</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>获取用于进入连续碰撞检测(CCD)范围的球半径。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#ccdsweptsphereradius">ccdSweptSphereRadius</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L263">laya/d3/physics/PhysicsComponent.ts:263</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>获取用于进入连续碰撞检测(CCD)范围的球半径。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">ccd<wbr>Swept<wbr>Sphere<wbr>Radius<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#ccdsweptsphereradius">ccdSweptSphereRadius</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L259">laya/d3/physics/PhysicsComponent.ts:259</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L263">laya/d3/physics/PhysicsComponent.ts:263</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="collidershape" class="tsd-anchor"></a>
 					<h3>collider<wbr>Shape</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> colliderShape<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_shape_collidershape_.collidershape.html" class="tsd-signature-type">ColliderShape</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> colliderShape<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_shape_collidershape_.collidershape.html" class="tsd-signature-type">ColliderShape</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#collidershape">colliderShape</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L278">laya/d3/physics/PhysicsComponent.ts:278</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>碰撞形状。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_physics_shape_collidershape_.collidershape.html" class="tsd-signature-type">ColliderShape</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#collidershape">colliderShape</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L282">laya/d3/physics/PhysicsComponent.ts:282</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>碰撞形状。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="_laya_d3_physics_shape_collidershape_.collidershape.html" class="tsd-signature-type">ColliderShape</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">collider<wbr>Shape<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#collidershape">colliderShape</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L278">laya/d3/physics/PhysicsComponent.ts:278</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L282">laya/d3/physics/PhysicsComponent.ts:282</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="collisiongroup" class="tsd-anchor"></a>
 					<h3>collision<wbr>Group</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> collisionGroup<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> collisionGroup<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#collisiongroup">collisionGroup</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L324">laya/d3/physics/PhysicsComponent.ts:324</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>所属碰撞组。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#collisiongroup">collisionGroup</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L328">laya/d3/physics/PhysicsComponent.ts:328</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>所属碰撞组。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">collision<wbr>Group<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#collisiongroup">collisionGroup</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L324">laya/d3/physics/PhysicsComponent.ts:324</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L328">laya/d3/physics/PhysicsComponent.ts:328</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="destroyed" class="tsd-anchor"></a>
 					<h3>destroyed</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> destroyed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#destroyed">destroyed</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L73">laya/components/Component.ts:73</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否已经销毁 。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">destroyed<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_laya_resource_idestroy_.idestroy.html">IDestroy</a>.<a href="../interfaces/_laya_resource_idestroy_.idestroy.html#destroyed">destroyed</a></p>
+						<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#destroyed">destroyed</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L73">laya/components/Component.ts:73</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="detectcollisions" class="tsd-anchor"></a>
 					<h3>detect<wbr>Collisions</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> detectCollisions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> detectCollisions<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L309">laya/d3/physics/Rigidbody3D.ts:309</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否进行碰撞检测。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L313">laya/d3/physics/Rigidbody3D.ts:313</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否进行碰撞检测。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">detect<wbr>Collisions<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L313">laya/d3/physics/Rigidbody3D.ts:313</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L317">laya/d3/physics/Rigidbody3D.ts:317</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="enabled" class="tsd-anchor"></a>
 					<h3>enabled</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> enabled<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> enabled<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#enabled">enabled</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L47">laya/components/Component.ts:47</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否启用组件。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#enabled">enabled</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L51">laya/components/Component.ts:51</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否启用组件。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#enabled">enabled</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L47">laya/components/Component.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L51">laya/components/Component.ts:51</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="friction" class="tsd-anchor"></a>
 					<h3>friction</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> friction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> friction<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#friction">friction</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L223">laya/d3/physics/PhysicsComponent.ts:223</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>摩擦力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#friction">friction</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L227">laya/d3/physics/PhysicsComponent.ts:227</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>摩擦力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">friction<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#friction">friction</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L223">laya/d3/physics/PhysicsComponent.ts:223</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L227">laya/d3/physics/PhysicsComponent.ts:227</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="gravity" class="tsd-anchor"></a>
 					<h3>gravity</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> gravity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> gravity<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L204">laya/d3/physics/Rigidbody3D.ts:204</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>重力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L208">laya/d3/physics/Rigidbody3D.ts:208</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>重力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">gravity<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L208">laya/d3/physics/Rigidbody3D.ts:208</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L212">laya/d3/physics/Rigidbody3D.ts:212</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> id<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#id">id</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L40">laya/components/Component.ts:40</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>唯一标识ID。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#id">id</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L40">laya/components/Component.ts:40</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="isactive" class="tsd-anchor"></a>
 					<h3>is<wbr>Active</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isActive<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#isactive">isActive</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L271">laya/d3/physics/PhysicsComponent.ts:271</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>获取是否激活。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Active<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#isactive">isActive</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L271">laya/d3/physics/PhysicsComponent.ts:271</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="iskinematic" class="tsd-anchor"></a>
 					<h3>is<wbr>Kinematic</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isKinematic<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> isKinematic<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L117">laya/d3/physics/Rigidbody3D.ts:117</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否为运动物体，如果为true仅可通过transform属性移动物体,而非其他力相关属性。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L121">laya/d3/physics/Rigidbody3D.ts:121</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否为运动物体，如果为true仅可通过transform属性移动物体,而非其他力相关属性。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Kinematic<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L121">laya/d3/physics/Rigidbody3D.ts:121</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L125">laya/d3/physics/Rigidbody3D.ts:125</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="issingleton" class="tsd-anchor"></a>
 					<h3>is<wbr>Singleton</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isSingleton<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#issingleton">isSingleton</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L66">laya/components/Component.ts:66</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否为单实例组件。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Singleton<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#issingleton">isSingleton</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L66">laya/components/Component.ts:66</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="issleeping" class="tsd-anchor"></a>
 					<h3>is<wbr>Sleeping</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isSleeping<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L328">laya/d3/physics/Rigidbody3D.ts:328</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否处于睡眠状态。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Sleeping<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L332">laya/d3/physics/Rigidbody3D.ts:332</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="istrigger" class="tsd-anchor"></a>
 					<h3>is<wbr>Trigger</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isTrigger<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> isTrigger<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicstriggercomponent_.physicstriggercomponent.html">PhysicsTriggerComponent</a>.<a href="_laya_d3_physics_physicstriggercomponent_.physicstriggercomponent.html#istrigger">isTrigger</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsTriggerComponent.ts#L15">laya/d3/physics/PhysicsTriggerComponent.ts:15</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否为触发器。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicstriggercomponent_.physicstriggercomponent.html">PhysicsTriggerComponent</a>.<a href="_laya_d3_physics_physicstriggercomponent_.physicstriggercomponent.html#istrigger">isTrigger</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsTriggerComponent.ts#L19">laya/d3/physics/PhysicsTriggerComponent.ts:19</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否为触发器。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Trigger<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicstriggercomponent_.physicstriggercomponent.html">PhysicsTriggerComponent</a>.<a href="_laya_d3_physics_physicstriggercomponent_.physicstriggercomponent.html#istrigger">isTrigger</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsTriggerComponent.ts#L15">laya/d3/physics/PhysicsTriggerComponent.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsTriggerComponent.ts#L19">laya/d3/physics/PhysicsTriggerComponent.ts:19</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="lineardamping" class="tsd-anchor"></a>
 					<h3>linear<wbr>Damping</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> linearDamping<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> linearDamping<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L156">laya/d3/physics/Rigidbody3D.ts:156</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体的线阻力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L160">laya/d3/physics/Rigidbody3D.ts:160</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体的线阻力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">linear<wbr>Damping<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L160">laya/d3/physics/Rigidbody3D.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L164">laya/d3/physics/Rigidbody3D.ts:164</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="linearfactor" class="tsd-anchor"></a>
 					<h3>linear<wbr>Factor</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> linearFactor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> linearFactor<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L230">laya/d3/physics/Rigidbody3D.ts:230</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>每个轴的线性运动缩放因子,如果某一轴的值为0表示冻结在该轴的线性运动。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L234">laya/d3/physics/Rigidbody3D.ts:234</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>每个轴的线性运动缩放因子,如果某一轴的值为0表示冻结在该轴的线性运动。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">linear<wbr>Factor<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L234">laya/d3/physics/Rigidbody3D.ts:234</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L238">laya/d3/physics/Rigidbody3D.ts:238</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="linearvelocity" class="tsd-anchor"></a>
 					<h3>linear<wbr>Velocity</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> linearVelocity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> linearVelocity<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L244">laya/d3/physics/Rigidbody3D.ts:244</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>线速度</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L250">laya/d3/physics/Rigidbody3D.ts:250</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>线速度</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">linear<wbr>Velocity<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L248">laya/d3/physics/Rigidbody3D.ts:248</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L254">laya/d3/physics/Rigidbody3D.ts:254</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="mass" class="tsd-anchor"></a>
 					<h3>mass</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> mass<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> mass<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L104">laya/d3/physics/Rigidbody3D.ts:104</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>质量。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L108">laya/d3/physics/Rigidbody3D.ts:108</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>质量。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">mass<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L108">laya/d3/physics/Rigidbody3D.ts:108</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L112">laya/d3/physics/Rigidbody3D.ts:112</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="overridegravity" class="tsd-anchor"></a>
 					<h3>override<wbr>Gravity</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> overrideGravity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> overrideGravity<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L182">laya/d3/physics/Rigidbody3D.ts:182</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否重载重力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L186">laya/d3/physics/Rigidbody3D.ts:186</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否重载重力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">override<wbr>Gravity<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L186">laya/d3/physics/Rigidbody3D.ts:186</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L190">laya/d3/physics/Rigidbody3D.ts:190</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="restitution" class="tsd-anchor"></a>
 					<h3>restitution</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> restitution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> restitution<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#restitution">restitution</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L211">laya/d3/physics/PhysicsComponent.ts:211</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>弹力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#restitution">restitution</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L215">laya/d3/physics/PhysicsComponent.ts:215</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>弹力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">restitution<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#restitution">restitution</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L211">laya/d3/physics/PhysicsComponent.ts:211</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L215">laya/d3/physics/PhysicsComponent.ts:215</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 					<a name="rollingfriction" class="tsd-anchor"></a>
 					<h3>rolling<wbr>Friction</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> rollingFriction<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> rollingFriction<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#rollingfriction">rollingFriction</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L235">laya/d3/physics/PhysicsComponent.ts:235</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>滚动摩擦力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#rollingfriction">rollingFriction</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L239">laya/d3/physics/PhysicsComponent.ts:239</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>滚动摩擦力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">rolling<wbr>Friction<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#rollingfriction">rollingFriction</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L235">laya/d3/physics/PhysicsComponent.ts:235</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L239">laya/d3/physics/PhysicsComponent.ts:239</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="simulation" class="tsd-anchor"></a>
 					<h3>simulation</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> simulation<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html" class="tsd-signature-type">PhysicsSimulation</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#simulation">simulation</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L317">laya/d3/physics/PhysicsComponent.ts:317</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>模拟器。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_physics_physicssimulation_.physicssimulation.html" class="tsd-signature-type">PhysicsSimulation</a></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">simulation<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#simulation">simulation</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L317">laya/d3/physics/PhysicsComponent.ts:317</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="sleepangularvelocity" class="tsd-anchor"></a>
 					<h3>sleep<wbr>Angular<wbr>Velocity</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> sleepAngularVelocity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> sleepAngularVelocity<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L349">laya/d3/physics/Rigidbody3D.ts:349</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体睡眠的角速度阈值。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L353">laya/d3/physics/Rigidbody3D.ts:353</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体睡眠的角速度阈值。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">sleep<wbr>Angular<wbr>Velocity<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L353">laya/d3/physics/Rigidbody3D.ts:353</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L357">laya/d3/physics/Rigidbody3D.ts:357</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="sleeplinearvelocity" class="tsd-anchor"></a>
 					<h3>sleep<wbr>Linear<wbr>Velocity</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> sleepLinearVelocity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> sleepLinearVelocity<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L337">laya/d3/physics/Rigidbody3D.ts:337</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体睡眠的线速度阈值。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L341">laya/d3/physics/Rigidbody3D.ts:341</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体睡眠的线速度阈值。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">sleep<wbr>Linear<wbr>Velocity<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L341">laya/d3/physics/Rigidbody3D.ts:341</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L345">laya/d3/physics/Rigidbody3D.ts:345</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="totalforce" class="tsd-anchor"></a>
 					<h3>total<wbr>Force</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> totalForce<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L218">laya/d3/physics/Rigidbody3D.ts:218</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>总力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">total<wbr>Force<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L222">laya/d3/physics/Rigidbody3D.ts:222</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="totaltorque" class="tsd-anchor"></a>
 					<h3>total<wbr>Torque</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> totalTorque<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L297">laya/d3/physics/Rigidbody3D.ts:297</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>刚体所有扭力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">total<wbr>Torque<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L301">laya/d3/physics/Rigidbody3D.ts:301</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -1469,14 +626,9 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#_derivephysicstransformation">_derivePhysicsTransformation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L395">laya/d3/physics/Rigidbody3D.ts:395</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L427">laya/d3/physics/Rigidbody3D.ts:427</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<pre><code>@<span class="hljs-keyword">internal</span></code></pre>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1499,14 +651,9 @@
 								<p>Implementation of <a href="../interfaces/_laya_resource_isingletonelement_.isingletonelement.html">ISingletonElement</a>.<a href="../interfaces/_laya_resource_isingletonelement_.isingletonelement.html#_getindexinlist">_getIndexInList</a></p>
 								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#_getindexinlist">_getIndexInList</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L98">laya/components/Component.ts:98</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L98">laya/components/Component.ts:98</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>[实现IListPool接口]</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
@@ -1522,15 +669,9 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_d3_physics_physicscomponent_.physicscomponent.html">PhysicsComponent</a>.<a href="_laya_d3_physics_physicscomponent_.physicscomponent.html#_innerderivephysicstransformation">_innerDerivePhysicsTransformation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L499">laya/d3/physics/PhysicsComponent.ts:499</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsComponent.ts#L499">laya/d3/physics/PhysicsComponent.ts:499</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<pre><code>@<span class="hljs-keyword">internal</span>
-通过渲染矩阵更新物理矩阵。</code></pre>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1556,14 +697,9 @@
 								<p>Implementation of <a href="../interfaces/_laya_resource_isingletonelement_.isingletonelement.html">ISingletonElement</a>.<a href="../interfaces/_laya_resource_isingletonelement_.isingletonelement.html#_setindexinlist">_setIndexInList</a></p>
 								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#_setindexinlist">_setIndexInList</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L105">laya/components/Component.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L105">laya/components/Component.ts:105</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>[实现IListPool接口]</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1584,27 +720,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L561">laya/d3/physics/Rigidbody3D.ts:561</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L620">laya/d3/physics/Rigidbody3D.ts:620</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>应用作用力。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>force: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>作用力。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> localOffset: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>偏移,如果为null则为中心点</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1621,27 +746,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L594">laya/d3/physics/Rigidbody3D.ts:594</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L653">laya/d3/physics/Rigidbody3D.ts:653</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>应用冲量。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>impulse: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>冲量。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> localOffset: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>偏移,如果为null则为中心点。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1658,21 +772,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L580">laya/d3/physics/Rigidbody3D.ts:580</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L639">laya/d3/physics/Rigidbody3D.ts:639</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>应用扭转力。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>torque: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>扭转力。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1689,20 +795,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L611">laya/d3/physics/Rigidbody3D.ts:611</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L670">laya/d3/physics/Rigidbody3D.ts:670</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>应用扭转冲量。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>torqueImpulse: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1719,14 +818,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L630">laya/d3/physics/Rigidbody3D.ts:630</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L689">laya/d3/physics/Rigidbody3D.ts:689</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>清除应用到刚体上的所有力。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1743,14 +837,9 @@
 								<p>Implementation of <a href="../interfaces/_laya_resource_idestroy_.idestroy.html">IDestroy</a>.<a href="../interfaces/_laya_resource_idestroy_.idestroy.html#destroy">destroy</a></p>
 								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#destroy">destroy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L190">laya/components/Component.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L197">laya/components/Component.ts:197</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>销毁组件</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1766,16 +855,9 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_components_component_.component.html">Component</a>.<a href="_laya_components_component_.component.html#onreset">onReset</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/components/Component.ts#L154">laya/components/Component.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/components/Component.ts#L154">laya/components/Component.ts:154</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>重置组件参数到默认值，如果实现了这个函数，则组件会被重置并且自动回收到对象池，方便下次复用
-										如果没有重置，则不进行回收复用
-									此方法为虚方法，使用时重写覆盖即可</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1790,14 +872,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L623">laya/d3/physics/Rigidbody3D.ts:623</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/Rigidbody3D.ts#L682">laya/d3/physics/Rigidbody3D.ts:682</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>唤醒刚体。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1848,6 +925,9 @@
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#angularvelocity" class="tsd-kind-icon">angular<wbr>Velocity</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#btcolliderobject" class="tsd-kind-icon">bt<wbr>Collider<wbr>Object</a>
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited">
 								<a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html#cancollidewith" class="tsd-kind-icon">can<wbr>Collide<wbr>With</a>

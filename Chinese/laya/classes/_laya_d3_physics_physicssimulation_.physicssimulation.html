@@ -69,13 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p><code>Simulation</code> 类用于创建物理模拟器。</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -129,14 +122,9 @@
 					<div class="tsd-signature tsd-kind-icon">fixed<wbr>Time<wbr>Step<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1.0 / 60.0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L144">laya/d3/physics/PhysicsSimulation.ts:144</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L145">laya/d3/physics/PhysicsSimulation.ts:145</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>物理模拟器帧的间隔时间:通过减少fixedTimeStep可增加模拟精度，默认是1.0 / 60.0。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="maxsubsteps" class="tsd-anchor"></a>
@@ -144,14 +132,9 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Sub<wbr>Steps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L142">laya/d3/physics/PhysicsSimulation.ts:142</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L143">laya/d3/physics/PhysicsSimulation.ts:143</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>物理引擎在一帧中用于补偿减速的最大次数：模拟器每帧允许的最大模拟次数，如果引擎运行缓慢,可能需要增加该次数，否则模拟器会丢失“时间&quot;,引擎间隔时间小于maxSubSteps*fixedTimeStep非常重要。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="disablesimulation" class="tsd-anchor"></a>
@@ -159,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">disable<wbr>Simulation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L75">laya/d3/physics/PhysicsSimulation.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L75">laya/d3/physics/PhysicsSimulation.ts:75</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,86 +152,24 @@
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="continuouscollisiondetection" class="tsd-anchor"></a>
 					<h3>continuous<wbr>Collision<wbr>Detection</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> continuousCollisionDetection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> continuousCollisionDetection<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L149">laya/d3/physics/PhysicsSimulation.ts:149</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否进行连续碰撞检测。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L153">laya/d3/physics/PhysicsSimulation.ts:153</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>是否进行连续碰撞检测。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">continuous<wbr>Collision<wbr>Detection<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L150">laya/d3/physics/PhysicsSimulation.ts:150</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L154">laya/d3/physics/PhysicsSimulation.ts:154</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="gravity" class="tsd-anchor"></a>
 					<h3>gravity</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> gravity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> gravity<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L160">laya/d3/physics/PhysicsSimulation.ts:160</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>获取重力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L166">laya/d3/physics/PhysicsSimulation.ts:166</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>获取重力。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">gravity<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L161">laya/d3/physics/PhysicsSimulation.ts:161</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L167">laya/d3/physics/PhysicsSimulation.ts:167</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -257,33 +178,22 @@
 					<a name="addconstraint" class="tsd-anchor"></a>
 					<h3>add<wbr>Constraint</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Constraint<span class="tsd-signature-symbol">(</span>constraint<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_constraint3d_.constraint3d.html" class="tsd-signature-type">Constraint3D</a>, disableCollisionsBetweenLinkedBodies<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Constraint<span class="tsd-signature-symbol">(</span>constraint<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_constraints_constraintcomponent_.constraintcomponent.html" class="tsd-signature-type">ConstraintComponent</a>, disableCollisionsBetweenLinkedBodies<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L623">laya/d3/physics/PhysicsSimulation.ts:623</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L625">laya/d3/physics/PhysicsSimulation.ts:625</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>添加刚体运动的约束条件。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>constraint: <a href="_laya_d3_physics_constraint3d_.constraint3d.html" class="tsd-signature-type">Constraint3D</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>约束。</p>
-									</div>
+									<h5>constraint: <a href="_laya_d3_physics_constraints_constraintcomponent_.constraintcomponent.html" class="tsd-signature-type">ConstraintComponent</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> disableCollisionsBetweenLinkedBodies: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>是否禁用</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -300,14 +210,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L880">laya/d3/physics/PhysicsSimulation.ts:880</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L896">laya/d3/physics/PhysicsSimulation.ts:896</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>清除力。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -322,42 +227,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L437">laya/d3/physics/PhysicsSimulation.ts:437</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L438">laya/d3/physics/PhysicsSimulation.ts:438</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> 射线检测第一个碰撞物体。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> outHitResult: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> distance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2147483647</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线长度,默认为最大值</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线所属碰撞组。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>与射线可产生碰撞的组。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -375,45 +263,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L455">laya/d3/physics/PhysicsSimulation.ts:455</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L456">laya/d3/physics/PhysicsSimulation.ts:456</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>射线检测所有碰撞的物体。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线</p>
-									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>碰撞结果[数组元素会被回收]。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> distance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2147483647</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线长度,默认为最大值</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线所属碰撞组。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>与射线可产生碰撞的组。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -431,45 +299,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L377">laya/d3/physics/PhysicsSimulation.ts:377</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L378">laya/d3/physics/PhysicsSimulation.ts:378</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>射线检测所有碰撞的物体。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>from: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>起始位置。</p>
-									</div>
 								</li>
 								<li>
 									<h5>to: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>结束位置。</p>
-									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>碰撞结果[数组元素会被回收]。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线所属碰撞组。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>与射线可产生碰撞的组。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -487,45 +335,25 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L329">laya/d3/physics/PhysicsSimulation.ts:329</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L330">laya/d3/physics/PhysicsSimulation.ts:330</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>射线检测第一个碰撞物体。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>from: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>起始位置。</p>
-									</div>
 								</li>
 								<li>
 									<h5>to: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>结束位置。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>碰撞结果。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线所属碰撞组。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>与射线可产生碰撞的组。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -537,24 +365,19 @@
 					<a name="removeconstraint" class="tsd-anchor"></a>
 					<h3>remove<wbr>Constraint</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Constraint<span class="tsd-signature-symbol">(</span>constraint<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_constraint3d_.constraint3d.html" class="tsd-signature-type">Constraint3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Constraint<span class="tsd-signature-symbol">(</span>constraint<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_constraints_constraintcomponent_.constraintcomponent.html" class="tsd-signature-type">ConstraintComponent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L633">laya/d3/physics/PhysicsSimulation.ts:633</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L636">laya/d3/physics/PhysicsSimulation.ts:636</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>移除刚体运动的约束条件。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>constraint: <a href="_laya_d3_physics_constraint3d_.constraint3d.html" class="tsd-signature-type">Constraint3D</a></h5>
+									<h5>constraint: <a href="_laya_d3_physics_constraints_constraintcomponent_.constraintcomponent.html" class="tsd-signature-type">ConstraintComponent</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -571,63 +394,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L476">laya/d3/physics/PhysicsSimulation.ts:476</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L477">laya/d3/physics/PhysicsSimulation.ts:477</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>形状检测第一个碰撞的物体。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>shape: <a href="_laya_d3_physics_shape_collidershape_.collidershape.html" class="tsd-signature-type">ColliderShape</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>形状。</p>
-									</div>
 								</li>
 								<li>
 									<h5>fromPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>世界空间起始位置。</p>
-									</div>
 								</li>
 								<li>
 									<h5>toPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>世界空间结束位置。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>碰撞结果。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>起始旋转。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> toRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>结束旋转。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线所属碰撞组。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>与射线可产生碰撞的组。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> allowedCcdPenetration: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
@@ -648,63 +442,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L550">laya/d3/physics/PhysicsSimulation.ts:550</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L551">laya/d3/physics/PhysicsSimulation.ts:551</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>形状检测所有碰撞的物体。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>shape: <a href="_laya_d3_physics_shape_collidershape_.collidershape.html" class="tsd-signature-type">ColliderShape</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>形状。</p>
-									</div>
 								</li>
 								<li>
 									<h5>fromPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>世界空间起始位置。</p>
-									</div>
 								</li>
 								<li>
 									<h5>toPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>世界空间结束位置。</p>
-									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>碰撞结果[数组元素会被回收]。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>起始旋转。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> toRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>结束旋转。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>射线所属碰撞组。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>与射线可产生碰撞的组。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> allowedCcdPenetration: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
@@ -725,14 +490,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L93">laya/d3/physics/PhysicsSimulation.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L93">laya/d3/physics/PhysicsSimulation.ts:93</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>创建限制刚体运动的约束条件。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>

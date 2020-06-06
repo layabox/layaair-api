@@ -69,15 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Media用于捕捉摄像头和麦克风。可以捕捉任意之一，或者同时捕捉两者。<code>getCamera</code>前可以使用<code>supported()</code>检查当前浏览器是否支持。
-						<b>NOTE:</b></p>
-						<p>目前Media在移动平台只支持Android，不支持IOS。只可在FireFox完整地使用，Chrome测试时无法捕捉视频。</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -118,7 +109,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/device/media/Media.ts#L10">laya/device/media/Media.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/device/media/Media.ts#L10">laya/device/media/Media.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_device_media_media_.media.html" class="tsd-signature-type">Media</a></h4>
@@ -138,33 +129,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/device/media/Media.ts#L28">laya/device/media/Media.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/device/media/Media.ts#L28">laya/device/media/Media.ts:28</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>获取用户媒体。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>options: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>简单的可选项可以使<code>{ audio:true, video:true }</code>表示同时捕捉两者。详情见<i><a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia">https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia</a></i>。</p>
-									</div>
 								</li>
 								<li>
 									<h5>onSuccess: <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>获取成功的处理器，唯一参数返回媒体的Blob地址，可以将其传给Video。</p>
-									</div>
 								</li>
 								<li>
 									<h5>onError: <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>获取失败的处理器，唯一参数是Error。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -181,14 +158,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/device/media/Media.ts#L18">laya/device/media/Media.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/device/media/Media.ts#L18">laya/device/media/Media.ts:18</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>检查浏览器兼容性。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>

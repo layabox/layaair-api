@@ -69,13 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p><code>Config3D</code> 类用于创建3D初始化配置。</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -108,6 +101,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config3d_.config3d.html#isalpha" class="tsd-kind-icon">is<wbr>Alpha</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config3d_.config3d.html#isantialias" class="tsd-kind-icon">is<wbr>Antialias</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config3d_.config3d.html#isstencil" class="tsd-kind-icon">is<wbr>Stencil</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config3d_.config3d.html#isusecannonphysicsengine" class="tsd-kind-icon">is<wbr>Use<wbr>Cannon<wbr>Physics<wbr>Engine</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config3d_.config3d.html#octreeculling" class="tsd-kind-icon">octree<wbr>Culling</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config3d_.config3d.html#octreeinitialcenter" class="tsd-kind-icon">octree<wbr>Initial<wbr>Center</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config3d_.config3d.html#octreeinitialsize" class="tsd-kind-icon">octree<wbr>Initial<wbr>Size</a></li>
@@ -123,6 +117,7 @@
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_config3d_.config3d.html#defaultphysicsmemory" class="tsd-kind-icon">default<wbr>Physics<wbr>Memory</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_config3d_.config3d.html#lightclustercount" class="tsd-kind-icon">light<wbr>Cluster<wbr>Count</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_config3d_.config3d.html#maxlightcount" class="tsd-kind-icon">max<wbr>Light<wbr>Count</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-static"><a href="_config3d_.config3d.html#usecannonphysics" class="tsd-kind-icon">use<wbr>Cannon<wbr>Physics</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -147,14 +142,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L106">Config3D.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L122">Config3D.ts:122</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>创建一个 <code>Config3D</code> 实例。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_config3d_.config3d.html" class="tsd-signature-type">Config3D</a></h4>
 						</li>
 					</ul>
@@ -168,16 +158,9 @@
 					<div class="tsd-signature tsd-kind-icon">debug<wbr>Frustum<wbr>Culling<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L52">Config3D.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L67">Config3D.ts:67</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>是否开启视锥裁剪调试。
-								如果开启八叉树裁剪,使用红色绘制高层次八叉树节点包围盒,使用蓝色绘制低层次八叉节点包围盒,精灵包围盒和八叉树节点包围盒颜色一致,但Alpha为非透明。如果视锥完全包含八叉树节点,八叉树节点包围盒和精灵包围盒变为蓝色,同样精灵包围盒的Alpha为非透明。
-							如果不开启八叉树裁剪,使用绿色像素线绘制精灵包围盒。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="enablemultilight" class="tsd-anchor"></a>
@@ -185,14 +168,9 @@
 					<div class="tsd-signature tsd-kind-icon">enable<wbr>Multi<wbr>Light<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L35">Config3D.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L49">Config3D.ts:49</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>是否开启多光源,如果场景不需要多光源，关闭后可提升性能。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="isalpha" class="tsd-anchor"></a>
@@ -200,14 +178,9 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L29">Config3D.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L43">Config3D.ts:43</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>画布是否包含透明通道。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="isantialias" class="tsd-anchor"></a>
@@ -215,14 +188,9 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Antialias<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L27">Config3D.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L41">Config3D.ts:41</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>是否开启抗锯齿。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="isstencil" class="tsd-anchor"></a>
@@ -230,14 +198,19 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Stencil<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L33">Config3D.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L47">Config3D.ts:47</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>画布是否开启模板缓冲。</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="isusecannonphysicsengine" class="tsd-anchor"></a>
+					<h3>is<wbr>Use<wbr>Cannon<wbr>Physics<wbr>Engine</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Use<wbr>Cannon<wbr>Physics<wbr>Engine<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L71">Config3D.ts:71</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="octreeculling" class="tsd-anchor"></a>
@@ -245,14 +218,9 @@
 					<div class="tsd-signature tsd-kind-icon">octree<wbr>Culling<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L37">Config3D.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L51">Config3D.ts:51</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>是否开启八叉树裁剪。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="octreeinitialcenter" class="tsd-anchor"></a>
@@ -260,14 +228,9 @@
 					<div class="tsd-signature tsd-kind-icon">octree<wbr>Initial<wbr>Center<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol"> =&nbsp;new Vector3(0, 0, 0)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L41">Config3D.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L55">Config3D.ts:55</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>八叉树初始化中心。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="octreeinitialsize" class="tsd-anchor"></a>
@@ -275,14 +238,9 @@
 					<div class="tsd-signature tsd-kind-icon">octree<wbr>Initial<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;64</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L39">Config3D.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L53">Config3D.ts:53</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>八叉树初始化尺寸。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="octreelooseness" class="tsd-anchor"></a>
@@ -290,14 +248,9 @@
 					<div class="tsd-signature tsd-kind-icon">octree<wbr>Looseness<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1.25</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L45">Config3D.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L59">Config3D.ts:59</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>八叉树松散值。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="octreeminnodesize" class="tsd-anchor"></a>
@@ -305,14 +258,9 @@
 					<div class="tsd-signature tsd-kind-icon">octree<wbr>Min<wbr>Node<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L43">Config3D.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L57">Config3D.ts:57</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>八叉树最小尺寸。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="pbrrenderquality" class="tsd-anchor"></a>
@@ -320,14 +268,9 @@
 					<div class="tsd-signature tsd-kind-icon">pbr<wbr>Render<wbr>Quality<span class="tsd-signature-symbol">:</span> <a href="../enums/_laya_d3_core_material_pbrrenderquality_.pbrrenderquality.html" class="tsd-signature-type">PBRRenderQuality</a><span class="tsd-signature-symbol"> =&nbsp;PBRRenderQuality.High</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L54">Config3D.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L69">Config3D.ts:69</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>PBR材质渲染质量。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="premultipliedalpha" class="tsd-anchor"></a>
@@ -335,14 +278,9 @@
 					<div class="tsd-signature tsd-kind-icon">premultiplied<wbr>Alpha<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L31">Config3D.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L45">Config3D.ts:45</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>画布是否预乘。</p>
-						</div>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -350,128 +288,46 @@
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="defaultphysicsmemory" class="tsd-anchor"></a>
 					<h3>default<wbr>Physics<wbr>Memory</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> defaultPhysicsMemory<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> defaultPhysicsMemory<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L59">Config3D.ts:59</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>默认物理功能初始化内存，单位为M。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L63">Config3D.ts:63</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>默认物理功能初始化内存，单位为M。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Physics<wbr>Memory<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L75">Config3D.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L79">Config3D.ts:79</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="lightclustercount" class="tsd-anchor"></a>
 					<h3>light<wbr>Cluster<wbr>Count</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> lightClusterCount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> lightClusterCount<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L89">Config3D.ts:89</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>X、Y、Z轴的光照集群数量,Z值会影响Cluster接受区域光(点光、聚光)影响的数量,Math.floor(2048 / lightClusterCount.z - 1) * 4 为每个Cluster的最大平均接受区域光数量,如果每个Cluster所接受光源影响的平均数量大于该值，则较远的Cluster会忽略其中多余的光照影响。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L93">Config3D.ts:93</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>X、Y、Z轴的光照集群数量,Z值会影响Cluster接受区域光(点光、聚光)影响的数量,Math.floor(2048 / lightClusterCount.z - 1) * 4 为每个Cluster的最大平均接受区域光数量,如果每个Cluster所接受光源影响的平均数量大于该值，则较远的Cluster会忽略其中多余的光照影响。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">light<wbr>Cluster<wbr>Count<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L105">Config3D.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L109">Config3D.ts:109</a></li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="maxlightcount" class="tsd-anchor"></a>
 					<h3>max<wbr>Light<wbr>Count</h3>
-					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> maxLightCount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> maxLightCount<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L72">Config3D.ts:72</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>最大光源数量。</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L76">Config3D.ts:76</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>最大光源数量。</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Light<wbr>Count<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L88">Config3D.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L92">Config3D.ts:92</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class tsd-is-static">
+					<a name="usecannonphysics" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> use<wbr>Cannon<wbr>Physics</h3>
+					<div class="tsd-signature tsd-kind-icon">use<wbr>Cannon<wbr>Physics<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L16">Config3D.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L19">Config3D.ts:19</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -487,14 +343,9 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_laya_d3_core_iclone_.iclone.html">IClone</a>.<a href="../interfaces/_laya_d3_core_iclone_.iclone.html#clone">clone</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L145">Config3D.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L161">Config3D.ts:161</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>克隆。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 							<p>克隆副本。</p>
 						</li>
@@ -511,14 +362,9 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_laya_d3_core_iclone_.iclone.html">IClone</a>.<a href="../interfaces/_laya_d3_core_iclone_.iclone.html#cloneto">cloneTo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/Config3D.ts#L119">Config3D.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/Config3D.ts#L135">Config3D.ts:135</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>克隆。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -568,6 +414,9 @@
 								<a href="_config3d_.config3d.html#isstencil" class="tsd-kind-icon">is<wbr>Stencil</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_config3d_.config3d.html#isusecannonphysicsengine" class="tsd-kind-icon">is<wbr>Use<wbr>Cannon<wbr>Physics<wbr>Engine</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_config3d_.config3d.html#octreeculling" class="tsd-kind-icon">octree<wbr>Culling</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -596,6 +445,9 @@
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="_config3d_.config3d.html#maxlightcount" class="tsd-kind-icon">max<wbr>Light<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class tsd-is-static">
+								<a href="_config3d_.config3d.html#usecannonphysics" class="tsd-kind-icon">use<wbr>Cannon<wbr>Physics</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_config3d_.config3d.html#clone" class="tsd-kind-icon">clone</a>

@@ -69,33 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Accelerator.instance获取唯一的Accelerator引用，请勿调用构造函数。</p>
-					</div>
-					<p>
-						listen()的回调处理器接受四个参数：
-						<ol>
-							<li><b>acceleration</b>: 表示用户给予设备的加速度。</li>
-							<li><b>accelerationIncludingGravity</b>: 设备受到的总加速度（包含重力）。</li>
-							<li><b>rotationRate</b>: 设备的自转速率。</li>
-							<li><b>interval</b>: 加速度获取的时间间隔（毫秒）。</li>
-						</ol>
-					</p>
-					<p>
-						<b>NOTE</b><br/>
-						如，rotationRate的alpha在apple和moz文档中都是z轴旋转角度，但是实测是x轴旋转角度。为了使各属性表示的值与文档所述相同，实际值与其他属性进行了对调。
-						其中：
-						<ul>
-							<li>alpha使用gamma值。</li>
-							<li>beta使用alpha值。</li>
-							<li>gamma使用beta。</li>
-						</ul>
-						目前孰是孰非尚未可知，以此为注。
-					</p>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -160,7 +133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/device/motion/Accelerator.ts#L44">laya/device/motion/Accelerator.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/device/motion/Accelerator.ts#L44">laya/device/motion/Accelerator.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -179,19 +152,12 @@
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
 					<a name="instance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> instance</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> instance<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_device_motion_accelerator_.accelerator.html" class="tsd-signature-type">Accelerator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/device/motion/Accelerator.ts#L37">laya/device/motion/Accelerator.ts:37</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_laya_device_motion_accelerator_.accelerator.html" class="tsd-signature-type">Accelerator</a></h4>
-						</li>
-					</ul>
+					<div class="tsd-signature tsd-kind-icon">instance<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/device/motion/Accelerator.ts#L37">laya/device/motion/Accelerator.ts:37</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -207,27 +173,16 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#event">event</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L30">laya/events/EventDispatcher.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L30">laya/events/EventDispatcher.ts:30</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>派发事件。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>事件类型。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> data: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>（可选）回调数据。<b>注意：</b>如果是需要传递多个参数 p1,p2,p3,...可以使用数组结构如：[p1,p2,p3,...] ；如果需要回调单个参数 p ，且 p 是一个数组，则需要使用结构如：[p]，其他的单个参数 p ，可以直接传入参数 p。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -246,21 +201,13 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#haslistener">hasListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L19">laya/events/EventDispatcher.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L19">laya/events/EventDispatcher.ts:19</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>检查 EventDispatcher 对象是否为特定事件类型注册了任何侦听器。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>事件的类型。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -279,21 +226,13 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#ismouseevent">isMouseEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L189">laya/events/EventDispatcher.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L189">laya/events/EventDispatcher.ts:189</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>检测指定事件类型是否是鼠标事件。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>事件的类型。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -312,18 +251,9 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/device/motion/Accelerator.ts#L67">laya/device/motion/Accelerator.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/device/motion/Accelerator.ts#L67">laya/device/motion/Accelerator.ts:67</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>取消侦听加速器。</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>override</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -354,21 +284,13 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#offall">offAll</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L142">laya/events/EventDispatcher.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L142">laya/events/EventDispatcher.ts:142</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>从 EventDispatcher 对象中删除指定事件类型的所有侦听器。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> type: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>（可选）事件类型，如果值为 null，则移除本对象所有类型的侦听器。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_events_eventdispatcher_.eventdispatcher.html" class="tsd-signature-type">EventDispatcher</a></h4>
@@ -387,21 +309,13 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#offallcaller">offAllCaller</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L161">laya/events/EventDispatcher.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L161">laya/events/EventDispatcher.ts:161</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>移除caller为target的所有事件监听</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>caller: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>caller对象</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_events_eventdispatcher_.eventdispatcher.html" class="tsd-signature-type">EventDispatcher</a></h4>
@@ -419,18 +333,9 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/device/motion/Accelerator.ts#L56">laya/device/motion/Accelerator.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/device/motion/Accelerator.ts#L56">laya/device/motion/Accelerator.ts:56</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>侦听加速器运动。</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>override</dt>
-									<dd></dd>
-								</dl>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -461,39 +366,22 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L75">laya/events/EventDispatcher.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L75">laya/events/EventDispatcher.ts:75</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>使用 EventDispatcher 对象注册指定类型的事件侦听器对象，以使侦听器能够接收事件通知，此侦听事件响应一次后自动移除。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>type: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>事件的类型。</p>
-									</div>
 								</li>
 								<li>
 									<h5>caller: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>事件侦听函数的执行域。</p>
-									</div>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-type">Function</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>事件侦听函数。</p>
-									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>（可选）事件侦听函数的回调参数。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_events_eventdispatcher_.eventdispatcher.html" class="tsd-signature-type">EventDispatcher</a></h4>
@@ -511,14 +399,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/device/motion/Accelerator.ts#L117">laya/device/motion/Accelerator.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/device/motion/Accelerator.ts#L117">laya/device/motion/Accelerator.ts:117</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>把加速度值转换为视觉上正确的加速度值。依赖于Browser.window.orientation，可能在部分低端机无效。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -539,18 +422,16 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_events_eventdispatcher_.eventdispatcher.html">EventDispatcher</a>.<a href="_laya_events_eventdispatcher_.eventdispatcher.html#mouse_events">MOUSE_EVENTS</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-					</div>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 						<a name="mouse_events.click" class="tsd-anchor"></a>
 						<h3>click</h3>
 						<div class="tsd-signature tsd-kind-icon">click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -560,7 +441,7 @@
 						<div class="tsd-signature tsd-kind-icon">doubleclick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -570,7 +451,7 @@
 						<div class="tsd-signature tsd-kind-icon">mousedown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -580,7 +461,7 @@
 						<div class="tsd-signature tsd-kind-icon">mousemove<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -590,7 +471,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -600,7 +481,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseover<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -610,7 +491,7 @@
 						<div class="tsd-signature tsd-kind-icon">mouseup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -620,7 +501,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightclick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -630,7 +511,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightmousedown<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -640,7 +521,7 @@
 						<div class="tsd-signature tsd-kind-icon">rightmouseup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/events/EventDispatcher.ts#L8">laya/events/EventDispatcher.ts:8</a></li>
 							</ul>
 						</aside>
 					</section>
