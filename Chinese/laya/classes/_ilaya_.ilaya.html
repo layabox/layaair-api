@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ILaya | zqx</title>
-	<meta name="description" content="">
+	<title>ILaya | Laya API</title>
+	<meta name="description" content="Documentation for Laya API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">zqx</a>
+					<a href="../index.html" class="title">Laya API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,6 +69,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>使用全局类的时候，避免引用其他模块</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -112,6 +119,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_ilaya_.ilaya.html#webaudiosound" class="tsd-kind-icon">Web<wbr>Audio<wbr>Sound</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_ilaya_.ilaya.html#webgl" class="tsd-kind-icon">WebGL</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_ilaya_.ilaya.html#workerloader" class="tsd-kind-icon">Worker<wbr>Loader</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_ilaya_.ilaya.html#__classmap" class="tsd-kind-icon">__class<wbr>Map</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_ilaya_.ilaya.html#latetimer" class="tsd-kind-icon">late<wbr>Timer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_ilaya_.ilaya.html#loader-1" class="tsd-kind-icon">loader</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_ilaya_.ilaya.html#physicstimer" class="tsd-kind-icon">physics<wbr>Timer</a></li>
@@ -136,360 +144,376 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="audiosound" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Audio<wbr>Sound</h3>
-					<div class="tsd-signature tsd-kind-icon">Audio<wbr>Sound<span class="tsd-signature-symbol">:</span> <a href="_laya_media_h5audio_audiosound_.audiosound.html" class="tsd-signature-type">AudioSound</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Audio<wbr>Sound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">AudioSound</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L55">ILaya.ts:55</a></li>
+							<li>Defined in ILaya.ts:55</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="browser" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Browser</h3>
-					<div class="tsd-signature tsd-kind-icon">Browser<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_browser_.browser.html" class="tsd-signature-type">Browser</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Browser<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Browser</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L63">ILaya.ts:63</a></li>
+							<li>Defined in ILaya.ts:63</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="classutils" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Class<wbr>Utils</h3>
-					<div class="tsd-signature tsd-kind-icon">Class<wbr>Utils<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_classutils_.classutils.html" class="tsd-signature-type">ClassUtils</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Class<wbr>Utils<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">ClassUtils</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L57">ILaya.ts:57</a></li>
+							<li>Defined in ILaya.ts:57</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="context" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Context</h3>
-					<div class="tsd-signature tsd-kind-icon">Context<span class="tsd-signature-symbol">:</span> <a href="_laya_resource_context_.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Context</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L59">ILaya.ts:59</a></li>
+							<li>Defined in ILaya.ts:59</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="dragging" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Dragging</h3>
-					<div class="tsd-signature tsd-kind-icon">Dragging<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_dragging_.dragging.html" class="tsd-signature-type">Dragging</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Dragging<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Dragging</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L38">ILaya.ts:38</a></li>
+							<li>Defined in ILaya.ts:38</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="graphics" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Graphics</h3>
-					<div class="tsd-signature tsd-kind-icon">Graphics<span class="tsd-signature-symbol">:</span> <a href="_laya_display_graphics_.graphics.html" class="tsd-signature-type">Graphics</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Graphics<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Graphics</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L67">ILaya.ts:67</a></li>
+							<li>Defined in ILaya.ts:67</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="graphicsbounds" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Graphics<wbr>Bounds</h3>
-					<div class="tsd-signature tsd-kind-icon">Graphics<wbr>Bounds<span class="tsd-signature-symbol">:</span> <a href="_laya_display_graphicsbounds_.graphicsbounds.html" class="tsd-signature-type">GraphicsBounds</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Graphics<wbr>Bounds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">GraphicsBounds</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L39">ILaya.ts:39</a></li>
+							<li>Defined in ILaya.ts:39</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="laya" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Laya</h3>
-					<div class="tsd-signature tsd-kind-icon">Laya<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Laya<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L34">ILaya.ts:34</a></li>
+							<li>Defined in ILaya.ts:34</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="loader" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Loader</h3>
-					<div class="tsd-signature tsd-kind-icon">Loader<span class="tsd-signature-symbol">:</span> <a href="_laya_net_loader_.loader.html" class="tsd-signature-type">Loader</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Loader<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Loader</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L50">ILaya.ts:50</a></li>
+							<li>Defined in ILaya.ts:50</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="mousemanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Mouse<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">Mouse<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="_laya_events_mousemanager_.mousemanager.html" class="tsd-signature-type">MouseManager</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Mouse<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">MouseManager</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L61">ILaya.ts:61</a></li>
+							<li>Defined in ILaya.ts:61</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="pool" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Pool</h3>
-					<div class="tsd-signature tsd-kind-icon">Pool<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_pool_.pool.html" class="tsd-signature-type">Pool</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Pool<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Pool</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L65">ILaya.ts:65</a></li>
+							<li>Defined in ILaya.ts:65</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="render" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Render</h3>
-					<div class="tsd-signature tsd-kind-icon">Render<span class="tsd-signature-symbol">:</span> <a href="_laya_renders_render_.render.html" class="tsd-signature-type">Render</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Render<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Render</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L60">ILaya.ts:60</a></li>
+							<li>Defined in ILaya.ts:60</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="resource" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Resource</h3>
-					<div class="tsd-signature tsd-kind-icon">Resource<span class="tsd-signature-symbol">:</span> <a href="_laya_resource_resource_.resource.html" class="tsd-signature-type">Resource</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Resource<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Resource</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L70">ILaya.ts:70</a></li>
+							<li>Defined in ILaya.ts:70</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="sceneutils" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Scene<wbr>Utils</h3>
-					<div class="tsd-signature tsd-kind-icon">Scene<wbr>Utils<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_sceneutils_.sceneutils.html" class="tsd-signature-type">SceneUtils</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Scene<wbr>Utils<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">SceneUtils</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L58">ILaya.ts:58</a></li>
+							<li>Defined in ILaya.ts:58</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="shadercompile" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Shader<wbr>Compile</h3>
-					<div class="tsd-signature tsd-kind-icon">Shader<wbr>Compile<span class="tsd-signature-symbol">:</span> <a href="_laya_webgl_utils_shadercompile_.shadercompile.html" class="tsd-signature-type">ShaderCompile</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Shader<wbr>Compile<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">ShaderCompile</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L56">ILaya.ts:56</a></li>
+							<li>Defined in ILaya.ts:56</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="soundmanager" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Sound<wbr>Manager</h3>
-					<div class="tsd-signature tsd-kind-icon">Sound<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="_laya_media_soundmanager_.soundmanager.html" class="tsd-signature-type">SoundManager</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Sound<wbr>Manager<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">SoundManager</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L53">ILaya.ts:53</a></li>
+							<li>Defined in ILaya.ts:53</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="sprite" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Sprite</h3>
-					<div class="tsd-signature tsd-kind-icon">Sprite<span class="tsd-signature-symbol">:</span> <a href="_laya_display_sprite_.sprite.html" class="tsd-signature-type">Sprite</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Sprite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Sprite</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L40">ILaya.ts:40</a></li>
+							<li>Defined in ILaya.ts:40</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="stage" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Stage</h3>
-					<div class="tsd-signature tsd-kind-icon">Stage<span class="tsd-signature-symbol">:</span> <a href="_laya_display_stage_.stage.html" class="tsd-signature-type">Stage</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Stage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Stage</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L69">ILaya.ts:69</a></li>
+							<li>Defined in ILaya.ts:69</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="submit" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Submit</h3>
-					<div class="tsd-signature tsd-kind-icon">Submit<span class="tsd-signature-symbol">:</span> <a href="_laya_webgl_submit_submit_.submit.html" class="tsd-signature-type">Submit</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Submit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Submit</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L68">ILaya.ts:68</a></li>
+							<li>Defined in ILaya.ts:68</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="ttfloader" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> TTFLoader</h3>
-					<div class="tsd-signature tsd-kind-icon">TTFLoader<span class="tsd-signature-symbol">:</span> <a href="_laya_net_ttfloader_.ttfloader.html" class="tsd-signature-type">TTFLoader</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">TTFLoader<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">TTFLoader</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L52">ILaya.ts:52</a></li>
+							<li>Defined in ILaya.ts:52</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="text" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Text</h3>
-					<div class="tsd-signature tsd-kind-icon">Text<span class="tsd-signature-symbol">:</span> <a href="_laya_display_text_.text.html" class="tsd-signature-type">Text</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Text</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L62">ILaya.ts:62</a></li>
+							<li>Defined in ILaya.ts:62</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="textatlas" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Text<wbr>Atlas</h3>
-					<div class="tsd-signature tsd-kind-icon">Text<wbr>Atlas<span class="tsd-signature-symbol">:</span> <a href="_laya_webgl_text_textatlas_.textatlas.html" class="tsd-signature-type">TextAtlas</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Text<wbr>Atlas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">TextAtlas</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L42">ILaya.ts:42</a></li>
+							<li>Defined in ILaya.ts:42</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="textrender" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Text<wbr>Render</h3>
-					<div class="tsd-signature tsd-kind-icon">Text<wbr>Render<span class="tsd-signature-symbol">:</span> <a href="_laya_webgl_text_textrender_.textrender.html" class="tsd-signature-type">TextRender</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Text<wbr>Render<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">TextRender</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L41">ILaya.ts:41</a></li>
+							<li>Defined in ILaya.ts:41</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="timer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Timer</h3>
-					<div class="tsd-signature tsd-kind-icon">Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L36">ILaya.ts:36</a></li>
+							<li>Defined in ILaya.ts:36</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="utils" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Utils</h3>
-					<div class="tsd-signature tsd-kind-icon">Utils<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_utils_.utils.html" class="tsd-signature-type">Utils</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Utils<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Utils</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L66">ILaya.ts:66</a></li>
+							<li>Defined in ILaya.ts:66</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="webaudiosound" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Web<wbr>Audio<wbr>Sound</h3>
-					<div class="tsd-signature tsd-kind-icon">Web<wbr>Audio<wbr>Sound<span class="tsd-signature-symbol">:</span> <a href="_laya_media_webaudio_webaudiosound_.webaudiosound.html" class="tsd-signature-type">WebAudioSound</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Web<wbr>Audio<wbr>Sound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">WebAudioSound</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L54">ILaya.ts:54</a></li>
+							<li>Defined in ILaya.ts:54</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="webgl" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> WebGL</h3>
-					<div class="tsd-signature tsd-kind-icon">WebGL<span class="tsd-signature-symbol">:</span> <a href="_laya_webgl_webgl_.webgl.html" class="tsd-signature-type">WebGL</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">WebGL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">WebGL</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L64">ILaya.ts:64</a></li>
+							<li>Defined in ILaya.ts:64</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="workerloader" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> Worker<wbr>Loader</h3>
-					<div class="tsd-signature tsd-kind-icon">Worker<wbr>Loader<span class="tsd-signature-symbol">:</span> <a href="_laya_net_workerloader_.workerloader.html" class="tsd-signature-type">WorkerLoader</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">Worker<wbr>Loader<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">WorkerLoader</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L37">ILaya.ts:37</a></li>
+							<li>Defined in ILaya.ts:37</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="latetimer" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> late<wbr>Timer</h3>
-					<div class="tsd-signature tsd-kind-icon">late<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<a name="__classmap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> __class<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">__class<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L47">ILaya.ts:47</a></li>
+							<li>Defined in ILaya.ts:73</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="latetimer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> late<wbr>Timer</h3>
+					<div class="tsd-signature tsd-kind-icon">late<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in ILaya.ts:47</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="loader-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> loader</h3>
-					<div class="tsd-signature tsd-kind-icon">loader<span class="tsd-signature-symbol">:</span> <a href="_laya_net_loadermanager_.loadermanager.html" class="tsd-signature-type">LoaderManager</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">loader<span class="tsd-signature-symbol">:</span> <a href="_laya_net_loadermanager_.loadermanager.html" class="tsd-signature-type">LoaderManager</a><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L51">ILaya.ts:51</a></li>
+							<li>Defined in ILaya.ts:51</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="physicstimer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> physics<wbr>Timer</h3>
-					<div class="tsd-signature tsd-kind-icon">physics<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">physics<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L48">ILaya.ts:48</a></li>
+							<li>Defined in ILaya.ts:48</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="stage-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> stage</h3>
-					<div class="tsd-signature tsd-kind-icon">stage<span class="tsd-signature-symbol">:</span> <a href="_laya_display_stage_.stage.html" class="tsd-signature-type">Stage</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">stage<span class="tsd-signature-symbol">:</span> <a href="_laya_display_stage_.stage.html" class="tsd-signature-type">Stage</a><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L49">ILaya.ts:49</a></li>
+							<li>Defined in ILaya.ts:49</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="starttimer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> start<wbr>Timer</h3>
-					<div class="tsd-signature tsd-kind-icon">start<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L45">ILaya.ts:45</a></li>
+							<li>Defined in ILaya.ts:45</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="systemtimer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> system<wbr>Timer</h3>
-					<div class="tsd-signature tsd-kind-icon">system<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">system<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L44">ILaya.ts:44</a></li>
+							<li>Defined in ILaya.ts:44</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="timer-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> timer</h3>
-					<div class="tsd-signature tsd-kind-icon">timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L43">ILaya.ts:43</a></li>
+							<li>Defined in ILaya.ts:43</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="updatetimer" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> update<wbr>Timer</h3>
-					<div class="tsd-signature tsd-kind-icon">update<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">update<wbr>Timer<span class="tsd-signature-symbol">:</span> <a href="_laya_utils_timer_.timer.html" class="tsd-signature-type">Timer</a><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L46">ILaya.ts:46</a></li>
+							<li>Defined in ILaya.ts:46</li>
 						</ul>
 					</aside>
 				</section>
@@ -506,7 +530,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/ILaya.ts#L74">ILaya.ts:74</a></li>
+									<li>Defined in ILaya.ts:74</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -527,8 +551,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_ilaya_.html">"ILaya"</a>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_ilaya_.html">&quot;ILaya&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -536,7 +560,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_ilaya_.ilaya.html" class="tsd-kind-icon">ILaya</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
@@ -624,6 +648,9 @@
 								<a href="_ilaya_.ilaya.html#workerloader" class="tsd-kind-icon">Worker<wbr>Loader</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_ilaya_.ilaya.html#__classmap" class="tsd-kind-icon">__class<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_ilaya_.ilaya.html#latetimer" class="tsd-kind-icon">late<wbr>Timer</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
@@ -664,57 +691,22 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PhysicsSimulation | zqx</title>
-	<meta name="description" content="">
+	<title>PhysicsSimulation | Laya API</title>
+	<meta name="description" content="Documentation for Laya API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">zqx</a>
+					<a href="../index.html" class="title">Laya API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,6 +69,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p><code>Simulation</code> 类用于创建物理模拟器。</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -82,10 +89,34 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_characters" class="tsd-kind-icon">_characters</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_physicsupdatelist" class="tsd-kind-icon">_physics<wbr>Update<wbr>List</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_updatedrigidbodies" class="tsd-kind-icon">_updated<wbr>Rigidbodies</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#fixedtimestep" class="tsd-kind-icon">fixed<wbr>Time<wbr>Step</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#maxsubsteps" class="tsd-kind-icon">max<wbr>Sub<wbr>Steps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_collisionsonly" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>COLLISIONSONLY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_multithreaded" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>MULTITHREADED</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_none" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>NONE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_softbodysupport" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>SOFTBODYSUPPORT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_usehardwarewhenpossible" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>USEHARDWAREWHENPOSSIBLE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_allow_zero_length_friction_directions" class="tsd-kind-icon">SOLVERMODE_<wbr>ALLOW_<wbr>ZERO_<wbr>LENGTH_<wbr>FRICTION_<wbr>DIRECTIONS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_cache_friendly" class="tsd-kind-icon">SOLVERMODE_<wbr>CACHE_<wbr>FRIENDLY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_disable_velocity_dependent_friction_direction" class="tsd-kind-icon">SOLVERMODE_<wbr>DISABLE_<wbr>VELOCITY_<wbr>DEPENDENT_<wbr>FRICTION_<wbr>DIRECTION</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_enable_friction_direction_caching" class="tsd-kind-icon">SOLVERMODE_<wbr>ENABLE_<wbr>FRICTION_<wbr>DIRECTION_<wbr>CACHING</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_friction_separate" class="tsd-kind-icon">SOLVERMODE_<wbr>FRICTION_<wbr>SEPARATE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_interleave_contact_and_friction_constraints" class="tsd-kind-icon">SOLVERMODE_<wbr>INTERLEAVE_<wbr>CONTACT_<wbr>AND_<wbr>FRICTION_<wbr>CONSTRAINTS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_randmize_order" class="tsd-kind-icon">SOLVERMODE_<wbr>RANDMIZE_<wbr>ORDER</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_simd" class="tsd-kind-icon">SOLVERMODE_<wbr>SIMD</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_use_2_friction_directions" class="tsd-kind-icon">SOLVERMODE_<wbr>USE_<wbr>2_FRICTION_<wbr>DIRECTIONS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_use_warmstarting" class="tsd-kind-icon">SOLVERMODE_<wbr>USE_<wbr>WARMSTARTING</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#disablesimulation" class="tsd-kind-icon">disable<wbr>Simulation</a></li>
 							</ul>
 						</section>
@@ -94,11 +125,24 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#continuouscollisiondetection" class="tsd-kind-icon">continuous<wbr>Collision<wbr>Detection</a></li>
 								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#gravity" class="tsd-kind-icon">gravity</a></li>
+								<li class="tsd-kind-accessor tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#speculativecontactrestitution" class="tsd-kind-icon">speculative<wbr>Contact<wbr>Restitution</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_addcharacter" class="tsd-kind-icon">_add<wbr>Character</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_addphysicscollider" class="tsd-kind-icon">_add<wbr>Physics<wbr>Collider</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_addrigidbody" class="tsd-kind-icon">_add<wbr>Rigid<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_destroy" class="tsd-kind-icon">_destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_eventscripts" class="tsd-kind-icon">_event<wbr>Scripts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_removecharacter" class="tsd-kind-icon">_remove<wbr>Character</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_removephysicscollider" class="tsd-kind-icon">_remove<wbr>Physics<wbr>Collider</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_removerigidbody" class="tsd-kind-icon">_remove<wbr>Rigid<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_simulate" class="tsd-kind-icon">_simulate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_updatecharacters" class="tsd-kind-icon">_update<wbr>Characters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_updatecollisions" class="tsd-kind-icon">_update<wbr>Collisions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_updatephysicstransformfromrender" class="tsd-kind-icon">_update<wbr>Physics<wbr>Transform<wbr>From<wbr>Render</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#addconstraint" class="tsd-kind-icon">add<wbr>Constraint</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#clearforces" class="tsd-kind-icon">clear<wbr>Forces</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#raycast" class="tsd-kind-icon">ray<wbr>Cast</a></li>
@@ -108,6 +152,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#removeconstraint" class="tsd-kind-icon">remove<wbr>Constraint</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#shapecast" class="tsd-kind-icon">shape<wbr>Cast</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#shapecastall" class="tsd-kind-icon">shape<wbr>Cast<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#__init__" class="tsd-kind-icon">__init__</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#createconstraint" class="tsd-kind-icon">create<wbr>Constraint</a></li>
 							</ul>
 						</section>
@@ -115,34 +160,368 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Physics<wbr>Simulation<span class="tsd-signature-symbol">(</span>configuration<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_physicssettings_.physicssettings.html" class="tsd-signature-type">PhysicsSettings</a>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_physicssimulation_.physicssimulation.html" class="tsd-signature-type">PhysicsSimulation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:194</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd><p>创建一个 <code>Simulation</code> 实例。</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>configuration: <a href="_laya_d3_physics_physicssettings_.physicssettings.html" class="tsd-signature-type">PhysicsSettings</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> flags: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_physics_physicssimulation_.physicssimulation.html" class="tsd-signature-type">PhysicsSimulation</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_characters" class="tsd-anchor"></a>
+					<h3>_characters</h3>
+					<div class="tsd-signature tsd-kind-icon">_characters<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_physics_charactercontroller_.charactercontroller.html" class="tsd-signature-type">CharacterController</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:138</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_physicsupdatelist" class="tsd-anchor"></a>
+					<h3>_physics<wbr>Update<wbr>List</h3>
+					<div class="tsd-signature tsd-kind-icon">_physics<wbr>Update<wbr>List<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_physics_physicsupdatelist_.physicsupdatelist.html" class="tsd-signature-type">PhysicsUpdateList</a><span class="tsd-signature-symbol"> = new PhysicsUpdateList()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:136</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_updatedrigidbodies" class="tsd-anchor"></a>
+					<h3>_updated<wbr>Rigidbodies</h3>
+					<div class="tsd-signature tsd-kind-icon">_updated<wbr>Rigidbodies<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:140</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="fixedtimestep" class="tsd-anchor"></a>
 					<h3>fixed<wbr>Time<wbr>Step</h3>
-					<div class="tsd-signature tsd-kind-icon">fixed<wbr>Time<wbr>Step<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1.0 / 60.0</span></div>
+					<div class="tsd-signature tsd-kind-icon">fixed<wbr>Time<wbr>Step<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1.0 / 60.0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L145">laya/d3/physics/PhysicsSimulation.ts:145</a></li>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:145</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>物理模拟器帧的间隔时间:通过减少fixedTimeStep可增加模拟精度，默认是1.0 / 60.0。</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="maxsubsteps" class="tsd-anchor"></a>
 					<h3>max<wbr>Sub<wbr>Steps</h3>
-					<div class="tsd-signature tsd-kind-icon">max<wbr>Sub<wbr>Steps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Sub<wbr>Steps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L143">laya/d3/physics/PhysicsSimulation.ts:143</a></li>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:143</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>物理引擎在一帧中用于补偿减速的最大次数：模拟器每帧允许的最大模拟次数，如果引擎运行缓慢,可能需要增加该次数，否则模拟器会丢失“时间&quot;,引擎间隔时间小于maxSubSteps*fixedTimeStep非常重要。</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="physicsengineflags_collisionsonly" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> PHYSICSENGINEFLAGS_<wbr>COLLISIONSONLY</h3>
+					<div class="tsd-signature tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>COLLISIONSONLY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:30</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="physicsengineflags_multithreaded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> PHYSICSENGINEFLAGS_<wbr>MULTITHREADED</h3>
+					<div class="tsd-signature tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>MULTITHREADED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:34</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="physicsengineflags_none" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> PHYSICSENGINEFLAGS_<wbr>NONE</h3>
+					<div class="tsd-signature tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>NONE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="physicsengineflags_softbodysupport" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> PHYSICSENGINEFLAGS_<wbr>SOFTBODYSUPPORT</h3>
+					<div class="tsd-signature tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>SOFTBODYSUPPORT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:32</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="physicsengineflags_usehardwarewhenpossible" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> PHYSICSENGINEFLAGS_<wbr>USEHARDWAREWHENPOSSIBLE</h3>
+					<div class="tsd-signature tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>USEHARDWAREWHENPOSSIBLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 8</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:36</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_allow_zero_length_friction_directions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>ALLOW_<wbr>ZERO_<wbr>LENGTH_<wbr>FRICTION_<wbr>DIRECTIONS</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>ALLOW_<wbr>ZERO_<wbr>LENGTH_<wbr>FRICTION_<wbr>DIRECTIONS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1024</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:57</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_cache_friendly" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>CACHE_<wbr>FRIENDLY</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>CACHE_<wbr>FRIENDLY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 128</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:51</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_disable_velocity_dependent_friction_direction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>DISABLE_<wbr>VELOCITY_<wbr>DEPENDENT_<wbr>FRICTION_<wbr>DIRECTION</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>DISABLE_<wbr>VELOCITY_<wbr>DEPENDENT_<wbr>FRICTION_<wbr>DIRECTION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 64</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:49</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_enable_friction_direction_caching" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>ENABLE_<wbr>FRICTION_<wbr>DIRECTION_<wbr>CACHING</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>ENABLE_<wbr>FRICTION_<wbr>DIRECTION_<wbr>CACHING<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 32</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:47</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_friction_separate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>FRICTION_<wbr>SEPARATE</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>FRICTION_<wbr>SEPARATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:41</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_interleave_contact_and_friction_constraints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>INTERLEAVE_<wbr>CONTACT_<wbr>AND_<wbr>FRICTION_<wbr>CONSTRAINTS</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>INTERLEAVE_<wbr>CONTACT_<wbr>AND_<wbr>FRICTION_<wbr>CONSTRAINTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 512</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:55</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_randmize_order" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>RANDMIZE_<wbr>ORDER</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>RANDMIZE_<wbr>ORDER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:39</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_simd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>SIMD</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>SIMD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 256</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:53</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_use_2_friction_directions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>USE_<wbr>2_FRICTION_<wbr>DIRECTIONS</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>USE_<wbr>2_FRICTION_<wbr>DIRECTIONS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 16</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:45</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="solvermode_use_warmstarting" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SOLVERMODE_<wbr>USE_<wbr>WARMSTARTING</h3>
+					<div class="tsd-signature tsd-kind-icon">SOLVERMODE_<wbr>USE_<wbr>WARMSTARTING<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:43</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="disablesimulation" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> disable<wbr>Simulation</h3>
-					<div class="tsd-signature tsd-kind-icon">disable<wbr>Simulation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<div class="tsd-signature tsd-kind-icon">disable<wbr>Simulation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L75">laya/d3/physics/PhysicsSimulation.ts:75</a></li>
+							<li>Defined in laya/d3/physics/PhysicsSimulation.ts:75</li>
 						</ul>
 					</aside>
 				</section>
@@ -152,28 +531,470 @@
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="continuouscollisiondetection" class="tsd-anchor"></a>
 					<h3>continuous<wbr>Collision<wbr>Detection</h3>
-					<div class="tsd-signature tsd-kind-icon">continuous<wbr>Collision<wbr>Detection<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L150">laya/d3/physics/PhysicsSimulation.ts:150</a></li>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L154">laya/d3/physics/PhysicsSimulation.ts:154</a></li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> continuousCollisionDetection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> continuousCollisionDetection<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:150</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>是否进行连续碰撞检测。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:154</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>是否进行连续碰撞检测。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
 					<a name="gravity" class="tsd-anchor"></a>
 					<h3>gravity</h3>
-					<div class="tsd-signature tsd-kind-icon">gravity<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L161">laya/d3/physics/PhysicsSimulation.ts:161</a></li>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L167">laya/d3/physics/PhysicsSimulation.ts:167</a></li>
-						</ul>
-					</aside>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> gravity<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> gravity<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:161</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取重力。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:167</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取重力。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="speculativecontactrestitution" class="tsd-anchor"></a>
+					<h3>speculative<wbr>Contact<wbr>Restitution</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> speculativeContactRestitution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> speculativeContactRestitution<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:181</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:190</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_addcharacter" class="tsd-anchor"></a>
+					<h3>_add<wbr>Character</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_add<wbr>Character<span class="tsd-signature-symbol">(</span>character<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_charactercontroller_.charactercontroller.html" class="tsd-signature-type">CharacterController</a>, group<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, mask<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:302</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>character: <a href="_laya_d3_physics_charactercontroller_.charactercontroller.html" class="tsd-signature-type">CharacterController</a></h5>
+								</li>
+								<li>
+									<h5>group: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>mask: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_addphysicscollider" class="tsd-anchor"></a>
+					<h3>_add<wbr>Physics<wbr>Collider</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_add<wbr>Physics<wbr>Collider<span class="tsd-signature-symbol">(</span>component<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_physicscollider_.physicscollider.html" class="tsd-signature-type">PhysicsCollider</a>, group<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, mask<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:270</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>component: <a href="_laya_d3_physics_physicscollider_.physicscollider.html" class="tsd-signature-type">PhysicsCollider</a></h5>
+								</li>
+								<li>
+									<h5>group: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>mask: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_addrigidbody" class="tsd-anchor"></a>
+					<h3>_add<wbr>Rigid<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_add<wbr>Rigid<wbr>Body<span class="tsd-signature-symbol">(</span>rigidBody<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html" class="tsd-signature-type">Rigidbody3D</a>, group<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, mask<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:284</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rigidBody: <a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html" class="tsd-signature-type">Rigidbody3D</a></h5>
+								</li>
+								<li>
+									<h5>group: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>mask: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_destroy" class="tsd-anchor"></a>
+					<h3>_destroy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_destroy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:249</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_eventscripts" class="tsd-anchor"></a>
+					<h3>_event<wbr>Scripts</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_event<wbr>Scripts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:754</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_removecharacter" class="tsd-anchor"></a>
+					<h3>_remove<wbr>Character</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_remove<wbr>Character<span class="tsd-signature-symbol">(</span>character<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_charactercontroller_.charactercontroller.html" class="tsd-signature-type">CharacterController</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:313</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>character: <a href="_laya_d3_physics_charactercontroller_.charactercontroller.html" class="tsd-signature-type">CharacterController</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_removephysicscollider" class="tsd-anchor"></a>
+					<h3>_remove<wbr>Physics<wbr>Collider</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_remove<wbr>Physics<wbr>Collider<span class="tsd-signature-symbol">(</span>component<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_physicscollider_.physicscollider.html" class="tsd-signature-type">PhysicsCollider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:277</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>component: <a href="_laya_d3_physics_physicscollider_.physicscollider.html" class="tsd-signature-type">PhysicsCollider</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_removerigidbody" class="tsd-anchor"></a>
+					<h3>_remove<wbr>Rigid<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_remove<wbr>Rigid<wbr>Body<span class="tsd-signature-symbol">(</span>rigidBody<span class="tsd-signature-symbol">: </span><a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html" class="tsd-signature-type">Rigidbody3D</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:293</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rigidBody: <a href="_laya_d3_physics_rigidbody3d_.rigidbody3d.html" class="tsd-signature-type">Rigidbody3D</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_simulate" class="tsd-anchor"></a>
+					<h3>_simulate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_simulate<span class="tsd-signature-symbol">(</span>deltaTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:237</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>deltaTime: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_updatecharacters" class="tsd-anchor"></a>
+					<h3>_update<wbr>Characters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_update<wbr>Characters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:660</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_updatecollisions" class="tsd-anchor"></a>
+					<h3>_update<wbr>Collisions</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_update<wbr>Collisions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:670</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="_updatephysicstransformfromrender" class="tsd-anchor"></a>
+					<h3>_update<wbr>Physics<wbr>Transform<wbr>From<wbr>Render</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">_update<wbr>Physics<wbr>Transform<wbr>From<wbr>Render<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:647</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="addconstraint" class="tsd-anchor"></a>
 					<h3>add<wbr>Constraint</h3>
@@ -184,16 +1005,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L625">laya/d3/physics/PhysicsSimulation.ts:625</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:625</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>添加刚体运动的约束条件。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>constraint: <a href="_laya_d3_physics_constraints_constraintcomponent_.constraintcomponent.html" class="tsd-signature-type">ConstraintComponent</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>约束。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> disableCollisionsBetweenLinkedBodies: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> disableCollisionsBetweenLinkedBodies: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>是否禁用</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -210,9 +1042,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L896">laya/d3/physics/PhysicsSimulation.ts:896</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:896</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>清除力。</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -227,25 +1064,42 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L438">laya/d3/physics/PhysicsSimulation.ts:438</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:438</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p> 射线检测第一个碰撞物体。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> outHitResult: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> outHitResult: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> = null</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> distance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2147483647</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> distance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2147483647</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线长度,默认为最大值</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线所属碰撞组。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>与射线可产生碰撞的组。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -263,25 +1117,45 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L456">laya/d3/physics/PhysicsSimulation.ts:456</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:456</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>射线检测所有碰撞的物体。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>碰撞结果[数组元素会被回收]。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> distance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2147483647</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> distance: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 2147483647</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线长度,默认为最大值</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线所属碰撞组。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>与射线可产生碰撞的组。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -299,25 +1173,45 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L378">laya/d3/physics/PhysicsSimulation.ts:378</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:378</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>射线检测所有碰撞的物体。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>from: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>起始位置。</p>
+									</div>
 								</li>
 								<li>
 									<h5>to: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>结束位置。</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>碰撞结果[数组元素会被回收]。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线所属碰撞组。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>与射线可产生碰撞的组。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -335,25 +1229,45 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L330">laya/d3/physics/PhysicsSimulation.ts:330</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:330</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>射线检测第一个碰撞物体。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>from: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>起始位置。</p>
+									</div>
 								</li>
 								<li>
 									<h5>to: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>结束位置。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>碰撞结果。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线所属碰撞组。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>与射线可产生碰撞的组。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -371,9 +1285,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L636">laya/d3/physics/PhysicsSimulation.ts:636</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:636</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>移除刚体运动的约束条件。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -394,37 +1313,66 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L477">laya/d3/physics/PhysicsSimulation.ts:477</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:477</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>形状检测第一个碰撞的物体。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>shape: <a href="_laya_d3_physics_shape_collidershape_.collidershape.html" class="tsd-signature-type">ColliderShape</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>形状。</p>
+									</div>
 								</li>
 								<li>
 									<h5>fromPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>世界空间起始位置。</p>
+									</div>
 								</li>
 								<li>
 									<h5>toPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>世界空间结束位置。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>碰撞结果。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>起始旋转。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> toRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> toRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>结束旋转。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线所属碰撞组。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>与射线可产生碰撞的组。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> allowedCcdPenetration: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> allowedCcdPenetration: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -442,41 +1390,93 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L551">laya/d3/physics/PhysicsSimulation.ts:551</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:551</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>形状检测所有碰撞的物体。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>shape: <a href="_laya_d3_physics_shape_collidershape_.collidershape.html" class="tsd-signature-type">ColliderShape</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>形状。</p>
+									</div>
 								</li>
 								<li>
 									<h5>fromPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>世界空间起始位置。</p>
+									</div>
 								</li>
 								<li>
 									<h5>toPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>世界空间结束位置。</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_physics_hitresult_.hitresult.html" class="tsd-signature-type">HitResult</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>碰撞结果[数组元素会被回收]。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fromRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>起始旋转。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> toRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> toRotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>结束旋转。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisonGroup: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线所属碰撞组。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> collisionMask: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Physics3DUtils.COLLISIONFILTERGROUP_ALLFILTER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>与射线可产生碰撞的组。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> allowedCcdPenetration: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> allowedCcdPenetration: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>是否成功。</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="__init__" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> __init__</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">__init__<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:80</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -490,9 +1490,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/physics/PhysicsSimulation.ts#L93">laya/d3/physics/PhysicsSimulation.ts:93</a></li>
+									<li>Defined in laya/d3/physics/PhysicsSimulation.ts:93</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>创建限制刚体运动的约束条件。</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -505,8 +1510,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_laya_d3_physics_physicssimulation_.html">"laya/d3/physics/<wbr>Physics<wbr>Simulation"</a>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_laya_d3_physics_physicssimulation_.html">&quot;laya/d3/physics/<wbr>Physics<wbr>Simulation&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -514,14 +1519,71 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html" class="tsd-kind-icon">Physics<wbr>Simulation</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_characters" class="tsd-kind-icon">_characters</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_physicsupdatelist" class="tsd-kind-icon">_physics<wbr>Update<wbr>List</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_updatedrigidbodies" class="tsd-kind-icon">_updated<wbr>Rigidbodies</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#fixedtimestep" class="tsd-kind-icon">fixed<wbr>Time<wbr>Step</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#maxsubsteps" class="tsd-kind-icon">max<wbr>Sub<wbr>Steps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_collisionsonly" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>COLLISIONSONLY</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_multithreaded" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>MULTITHREADED</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_none" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>NONE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_softbodysupport" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>SOFTBODYSUPPORT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#physicsengineflags_usehardwarewhenpossible" class="tsd-kind-icon">PHYSICSENGINEFLAGS_<wbr>USEHARDWAREWHENPOSSIBLE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_allow_zero_length_friction_directions" class="tsd-kind-icon">SOLVERMODE_<wbr>ALLOW_<wbr>ZERO_<wbr>LENGTH_<wbr>FRICTION_<wbr>DIRECTIONS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_cache_friendly" class="tsd-kind-icon">SOLVERMODE_<wbr>CACHE_<wbr>FRIENDLY</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_disable_velocity_dependent_friction_direction" class="tsd-kind-icon">SOLVERMODE_<wbr>DISABLE_<wbr>VELOCITY_<wbr>DEPENDENT_<wbr>FRICTION_<wbr>DIRECTION</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_enable_friction_direction_caching" class="tsd-kind-icon">SOLVERMODE_<wbr>ENABLE_<wbr>FRICTION_<wbr>DIRECTION_<wbr>CACHING</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_friction_separate" class="tsd-kind-icon">SOLVERMODE_<wbr>FRICTION_<wbr>SEPARATE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_interleave_contact_and_friction_constraints" class="tsd-kind-icon">SOLVERMODE_<wbr>INTERLEAVE_<wbr>CONTACT_<wbr>AND_<wbr>FRICTION_<wbr>CONSTRAINTS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_randmize_order" class="tsd-kind-icon">SOLVERMODE_<wbr>RANDMIZE_<wbr>ORDER</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_simd" class="tsd-kind-icon">SOLVERMODE_<wbr>SIMD</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_use_2_friction_directions" class="tsd-kind-icon">SOLVERMODE_<wbr>USE_<wbr>2_FRICTION_<wbr>DIRECTIONS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#solvermode_use_warmstarting" class="tsd-kind-icon">SOLVERMODE_<wbr>USE_<wbr>WARMSTARTING</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#disablesimulation" class="tsd-kind-icon">disable<wbr>Simulation</a>
@@ -531,6 +1593,45 @@
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#gravity" class="tsd-kind-icon">gravity</a>
+							</li>
+							<li class=" tsd-kind-accessor tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#speculativecontactrestitution" class="tsd-kind-icon">speculative<wbr>Contact<wbr>Restitution</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_addcharacter" class="tsd-kind-icon">_add<wbr>Character</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_addphysicscollider" class="tsd-kind-icon">_add<wbr>Physics<wbr>Collider</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_addrigidbody" class="tsd-kind-icon">_add<wbr>Rigid<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_destroy" class="tsd-kind-icon">_destroy</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_eventscripts" class="tsd-kind-icon">_event<wbr>Scripts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_removecharacter" class="tsd-kind-icon">_remove<wbr>Character</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_removephysicscollider" class="tsd-kind-icon">_remove<wbr>Physics<wbr>Collider</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_removerigidbody" class="tsd-kind-icon">_remove<wbr>Rigid<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_simulate" class="tsd-kind-icon">_simulate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_updatecharacters" class="tsd-kind-icon">_update<wbr>Characters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_updatecollisions" class="tsd-kind-icon">_update<wbr>Collisions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#_updatephysicstransformfromrender" class="tsd-kind-icon">_update<wbr>Physics<wbr>Transform<wbr>From<wbr>Render</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#addconstraint" class="tsd-kind-icon">add<wbr>Constraint</a>
@@ -560,6 +1661,9 @@
 								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#shapecastall" class="tsd-kind-icon">shape<wbr>Cast<wbr>All</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#__init__" class="tsd-kind-icon">__init__</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_d3_physics_physicssimulation_.physicssimulation.html#createconstraint" class="tsd-kind-icon">create<wbr>Constraint</a>
 							</li>
 						</ul>
@@ -576,57 +1680,26 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

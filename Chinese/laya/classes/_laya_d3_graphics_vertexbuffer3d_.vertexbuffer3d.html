@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VertexBuffer3D | zqx</title>
-	<meta name="description" content="">
+	<title>VertexBuffer3D | Laya API</title>
+	<meta name="description" content="Documentation for Laya API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">zqx</a>
+					<a href="../index.html" class="title">Laya API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,6 +69,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p><code>VertexBuffer3D</code> 类用于创建顶点缓冲。</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -96,6 +103,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_bytelength" class="tsd-kind-icon">_byte<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_float32reader" class="tsd-kind-icon">_float32<wbr>Reader</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_vertexdeclaration" class="tsd-kind-icon">_vertex<wbr>Declaration</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#datatype_float32array" class="tsd-kind-icon">DATATYPE_<wbr>FLOAT32ARRAY</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#datatype_uint8array" class="tsd-kind-icon">DATATYPE_<wbr>UINT8ARRAY</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_bindedindexbuffer" class="tsd-kind-icon">_binded<wbr>Index<wbr>Buffer</a></li>
@@ -113,7 +122,6 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_bindforvao" class="tsd-kind-icon">_bind<wbr>ForVAO</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#bind" class="tsd-kind-icon">bind</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#destroy" class="tsd-kind-icon">destroy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#getuint8data" class="tsd-kind-icon">get<wbr>Uint8<wbr>Data</a></li>
@@ -137,19 +145,39 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L42">laya/d3/graphics/VertexBuffer3D.ts:42</a></li>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:42</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>创建一个 <code>VertexBuffer3D</code> 实例。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>byteLength: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>字节长度。</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>bufferUsage: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>VertexBuffer3D用途类型。</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> canRead: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> canRead: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>是否可读。</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html" class="tsd-signature-type">VertexBuffer3D</a></h4>
@@ -162,33 +190,75 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="_bytelength" class="tsd-anchor"></a>
 					<h3>_byte<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">_byte<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<div class="tsd-signature tsd-kind-icon">_byte<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#_bytelength">_byteLength</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/webgl/utils/Buffer.ts#L13">laya/webgl/utils/Buffer.ts:13</a></li>
+							<li>Defined in laya/webgl/utils/Buffer.ts:13</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_float32reader" class="tsd-anchor"></a>
+					<h3>_float32<wbr>Reader</h3>
+					<div class="tsd-signature tsd-kind-icon">_float32<wbr>Reader<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:22</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="_vertexdeclaration" class="tsd-anchor"></a>
+					<h3>_vertex<wbr>Declaration</h3>
+					<div class="tsd-signature tsd-kind-icon">_vertex<wbr>Declaration<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_graphics_vertexdeclaration_.vertexdeclaration.html" class="tsd-signature-type">VertexDeclaration</a><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:20</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="datatype_float32array" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> DATATYPE_<wbr>FLOAT32ARRAY</h3>
-					<div class="tsd-signature tsd-kind-icon">DATATYPE_<wbr>FLOAT32ARRAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<div class="tsd-signature tsd-kind-icon">DATATYPE_<wbr>FLOAT32ARRAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L12">laya/d3/graphics/VertexBuffer3D.ts:12</a></li>
+							<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:12</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>数据类型_Float32Array类型。</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="datatype_uint8array" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> DATATYPE_<wbr>UINT8ARRAY</h3>
-					<div class="tsd-signature tsd-kind-icon">DATATYPE_<wbr>UINT8ARRAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+					<div class="tsd-signature tsd-kind-icon">DATATYPE_<wbr>UINT8ARRAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L14">laya/d3/graphics/VertexBuffer3D.ts:14</a></li>
+							<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:14</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>数据类型_Uint8Array类型。</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="_bindedindexbuffer" class="tsd-anchor"></a>
@@ -197,7 +267,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#_bindedindexbuffer">_bindedIndexBuffer</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/webgl/utils/Buffer.ts#L5">laya/webgl/utils/Buffer.ts:5</a></li>
+							<li>Defined in laya/webgl/utils/Buffer.ts:5</li>
 						</ul>
 					</aside>
 				</section>
@@ -208,7 +278,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#_bindedvertexbuffer">_bindedVertexBuffer</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/webgl/utils/Buffer.ts#L4">laya/webgl/utils/Buffer.ts:4</a></li>
+							<li>Defined in laya/webgl/utils/Buffer.ts:4</li>
 						</ul>
 					</aside>
 				</section>
@@ -218,56 +288,88 @@
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 					<a name="bufferusage" class="tsd-anchor"></a>
 					<h3>buffer<wbr>Usage</h3>
-					<div class="tsd-signature tsd-kind-icon">buffer<wbr>Usage<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#bufferusage">bufferUsage</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/webgl/utils/Buffer.ts#L15">laya/webgl/utils/Buffer.ts:15</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="canread" class="tsd-anchor"></a>
-					<h3>can<wbr>Read</h3>
-					<div class="tsd-signature tsd-kind-icon">can<wbr>Read<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L40">laya/d3/graphics/VertexBuffer3D.ts:40</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
-					<a name="vertexdeclaration" class="tsd-anchor"></a>
-					<h3>vertex<wbr>Declaration</h3>
-					<div class="tsd-signature tsd-kind-icon">vertex<wbr>Declaration<span class="tsd-signature-symbol">:</span> </div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L27">laya/d3/graphics/VertexBuffer3D.ts:27</a></li>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L31">laya/d3/graphics/VertexBuffer3D.ts:31</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
-					<a name="_bindforvao" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _bind<wbr>ForVAO</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">_bind<wbr>ForVAO<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> bufferUsage<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#_bindforvao">_bindForVAO</a></p>
+								<p>Inherited from <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#bufferusage">bufferUsage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/webgl/utils/Buffer.ts#L27">laya/webgl/utils/Buffer.ts:27</a></li>
+									<li>Defined in laya/webgl/utils/Buffer.ts:15</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="canread" class="tsd-anchor"></a>
+					<h3>can<wbr>Read</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> canRead<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:40</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>是否可读。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class">
+					<a name="vertexdeclaration" class="tsd-anchor"></a>
+					<h3>vertex<wbr>Declaration</h3>
+					<ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> vertexDeclaration<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_graphics_vertexdeclaration_.vertexdeclaration.html" class="tsd-signature-type">VertexDeclaration</a></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">set</span> vertexDeclaration<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><a href="_laya_d3_graphics_vertexdeclaration_.vertexdeclaration.html" class="tsd-signature-type">VertexDeclaration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:27</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取顶点声明。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_graphics_vertexdeclaration_.vertexdeclaration.html" class="tsd-signature-type">VertexDeclaration</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:31</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取顶点声明。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <a href="_laya_d3_graphics_vertexdeclaration_.vertexdeclaration.html" class="tsd-signature-type">VertexDeclaration</a></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="bind" class="tsd-anchor"></a>
 					<h3>bind</h3>
@@ -277,11 +379,19 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#bind">bind</a></p>
+								<p>Overrides Buffer.bind</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L70">laya/d3/graphics/VertexBuffer3D.ts:70</a></li>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:70</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
@@ -295,11 +405,19 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_laya_webgl_utils_buffer_.buffer.html">Buffer</a>.<a href="_laya_webgl_utils_buffer_.buffer.html#destroy">destroy</a></p>
+								<p>Overrides Buffer.destroy</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L146">laya/d3/graphics/VertexBuffer3D.ts:146</a></li>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:146</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+									<dt>override</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -314,9 +432,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L116">laya/d3/graphics/VertexBuffer3D.ts:116</a></li>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:116</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取顶点数据。</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
 							<p>顶点数据。</p>
 						</li>
@@ -332,9 +455,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L84">laya/d3/graphics/VertexBuffer3D.ts:84</a></li>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:84</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>剥离内存块存储。</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -349,22 +477,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/graphics/VertexBuffer3D.ts#L96">laya/d3/graphics/VertexBuffer3D.ts:96</a></li>
+									<li>Defined in laya/d3/graphics/VertexBuffer3D.ts:96</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>设置数据。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>buffer: <span class="tsd-signature-type">ArrayBuffer</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> bufferOffset: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> bufferOffset: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>顶点缓冲中的偏移,以字节为单位。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dataStartIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dataStartIndex: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>顶点数据的偏移,以字节为单位。</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dataCount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Number.MAX_SAFE_INTEGER</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dataCount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = Number.MAX_SAFE_INTEGER</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>顶点数据的长度,以字节为单位。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -379,8 +521,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_laya_d3_graphics_vertexbuffer3d_.html">"laya/d3/graphics/<wbr>Vertex<wbr>Buffer3<wbr>D"</a>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_laya_d3_graphics_vertexbuffer3d_.html">&quot;laya/d3/graphics/<wbr>Vertex<wbr>Buffer3<wbr>D&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -388,7 +530,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html" class="tsd-kind-icon">Vertex<wbr>Buffer3D</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
@@ -396,6 +538,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_bytelength" class="tsd-kind-icon">_byte<wbr>Length</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_float32reader" class="tsd-kind-icon">_float32<wbr>Reader</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_vertexdeclaration" class="tsd-kind-icon">_vertex<wbr>Declaration</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#datatype_float32array" class="tsd-kind-icon">DATATYPE_<wbr>FLOAT32ARRAY</a>
@@ -417,9 +565,6 @@
 							</li>
 							<li class=" tsd-kind-accessor tsd-parent-kind-class">
 								<a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#vertexdeclaration" class="tsd-kind-icon">vertex<wbr>Declaration</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-private">
-								<a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#_bindforvao" class="tsd-kind-icon">_bind<wbr>ForVAO</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_laya_d3_graphics_vertexbuffer3d_.vertexbuffer3d.html#bind" class="tsd-kind-icon">bind</a>
@@ -450,57 +595,28 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

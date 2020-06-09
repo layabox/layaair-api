@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SoundManager | zqx</title>
-	<meta name="description" content="">
+	<title>SoundManager | Laya API</title>
+	<meta name="description" content="Documentation for Laya API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">zqx</a>
+					<a href="../index.html" class="title">Laya API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -96,6 +96,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#_bgmusic" class="tsd-kind-icon">_bg<wbr>Music</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#_musicclass" class="tsd-kind-icon">_music<wbr>Class</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#_soundclass" class="tsd-kind-icon">_sound<wbr>Class</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#autoreleasesound" class="tsd-kind-icon">auto<wbr>Release<wbr>Sound</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#musicvolume" class="tsd-kind-icon">music<wbr>Volume</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#playbackrate" class="tsd-kind-icon">playback<wbr>Rate</a></li>
@@ -115,10 +118,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#__init__" class="tsd-kind-icon">__init__</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#addchannel" class="tsd-kind-icon">add<wbr>Channel</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#destroysound" class="tsd-kind-icon">destroy<wbr>Sound</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#disposesoundifnotused" class="tsd-kind-icon">dispose<wbr>Sound<wbr>IfNot<wbr>Used</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#disposesoundlater" class="tsd-kind-icon">dispose<wbr>Sound<wbr>Later</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#playmusic" class="tsd-kind-icon">play<wbr>Music</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#playsound" class="tsd-kind-icon">play<wbr>Sound</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_media_soundmanager_.soundmanager.html#removechannel" class="tsd-kind-icon">remove<wbr>Channel</a></li>
@@ -136,12 +138,71 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="autoreleasesound" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> auto<wbr>Release<wbr>Sound</h3>
-					<div class="tsd-signature tsd-kind-icon">auto<wbr>Release<wbr>Sound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+					<a name="_bgmusic" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> _bg<wbr>Music</h3>
+					<div class="tsd-signature tsd-kind-icon">_bg<wbr>Music<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L88">laya/media/SoundManager.ts:88</a></li>
+							<li>Defined in laya/media/SoundManager.ts:52</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd><p>当前背景音乐url。</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="_musicclass" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> _music<wbr>Class</h3>
+					<div class="tsd-signature tsd-kind-icon">_music<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/media/SoundManager.ts:66</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="_soundclass" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> _sound<wbr>Class</h3>
+					<div class="tsd-signature tsd-kind-icon">_sound<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/media/SoundManager.ts:64</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="autoreleasesound" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> auto<wbr>Release<wbr>Sound</h3>
+					<div class="tsd-signature tsd-kind-icon">auto<wbr>Release<wbr>Sound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/media/SoundManager.ts:88</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -158,10 +219,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="musicvolume" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> music<wbr>Volume</h3>
-					<div class="tsd-signature tsd-kind-icon">music<wbr>Volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+					<div class="tsd-signature tsd-kind-icon">music<wbr>Volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L29">laya/media/SoundManager.ts:29</a></li>
+							<li>Defined in laya/media/SoundManager.ts:29</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -178,10 +239,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="playbackrate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> playback<wbr>Rate</h3>
-					<div class="tsd-signature tsd-kind-icon">playback<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+					<div class="tsd-signature tsd-kind-icon">playback<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L39">laya/media/SoundManager.ts:39</a></li>
+							<li>Defined in laya/media/SoundManager.ts:39</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,10 +259,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="soundvolume" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> sound<wbr>Volume</h3>
-					<div class="tsd-signature tsd-kind-icon">sound<wbr>Volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+					<div class="tsd-signature tsd-kind-icon">sound<wbr>Volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L34">laya/media/SoundManager.ts:34</a></li>
+							<li>Defined in laya/media/SoundManager.ts:34</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -229,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L171">laya/media/SoundManager.ts:171</a></li>
+									<li>Defined in laya/media/SoundManager.ts:171</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,7 +303,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L156">laya/media/SoundManager.ts:156</a></li>
+									<li>Defined in laya/media/SoundManager.ts:156</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -255,9 +316,7 @@
 								<li>
 									<h5>v: <span class="tsd-signature-type">boolean</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Boolean 失去焦点后是否自动停止背景音乐。</p>
-										</div>
+										<p>Boolean 失去焦点后是否自动停止背景音乐。</p>
 									</div>
 								</li>
 							</ul>
@@ -276,7 +335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L279">laya/media/SoundManager.ts:279</a></li>
+									<li>Defined in laya/media/SoundManager.ts:279</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L244">laya/media/SoundManager.ts:244</a></li>
+									<li>Defined in laya/media/SoundManager.ts:244</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,7 +377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L226">laya/media/SoundManager.ts:226</a></li>
+									<li>Defined in laya/media/SoundManager.ts:226</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -331,7 +390,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L217">laya/media/SoundManager.ts:217</a></li>
+									<li>Defined in laya/media/SoundManager.ts:217</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -360,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L237">laya/media/SoundManager.ts:237</a></li>
+									<li>Defined in laya/media/SoundManager.ts:237</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,7 +432,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L233">laya/media/SoundManager.ts:233</a></li>
+									<li>Defined in laya/media/SoundManager.ts:233</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -402,7 +461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L283">laya/media/SoundManager.ts:283</a></li>
+									<li>Defined in laya/media/SoundManager.ts:283</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -410,7 +469,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L287">laya/media/SoundManager.ts:287</a></li>
+									<li>Defined in laya/media/SoundManager.ts:287</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -427,6 +486,29 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="__init__" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> __init__</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">__init__<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/media/SoundManager.ts:73</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="addchannel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> add<wbr>Channel</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -436,7 +518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L94">laya/media/SoundManager.ts:94</a></li>
+									<li>Defined in laya/media/SoundManager.ts:94</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -467,7 +549,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L347">laya/media/SoundManager.ts:347</a></li>
+									<li>Defined in laya/media/SoundManager.ts:347</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -488,56 +570,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-					<a name="disposesoundifnotused" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> dispose<wbr>Sound<wbr>IfNot<wbr>Used</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">dispose<wbr>Sound<wbr>IfNot<wbr>Used<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L141">laya/media/SoundManager.ts:141</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>url: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-					<a name="disposesoundlater" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> dispose<wbr>Sound<wbr>Later</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">dispose<wbr>Sound<wbr>Later<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L113">laya/media/SoundManager.ts:113</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>url: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="playmusic" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> play<wbr>Music</h3>
@@ -548,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L363">laya/media/SoundManager.ts:363</a></li>
+									<li>Defined in laya/media/SoundManager.ts:363</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -565,19 +597,19 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> loops: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> loops: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>循环次数,0表示无限循环。</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> complete: <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> complete: <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a><span class="tsd-signature-symbol"> = null</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>声音播放完成回调。</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> startTime: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> startTime: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>声音播放起始时间。</p>
 									</div>
@@ -592,13 +624,13 @@
 					<a name="playsound" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> play<wbr>Sound</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">play<wbr>Sound<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, loops<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, complete<span class="tsd-signature-symbol">?: </span><a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a>, soundClass<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span>, startTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_media_soundchannel_.soundchannel.html" class="tsd-signature-type">SoundChannel</a></li>
+						<li class="tsd-signature tsd-kind-icon">play<wbr>Sound<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, loops<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, complete<span class="tsd-signature-symbol">?: </span><a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a>, soundClass<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span>, startTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_media_soundchannel_.soundchannel.html" class="tsd-signature-type">SoundChannel</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L305">laya/media/SoundManager.ts:305</a></li>
+									<li>Defined in laya/media/SoundManager.ts:305</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,19 +647,19 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> loops: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> loops: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>循环次数,0表示无限循环。</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> complete: <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> complete: <a href="_laya_utils_handler_.handler.html" class="tsd-signature-type">Handler</a><span class="tsd-signature-symbol"> = null</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>声音播放完成回调  Handler对象。</p>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> soundClass: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> soundClass: <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = null</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>使用哪个声音类进行播放，null表示自动选择。</p>
 									</div>
@@ -635,7 +667,7 @@
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> startTime: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> startTime: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>声音播放起始时间。</p>
 									</div>
@@ -656,7 +688,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L103">laya/media/SoundManager.ts:103</a></li>
+									<li>Defined in laya/media/SoundManager.ts:103</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -687,7 +719,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L448">laya/media/SoundManager.ts:448</a></li>
+									<li>Defined in laya/media/SoundManager.ts:448</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -718,7 +750,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L427">laya/media/SoundManager.ts:427</a></li>
+									<li>Defined in laya/media/SoundManager.ts:427</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -735,7 +767,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>(default = null)声音播放地址。默认为null。为空表示设置所有音效（不包括背景音乐）的音量，不为空表示设置指定声音（背景音乐或音效）的音量。</p>
 									</div>
@@ -755,7 +787,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L389">laya/media/SoundManager.ts:389</a></li>
+									<li>Defined in laya/media/SoundManager.ts:389</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -777,7 +809,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L402">laya/media/SoundManager.ts:402</a></li>
+									<li>Defined in laya/media/SoundManager.ts:402</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -799,7 +831,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L417">laya/media/SoundManager.ts:417</a></li>
+									<li>Defined in laya/media/SoundManager.ts:417</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -821,7 +853,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/layabox/LayaAir/blob/8b04e600/src/layaAir/laya/media/SoundManager.ts#L374">laya/media/SoundManager.ts:374</a></li>
+									<li>Defined in laya/media/SoundManager.ts:374</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -850,8 +882,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_laya_media_soundmanager_.html">"laya/media/<wbr>Sound<wbr>Manager"</a>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_laya_media_soundmanager_.html">&quot;laya/media/<wbr>Sound<wbr>Manager&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -859,9 +891,18 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_laya_media_soundmanager_.soundmanager.html" class="tsd-kind-icon">Sound<wbr>Manager</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_media_soundmanager_.soundmanager.html#_bgmusic" class="tsd-kind-icon">_bg<wbr>Music</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_media_soundmanager_.soundmanager.html#_musicclass" class="tsd-kind-icon">_music<wbr>Class</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_media_soundmanager_.soundmanager.html#_soundclass" class="tsd-kind-icon">_sound<wbr>Class</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_media_soundmanager_.soundmanager.html#autoreleasesound" class="tsd-kind-icon">auto<wbr>Release<wbr>Sound</a>
 							</li>
@@ -890,16 +931,13 @@
 								<a href="_laya_media_soundmanager_.soundmanager.html#useaudiomusic" class="tsd-kind-icon">use<wbr>Audio<wbr>Music</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_media_soundmanager_.soundmanager.html#__init__" class="tsd-kind-icon">__init__</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_media_soundmanager_.soundmanager.html#addchannel" class="tsd-kind-icon">add<wbr>Channel</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_media_soundmanager_.soundmanager.html#destroysound" class="tsd-kind-icon">destroy<wbr>Sound</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-								<a href="_laya_media_soundmanager_.soundmanager.html#disposesoundifnotused" class="tsd-kind-icon">dispose<wbr>Sound<wbr>IfNot<wbr>Used</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-								<a href="_laya_media_soundmanager_.soundmanager.html#disposesoundlater" class="tsd-kind-icon">dispose<wbr>Sound<wbr>Later</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_media_soundmanager_.soundmanager.html#playmusic" class="tsd-kind-icon">play<wbr>Music</a>
@@ -942,57 +980,22 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>

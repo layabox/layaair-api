@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Matrix4x4 | zqx</title>
-	<meta name="description" content="">
+	<title>Matrix4x4 | Laya API</title>
+	<meta name="description" content="Documentation for Laya API">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">zqx</a>
+					<a href="../index.html" class="title">Laya API</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,6 +69,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p><code>Matrix4x4</code> 类用于创建4x4矩阵。</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -80,7 +87,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_laya_d3_core_iclone_.iclone.html" class="tsd-signature-type">IClone</a></li>
+					<li><span class="tsd-signature-type">IClone</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -98,6 +105,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_d3_math_matrix4x4_.matrix4x4.html#elements" class="tsd-kind-icon">elements</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_matrix4x4_.matrix4x4.html#default" class="tsd-kind-icon">DEFAULT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_matrix4x4_.matrix4x4.html#tempmatrix0" class="tsd-kind-icon">TEMPMatrix0</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_matrix4x4_.matrix4x4.html#tempmatrix1" class="tsd-kind-icon">TEMPMatrix1</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_matrix4x4_.matrix4x4.html#zero" class="tsd-kind-icon">ZERO</a></li>
 							</ul>
 						</section>
@@ -157,61 +166,66 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L447">laya/d3/math/Matrix4x4.ts:447</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:447</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>创建一个 <code>Matrix4x4</code> 实例。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m11: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m11: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m12: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m12: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m13: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m13: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m14: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m14: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m21: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m21: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m22: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m22: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m23: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m23: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m24: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m24: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m31: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m31: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m32: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m32: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m33: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m33: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m34: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m34: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m41: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m41: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m42: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m42: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m43: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m43: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m44: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> m44: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> elements: <span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> elements: <span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol"> = null</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h4>
@@ -227,29 +241,76 @@
 					<div class="tsd-signature tsd-kind-icon">elements<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Float32Array</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L447">laya/d3/math/Matrix4x4.ts:447</a></li>
+							<li>Defined in laya/d3/math/Matrix4x4.ts:447</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>矩阵元素数组</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="default" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> DEFAULT</h3>
-					<div class="tsd-signature tsd-kind-icon">DEFAULT<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a><span class="tsd-signature-symbol"> =&nbsp;new Matrix4x4()</span></div>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a><span class="tsd-signature-symbol"> = new Matrix4x4()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L29">laya/d3/math/Matrix4x4.ts:29</a></li>
+							<li>Defined in laya/d3/math/Matrix4x4.ts:29</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>默认矩阵,禁止修改</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="tempmatrix0" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> TEMPMatrix0</h3>
+					<div class="tsd-signature tsd-kind-icon">TEMPMatrix0<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a><span class="tsd-signature-symbol"> = new Matrix4x4()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/math/Matrix4x4.ts:14</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="tempmatrix1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> TEMPMatrix1</h3>
+					<div class="tsd-signature tsd-kind-icon">TEMPMatrix1<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a><span class="tsd-signature-symbol"> = new Matrix4x4()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/d3/math/Matrix4x4.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="zero" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> ZERO</h3>
-					<div class="tsd-signature tsd-kind-icon">ZERO<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a><span class="tsd-signature-symbol"> =&nbsp;new Matrix4x4(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)</span></div>
+					<div class="tsd-signature tsd-kind-icon">ZERO<span class="tsd-signature-symbol">:</span> <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a><span class="tsd-signature-symbol"> = new Matrix4x4(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L31">laya/d3/math/Matrix4x4.ts:31</a></li>
+							<li>Defined in laya/d3/math/Matrix4x4.ts:31</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>默认矩阵,禁止修改</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -263,11 +324,15 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_laya_d3_core_iclone_.iclone.html">IClone</a>.<a href="../interfaces/_laya_d3_core_iclone_.iclone.html#clone">clone</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L775">laya/d3/math/Matrix4x4.ts:775</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:775</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>克隆。</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 							<p>克隆副本。</p>
 						</li>
@@ -282,15 +347,22 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_laya_d3_core_iclone_.iclone.html">IClone</a>.<a href="../interfaces/_laya_d3_core_iclone_.iclone.html#cloneto">cloneTo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L758">laya/d3/math/Matrix4x4.ts:758</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:758</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>克隆。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>destObject: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>克隆源。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -307,19 +379,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L527">laya/d3/math/Matrix4x4.ts:527</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:527</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>分解矩阵为平移向量、旋转矩阵、缩放向量。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>translation: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平移向量。</p>
+									</div>
 								</li>
 								<li>
 									<h5>rotationMatrix: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转矩阵。</p>
+									</div>
 								</li>
 								<li>
 									<h5>scale: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>缩放向量。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -337,19 +423,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L509">laya/d3/math/Matrix4x4.ts:509</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:509</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>分解矩阵为平移向量、旋转四元数、缩放向量。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>translation: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平移向量。</p>
+									</div>
 								</li>
 								<li>
 									<h5>rotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转四元数。</p>
+									</div>
 								</li>
 								<li>
 									<h5>scale: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>缩放向量。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -367,9 +467,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L597">laya/d3/math/Matrix4x4.ts:597</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:597</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>分解旋转矩阵的旋转为YawPitchRoll欧拉角。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -390,13 +495,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L495">laya/d3/math/Matrix4x4.ts:495</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:495</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>判断两个4x4矩阵的值是否相等。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>other: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>4x4矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -413,7 +526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L473">laya/d3/math/Matrix4x4.ts:473</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:473</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -439,13 +552,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L816">laya/d3/math/Matrix4x4.ts:816</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:816</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取前向量。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>前向量。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -462,13 +583,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L793">laya/d3/math/Matrix4x4.ts:793</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:793</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取平移向量。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平移向量。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -485,9 +614,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L748">laya/d3/math/Matrix4x4.ts:748</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:748</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>设置矩阵为单位矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -502,13 +636,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L664">laya/d3/math/Matrix4x4.ts:664</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:664</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>计算一个矩阵的逆矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -525,9 +667,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L615">laya/d3/math/Matrix4x4.ts:615</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:615</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>归一化矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -542,7 +689,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L482">laya/d3/math/Matrix4x4.ts:482</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:482</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -571,13 +718,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L827">laya/d3/math/Matrix4x4.ts:827</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:827</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>设置前向量。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>forward: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>前向量。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -594,7 +749,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L157">laya/d3/math/Matrix4x4.ts:157</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:157</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -617,7 +772,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L129">laya/d3/math/Matrix4x4.ts:129</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:129</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -640,13 +795,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L804">laya/d3/math/Matrix4x4.ts:804</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:804</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>设置平移向量。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>translate: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平移向量。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -663,9 +826,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L636">laya/d3/math/Matrix4x4.ts:636</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:636</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>计算矩阵的转置矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h4>
 						</li>
 					</ul>
@@ -680,28 +848,48 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L706">laya/d3/math/Matrix4x4.ts:706</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:706</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>计算BlillBoard矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>objectPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>物体位置</p>
+									</div>
 								</li>
 								<li>
 									<h5>cameraPosition: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相机位置</p>
+									</div>
 								</li>
 								<li>
 									<h5>cameraRight: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
 								</li>
 								<li>
 									<h5>cameraUp: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相机上向量</p>
+									</div>
 								</li>
 								<li>
 									<h5>cameraForward: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相机前向量</p>
+									</div>
 								</li>
 								<li>
 									<h5>mat: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>变换矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -718,22 +906,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L322">laya/d3/math/Matrix4x4.ts:322</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:322</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>计算仿射矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>trans: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平移</p>
+									</div>
 								</li>
 								<li>
 									<h5>rot: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转</p>
+									</div>
 								</li>
 								<li>
 									<h5>scale: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>缩放</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -750,16 +955,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L277">laya/d3/math/Matrix4x4.ts:277</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:277</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>从四元数计算旋转矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>rotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>四元数</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -776,22 +992,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L354">laya/d3/math/Matrix4x4.ts:354</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:354</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>计算观察矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>eye: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视点位置</p>
+									</div>
 								</li>
 								<li>
 									<h5>target: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视点目标</p>
+									</div>
 								</li>
 								<li>
 									<h5>up: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>向上向量</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -808,22 +1041,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L432">laya/d3/math/Matrix4x4.ts:432</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:432</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>计算正交投影矩阵。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>left: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎左边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>right: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎右边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>bottom: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎底边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>top: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎顶边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>znear: <span class="tsd-signature-type">number</span></h5>
@@ -833,6 +1083,9 @@
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -849,16 +1102,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L390">laya/d3/math/Matrix4x4.ts:390</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:390</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>通过FOV创建透视投影矩阵。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>fov: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视角。</p>
+									</div>
 								</li>
 								<li>
 									<h5>aspect: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>横纵比。</p>
+									</div>
 								</li>
 								<li>
 									<h5>znear: <span class="tsd-signature-type">number</span></h5>
@@ -868,6 +1132,9 @@
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -884,31 +1151,57 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L409">laya/d3/math/Matrix4x4.ts:409</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:409</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>创建透视投影矩阵。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>left: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎左边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>right: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎右边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>bottom: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎底边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>top: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎顶边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>znear: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎近边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>zfar: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>视椎远边界。</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -925,19 +1218,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L102">laya/d3/math/Matrix4x4.ts:102</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:102</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>通过旋转轴axis和旋转角度angle计算旋转矩阵。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>axis: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转轴,假定已经归一化。</p>
+									</div>
 								</li>
 								<li>
 									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转角度。</p>
+									</div>
 								</li>
 								<li>
 									<h5>result: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>结果矩阵。</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -954,16 +1261,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L169">laya/d3/math/Matrix4x4.ts:169</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:169</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>通过四元数创建旋转矩阵。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>rotation: <a href="_laya_d3_math_quaternion_.quaternion.html" class="tsd-signature-type">Quaternion</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转四元数。</p>
+									</div>
 								</li>
 								<li>
 									<h5>result: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出旋转矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -980,16 +1298,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L38">laya/d3/math/Matrix4x4.ts:38</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:38</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>绕X轴旋转</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>rad: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转角度</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1006,16 +1335,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L55">laya/d3/math/Matrix4x4.ts:55</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:55</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>绕Y轴旋转</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>rad: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转角度</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1032,9 +1372,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L91">laya/d3/math/Matrix4x4.ts:91</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:91</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>通过yaw pitch roll旋转创建旋转矩阵。</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1048,6 +1393,8 @@
 								</li>
 								<li>
 									<h5>result: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1064,16 +1411,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L72">laya/d3/math/Matrix4x4.ts:72</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:72</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>绕Z轴旋转</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>rad: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>旋转角度</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1090,16 +1448,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L219">laya/d3/math/Matrix4x4.ts:219</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:219</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>根据缩放计算输出矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>scale: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>缩放值</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1116,16 +1485,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L204">laya/d3/math/Matrix4x4.ts:204</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:204</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>根据平移计算输出矩阵</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>trans: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平移向量</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1142,19 +1522,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L235">laya/d3/math/Matrix4x4.ts:235</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:235</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>计算两个矩阵的乘法</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>left: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>left矩阵</p>
+									</div>
 								</li>
 								<li>
 									<h5>right: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>right矩阵</p>
+									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-signature-type">Matrix4x4</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>输出矩阵</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1171,7 +1565,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L268">laya/d3/math/Matrix4x4.ts:268</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:268</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1200,7 +1594,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ZhengQixv/LayaAir/blob/5583c984/src/layaAir/laya/d3/math/Matrix4x4.ts#L781">laya/d3/math/Matrix4x4.ts:781</a></li>
+									<li>Defined in laya/d3/math/Matrix4x4.ts:781</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1224,8 +1618,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_laya_d3_math_matrix4x4_.html">"laya/d3/math/<wbr>Matrix4x4"</a>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_laya_d3_math_matrix4x4_.html">&quot;laya/d3/math/<wbr>Matrix4x4&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -1233,7 +1627,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_laya_d3_math_matrix4x4_.matrix4x4.html" class="tsd-kind-icon">Matrix4x4</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -1244,6 +1638,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_d3_math_matrix4x4_.matrix4x4.html#default" class="tsd-kind-icon">DEFAULT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_matrix4x4_.matrix4x4.html#tempmatrix0" class="tsd-kind-icon">TEMPMatrix0</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_matrix4x4_.matrix4x4.html#tempmatrix1" class="tsd-kind-icon">TEMPMatrix1</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_d3_math_matrix4x4_.matrix4x4.html#zero" class="tsd-kind-icon">ZERO</a>
@@ -1370,57 +1770,25 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>
