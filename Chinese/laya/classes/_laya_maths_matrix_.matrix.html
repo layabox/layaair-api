@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Matrix | Laya API</title>
-	<meta name="description" content="Documentation for Laya API">
+	<title>Matrix | zqx</title>
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Laya API</a>
+					<a href="../index.html" class="title">zqx</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -69,14 +69,6 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p> <code>Matrix</code> 类表示一个转换矩阵，它确定如何将点从一个坐标空间映射到另一个坐标空间。</p>
-						<p>您可以对一个显示对象执行不同的图形转换，方法是设置 Matrix 对象的属性，将该 Matrix 对象应用于 Transform 对象的 matrix 属性，然后应用该 Transform 对象作为显示对象的 transform 属性。这些转换函数包括平移（x 和 y 重新定位）、旋转、缩放和倾斜。</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -98,21 +90,19 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#_btransform" class="tsd-kind-icon">_b<wbr>Transform</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#a" class="tsd-kind-icon">a</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#b" class="tsd-kind-icon">b</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#c" class="tsd-kind-icon">c</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#d" class="tsd-kind-icon">d</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#tx" class="tsd-kind-icon">tx</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#ty" class="tsd-kind-icon">ty</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_laya_maths_matrix_.matrix.html#empty" class="tsd-kind-icon">EMPTY</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_maths_matrix_.matrix.html#temp" class="tsd-kind-icon">TEMP</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_laya_maths_matrix_.matrix.html#_createfun" class="tsd-kind-icon">_create<wbr>Fun</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#_checktransform" class="tsd-kind-icon">_check<wbr>Transform</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#concat" class="tsd-kind-icon">concat</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#copyto" class="tsd-kind-icon">copy<wbr>To</a></li>
@@ -124,7 +114,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#inverttransformpoint" class="tsd-kind-icon">invert<wbr>Transform<wbr>Point</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#recover" class="tsd-kind-icon">recover</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#rotate" class="tsd-kind-icon">rotate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_laya_maths_matrix_.matrix.html#rotateex" class="tsd-kind-icon">rotate<wbr>Ex</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#scale" class="tsd-kind-icon">scale</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_laya_maths_matrix_.matrix.html#scaleex" class="tsd-kind-icon">scale<wbr>Ex</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#setto" class="tsd-kind-icon">set<wbr>To</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#settranslate" class="tsd-kind-icon">set<wbr>Translate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_maths_matrix_.matrix.html#skew" class="tsd-kind-icon">skew</a></li>
@@ -155,63 +147,28 @@
 									<li>Defined in laya/maths/Matrix.ts:30</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>使用指定参数创建新的 <code>Matrix</code> 对象。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> a: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>（可选）缩放或旋转图像时影响像素沿 x 轴定位的值。</p>
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> a: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> b: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>（可选）旋转或倾斜图像时影响像素沿 y 轴定位的值。</p>
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> b: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> c: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>（可选）旋转或倾斜图像时影响像素沿 x 轴定位的值。</p>
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> c: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> d: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>（可选）缩放或旋转图像时影响像素沿 y 轴定位的值。</p>
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> d: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> tx: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>（可选）沿 x 轴平移每个点的距离。</p>
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> tx: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> ty: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>（可选）沿 y 轴平移每个点的距离。</p>
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> ty: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> nums: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> nums: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -222,23 +179,6 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="_btransform" class="tsd-anchor"></a>
-					<h3>_b<wbr>Transform</h3>
-					<div class="tsd-signature tsd-kind-icon">_b<wbr>Transform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in laya/maths/Matrix.ts:30</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>internal</dt>
-							<dd><p>是否有旋转缩放操作</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="a" class="tsd-anchor"></a>
 					<h3>a</h3>
 					<div class="tsd-signature tsd-kind-icon">a<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
@@ -247,11 +187,6 @@
 							<li>Defined in laya/maths/Matrix.ts:18</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>缩放或旋转图像时影响像素沿 x 轴定位的值。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="b" class="tsd-anchor"></a>
@@ -262,11 +197,6 @@
 							<li>Defined in laya/maths/Matrix.ts:20</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>旋转或倾斜图像时影响像素沿 y 轴定位的值。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="c" class="tsd-anchor"></a>
@@ -277,11 +207,6 @@
 							<li>Defined in laya/maths/Matrix.ts:22</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>旋转或倾斜图像时影响像素沿 x 轴定位的值。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="d" class="tsd-anchor"></a>
@@ -292,11 +217,6 @@
 							<li>Defined in laya/maths/Matrix.ts:24</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>缩放或旋转图像时影响像素沿 y 轴定位的值。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="tx" class="tsd-anchor"></a>
@@ -307,11 +227,6 @@
 							<li>Defined in laya/maths/Matrix.ts:26</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>沿 x 轴平移每个点的距离。</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="ty" class="tsd-anchor"></a>
@@ -322,69 +237,30 @@
 							<li>Defined in laya/maths/Matrix.ts:28</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>沿 y 轴平移每个点的距离。</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="empty" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> EMPTY</h3>
+					<div class="tsd-signature tsd-kind-icon">EMPTY<span class="tsd-signature-symbol">:</span> <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol"> =&nbsp;new Matrix()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in laya/maths/Matrix.ts:11</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="temp" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> TEMP</h3>
-					<div class="tsd-signature tsd-kind-icon">TEMP<span class="tsd-signature-symbol">:</span> <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol"> = new Matrix()</span></div>
+					<div class="tsd-signature tsd-kind-icon">TEMP<span class="tsd-signature-symbol">:</span> <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a><span class="tsd-signature-symbol"> =&nbsp;new Matrix()</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in laya/maths/Matrix.ts:13</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>用于中转使用的 <code>Matrix</code> 对象。</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="_createfun" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> _create<wbr>Fun</h3>
-					<div class="tsd-signature tsd-kind-icon">_create<wbr>Fun<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in laya/maths/Matrix.ts:15</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>internal</dt>
-							<dd></dd>
-						</dl>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="_checktransform" class="tsd-anchor"></a>
-					<h3>_check<wbr>Transform</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">_check<wbr>Transform<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in laya/maths/Matrix.ts:66</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>internal</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="clone" class="tsd-anchor"></a>
 					<h3>clone</h3>
@@ -398,11 +274,6 @@
 									<li>Defined in laya/maths/Matrix.ts:365</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>返回此 Matrix 对象的副本。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
 							<p>与原始实例具有完全相同的属性的新 Matrix 实例。</p>
 						</li>
@@ -421,18 +292,10 @@
 									<li>Defined in laya/maths/Matrix.ts:247</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将指定矩阵与当前矩阵连接，从而将这两个矩阵的几何效果有效地结合在一起。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>matrix: <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要连接到源矩阵的矩阵。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -453,18 +316,10 @@
 									<li>Defined in laya/maths/Matrix.ts:382</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将当前 Matrix 对象中的所有矩阵数据复制到指定的 Matrix 对象中。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>dec: <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>要复制当前矩阵数据的 Matrix 对象。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -485,11 +340,6 @@
 									<li>Defined in laya/maths/Matrix.ts:404</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>销毁此对象。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -507,11 +357,6 @@
 									<li>Defined in laya/maths/Matrix.ts:195</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>获取 X 轴缩放值。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>X 轴缩放值。</p>
 						</li>
@@ -530,11 +375,6 @@
 									<li>Defined in laya/maths/Matrix.ts:203</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>获取 Y 轴缩放值。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 							<p>Y 轴缩放值。</p>
 						</li>
@@ -553,11 +393,6 @@
 									<li>Defined in laya/maths/Matrix.ts:58</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将本矩阵设置为单位矩阵。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
 							<p>返回当前矩形。</p>
 						</li>
@@ -576,11 +411,6 @@
 									<li>Defined in laya/maths/Matrix.ts:211</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>执行原始矩阵的逆转换。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
 							<p>当前矩阵对象。</p>
 						</li>
@@ -599,18 +429,10 @@
 									<li>Defined in laya/maths/Matrix.ts:156</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>对指定的点应用当前矩阵的逆转化并返回此点。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>out: <a href="_laya_maths_point_.point.html" class="tsd-signature-type">Point</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>待转化的点 Point 对象。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_point_.point.html" class="tsd-signature-type">Point</a></h4>
@@ -631,11 +453,6 @@
 									<li>Defined in laya/maths/Matrix.ts:411</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>回收到对象池，方便复用</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -653,22 +470,37 @@
 									<li>Defined in laya/maths/Matrix.ts:116</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>对 Matrix 对象应用旋转转换。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>angle: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>以弧度为单位的旋转角度。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
 							<p>返回矩阵对象本身</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="rotateex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rotate<wbr>Ex</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">rotate<wbr>Ex<span class="tsd-signature-symbol">(</span>angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/maths/Matrix.ts:343</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -685,28 +517,43 @@
 									<li>Defined in laya/maths/Matrix.ts:100</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>对矩阵应用缩放转换。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>用于沿 x 轴缩放对象的乘数。</p>
-									</div>
 								</li>
 								<li>
 									<h5>y: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>用于沿 y 轴缩放对象的乘数。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
 							<p>返回矩阵对象本身</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="scaleex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> scale<wbr>Ex</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">scale<wbr>Ex<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/maths/Matrix.ts:322</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -723,48 +570,25 @@
 									<li>Defined in laya/maths/Matrix.ts:237</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p> 将 Matrix 的成员设置为指定值。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>a: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>缩放或旋转图像时影响像素沿 x 轴定位的值。</p>
-									</div>
 								</li>
 								<li>
 									<h5>b: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>旋转或倾斜图像时影响像素沿 y 轴定位的值。</p>
-									</div>
 								</li>
 								<li>
 									<h5>c: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>旋转或倾斜图像时影响像素沿 x 轴定位的值。</p>
-									</div>
 								</li>
 								<li>
 									<h5>d: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>缩放或旋转图像时影响像素沿 y 轴定位的值。</p>
-									</div>
 								</li>
 								<li>
 									<h5>tx: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>沿 x 轴平移每个点的距离。</p>
-									</div>
 								</li>
 								<li>
 									<h5>ty: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>沿 y 轴平移每个点的距离。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -785,24 +609,13 @@
 									<li>Defined in laya/maths/Matrix.ts:76</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>设置沿 x 、y 轴平移每个点的距离。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>沿 x 轴平移每个点的距离。</p>
-									</div>
 								</li>
 								<li>
 									<h5>y: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>沿 y 轴平移每个点的距离。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -823,24 +636,13 @@
 									<li>Defined in laya/maths/Matrix.ts:139</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>对 Matrix 对象应用倾斜转换。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>沿着 X 轴的 2D 倾斜弧度。</p>
-									</div>
 								</li>
 								<li>
 									<h5>y: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>沿着 Y 轴的 2D 倾斜弧度。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -861,11 +663,6 @@
 									<li>Defined in laya/maths/Matrix.ts:397</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>返回列出该 Matrix 对象属性的文本值。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>一个字符串，它包含 Matrix 对象的属性值：a、b、c、d、tx 和 ty。</p>
 						</li>
@@ -884,18 +681,10 @@
 									<li>Defined in laya/maths/Matrix.ts:178</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将 Matrix 对象表示的几何转换应用于指定点。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>out: <a href="_laya_maths_point_.point.html" class="tsd-signature-type">Point</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>用来设定输出结果的点。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_point_.point.html" class="tsd-signature-type">Point</a></h4>
@@ -916,18 +705,10 @@
 									<li>Defined in laya/maths/Matrix.ts:187</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将 Matrix 对象表示的几何转换应用于指定点，忽略tx、ty。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>out: <a href="_laya_maths_point_.point.html" class="tsd-signature-type">Point</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>用来设定输出结果的点。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_point_.point.html" class="tsd-signature-type">Point</a></h4>
@@ -948,24 +729,13 @@
 									<li>Defined in laya/maths/Matrix.ts:88</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>沿 x 和 y 轴平移矩阵，平移的变化量由 x 和 y 参数指定。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>沿 x 轴向右移动的量（以像素为单位）。</p>
-									</div>
 								</li>
 								<li>
 									<h5>y: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>沿 y 轴向下移动的量（以像素为单位）。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -986,11 +756,6 @@
 									<li>Defined in laya/maths/Matrix.ts:419</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>从对象池中创建一个 <code>Matrix</code> 对象。</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
 							<p><code>Matrix</code> 对象。</p>
 						</li>
@@ -1009,30 +774,16 @@
 									<li>Defined in laya/maths/Matrix.ts:267</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将指定的两个矩阵相乘后的结果赋值给指定的输出对象。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>m1: <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>矩阵一。</p>
-									</div>
 								</li>
 								<li>
 									<h5>m2: <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>矩阵二。</p>
-									</div>
 								</li>
 								<li>
 									<h5>out: <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>输出对象。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h4>
@@ -1053,30 +804,16 @@
 									<li>Defined in laya/maths/Matrix.ts:295</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>将指定的两个矩阵相乘，结果赋值给指定的输出数组，长度为16。</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>m1: <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>矩阵一。</p>
-									</div>
 								</li>
 								<li>
 									<h5>m2: <a href="_laya_maths_matrix_.matrix.html" class="tsd-signature-type">Matrix</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>矩阵二。</p>
-									</div>
 								</li>
 								<li>
 									<h5>out: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>输出对象Array。</p>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1092,8 +829,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-module">
-						<a href="../modules/_laya_maths_matrix_.html">&quot;laya/maths/<wbr>Matrix&quot;</a>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_laya_maths_matrix_.html">"laya/maths/<wbr>Matrix"</a>
 					</li>
 				</ul>
 			</nav>
@@ -1101,14 +838,11 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-module">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_laya_maths_matrix_.matrix.html" class="tsd-kind-icon">Matrix</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="_laya_maths_matrix_.matrix.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_laya_maths_matrix_.matrix.html#_btransform" class="tsd-kind-icon">_b<wbr>Transform</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_laya_maths_matrix_.matrix.html#a" class="tsd-kind-icon">a</a>
@@ -1128,14 +862,11 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_laya_maths_matrix_.matrix.html#ty" class="tsd-kind-icon">ty</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="_laya_maths_matrix_.matrix.html#empty" class="tsd-kind-icon">EMPTY</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_laya_maths_matrix_.matrix.html#temp" class="tsd-kind-icon">TEMP</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="_laya_maths_matrix_.matrix.html#_createfun" class="tsd-kind-icon">_create<wbr>Fun</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_laya_maths_matrix_.matrix.html#_checktransform" class="tsd-kind-icon">_check<wbr>Transform</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_laya_maths_matrix_.matrix.html#clone" class="tsd-kind-icon">clone</a>
@@ -1170,8 +901,14 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_laya_maths_matrix_.matrix.html#rotate" class="tsd-kind-icon">rotate</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_laya_maths_matrix_.matrix.html#rotateex" class="tsd-kind-icon">rotate<wbr>Ex</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_laya_maths_matrix_.matrix.html#scale" class="tsd-kind-icon">scale</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_laya_maths_matrix_.matrix.html#scaleex" class="tsd-kind-icon">scale<wbr>Ex</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_laya_maths_matrix_.matrix.html#setto" class="tsd-kind-icon">set<wbr>To</a>
@@ -1217,25 +954,57 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
