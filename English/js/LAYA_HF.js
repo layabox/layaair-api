@@ -282,20 +282,6 @@ function laya_nav(laya) {
                     "en": visual
                 },
                 "blank": "1"
-            }, {
-                "title": {
-                    "zh": "LayaCloud",
-                    "en": "LayaCloud"
-                },
-                "url": {
-                    "zh": laya_http + "wiki.cloud.layabox.com/",
-                    "en": laya_http + "wiki.cloud.layabox.com/"
-                },
-                "visual": {
-                    "zh": visual,
-                    "en": visual
-                },
-                "blank": "1"
             },
             {
                 "title": {
