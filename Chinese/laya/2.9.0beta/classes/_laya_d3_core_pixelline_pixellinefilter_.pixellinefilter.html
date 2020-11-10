@@ -115,7 +115,6 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_laya_d3_core_pixelline_pixellinefilter_.pixellinefilter.html#_getlinedata" class="tsd-kind-icon">_get<wbr>Line<wbr>Data</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_laya_d3_core_pixelline_pixellinefilter_.pixellinefilter.html#_gettype" class="tsd-kind-icon">_get<wbr>Type</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_laya_d3_core_pixelline_pixellinefilter_.pixellinefilter.html#destroy" class="tsd-kind-icon">destroy</a></li>
 							</ul>
 						</section>
@@ -138,13 +137,28 @@
 									<li>Defined in laya/d3/core/pixelLine/PixelLineFilter.ts:51</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>创建一个PixelLineFilter实例</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>owner: <a href="_laya_d3_core_pixelline_pixellinesprite3d_.pixellinesprite3d.html" class="tsd-signature-type">PixelLineSprite3D</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>渲染精灵节点</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>maxLineCount: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>最大线长</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_core_pixelline_pixellinefilter_.pixellinefilter.html" class="tsd-signature-type">PixelLineFilter</a></h4>
@@ -191,7 +205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in laya/d3/core/pixelLine/PixelLineFilter.ts:235</li>
+									<li>Defined in laya/d3/core/pixelLine/PixelLineFilter.ts:241</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,33 +228,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-					<a name="_gettype" class="tsd-anchor"></a>
-					<h3>_get<wbr>Type</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">_get<wbr>Type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides <a href="_laya_d3_core_geometryelement_.geometryelement.html">GeometryElement</a>.<a href="_laya_d3_core_geometryelement_.geometryelement.html#_gettype">_getType</a></p>
-								<ul>
-									<li>Defined in laya/d3/core/pixelLine/PixelLineFilter.ts:77</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<pre><code>{@inheritDoc <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">PixelLineFilter</span>.</span><span class="hljs-module"><span class="hljs-identifier">_getType</span>}</span></span></code></pre>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>override</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="destroy" class="tsd-anchor"></a>
 					<h3>destroy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
@@ -252,7 +239,7 @@
 								<p>Implementation of <a href="../interfaces/_laya_resource_idestroy_.idestroy.html">IDestroy</a>.<a href="../interfaces/_laya_resource_idestroy_.idestroy.html#destroy">destroy</a></p>
 								<p>Overrides <a href="_laya_d3_core_geometryelement_.geometryelement.html">GeometryElement</a>.<a href="_laya_d3_core_geometryelement_.geometryelement.html#destroy">destroy</a></p>
 								<ul>
-									<li>Defined in laya/d3/core/pixelLine/PixelLineFilter.ts:294</li>
+									<li>Defined in laya/d3/core/pixelLine/PixelLineFilter.ts:301</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -260,7 +247,8 @@
 									<dt>inheritdoc</dt>
 									<dd></dd>
 									<dt>override</dt>
-									<dd></dd>
+									<dd><p>删除</p>
+									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -295,9 +283,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_laya_d3_core_pixelline_pixellinefilter_.pixellinefilter.html#_getlinedata" class="tsd-kind-icon">_get<wbr>Line<wbr>Data</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_laya_d3_core_pixelline_pixellinefilter_.pixellinefilter.html#_gettype" class="tsd-kind-icon">_get<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_laya_d3_core_pixelline_pixellinefilter_.pixellinefilter.html#destroy" class="tsd-kind-icon">destroy</a>
