@@ -78,6 +78,15 @@
         <div class="sider-content siderbarldc slider-nav" id="laya-siderbar">
             <div class="slider-body">
                 <div>
+                    
+                    <div class="select-group clearfix">
+                        <div class="select-tit">版本：</div>
+                        <div class="select-con">
+                            <div class="select-selected"><span></span><em class="select-icon"><svg t="1604305766531" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1141" width="16" height="16"><path d="M787.2 380.8c-9.6-9.6-22.4-12.8-35.2-12.8l-480 3.2c-12.8 0-25.6 3.2-35.2 12.8-19.2 19.2-19.2 48 0 67.2l240 240c3.2 3.2 9.6 6.4 12.8 9.6l3.2 3.2c16 6.4 38.4 3.2 51.2-9.6l240-243.2c22.4-22.4 19.2-51.2 3.2-70.4z" fill="" p-id="1142"></path></svg></em></div>
+                            <ul class="select-list">
+                            </ul>
+                        </div>
+                    </div>
                     <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-primary active" id="categoryRadio">
                             <input type="radio" name="options" autocomplete="off" checked>分类</label>
@@ -87,15 +96,7 @@
                     <!-- Tab panes -->
                     <div id="category">
                         <div class="slider-info">
-                            <div class="part">
-                                <div class="packageCon">
-                                    <div class="nav-content">
-                                        <div class="part-01">
-                                            <ul id="packageGroup"></ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="category-tab"></div>
                             <div class="classCon">
                                 <div class="search">
                                     <input type="text" id="classSearch" class="form-control"/>
@@ -189,30 +190,62 @@
     SyntaxHighlighter.defaults['toolbar'] = false;
     function api_resize() {
         // $("section").css("height", $(window).height() - 90);
-        $(".classnav").css("height", $(window).height() - 90);
-        $("#laya-siderbar").css("height", $(window).height() - 92);
-        $("#classGroup").css("height", $("#laya-siderbar").height() - 265);
-        $("#allClassList").css("height", $("#laya-siderbar").height() - 99);
+        // $(".classnav").css("height", $(window).height() - 90);
+        // $("#laya-siderbar").css("height", $(window).height() - 92);
+        // $("#classGroup").css("height", $("#laya-siderbar").height() - 265);
+        // $("#allClassList").css("height", $("#laya-siderbar").height() - 99);
         $(".classbox").css("height", $(window).height() - 90);
         $(".classbox").css("width", $(window).width() - 393);
-        $("#ldc_content").css("height", $(".classbox").height() - 10);
+        // $("#ldc_content").css("height", $(".classbox").height() - 10);
         if ($(window).width() <= 767) {
-            $(".classnav").css("height", 460);
-            $("#laya-siderbar").css("height", 460);
-            $("#classGroup").css("height", 200);
-            $("#allClassList").css("height", 370);
+            // $(".classnav").css("height", 460);
+            // $("#laya-siderbar").css("height", 460);
+            // $("#classGroup").css("height", 200);
+            // $("#allClassList").css("height", 370);
             $(".classbox").css("width", "100%");
-            $("#ldc_content").css("height", $(window).height() - 105);
+            // $("#ldc_content").css("height", $(window).height() - 105);
         }
     }
     $(window).on("resize", function () {
         onLR();
         api_resize();
     });
-    $("#packageGroup li a").click(function () {
-        $("#packageGroup li").removeClass("swich");
+    $(".packageGroup li a").click(function () {
+        $(".packageGroup li").removeClass("swich");
         $(this).parent("li").addClass("swich");
     });
+    $("body").on("click", ".select-group .select-selected",function() {
+        if($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+        }
+    }).on("click", ".select-list li", function() {
+        var val = $(this).data("value");
+        var href = changeURLArg(window.location.href, "version", val);
+        window.location.href = href;
+    }).on("click", ".category-tab-tit span", function() {
+        var index = $(this).parent().find("span").index($(this));
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active")
+        $(".category-tag-box .part").removeClass("active").eq(index).addClass("active");
+    });
+
+    function changeURLArg(url,arg,arg_val){
+        var pattern=arg+'=([^&]*)';
+        var replaceText=arg+'='+arg_val; 
+        if(url.match(pattern)){
+            var tmp='/('+ arg+'=)([^&]*)/gi';
+            tmp=url.replace(eval(tmp),replaceText);
+            return tmp;
+        }else{ 
+            if(url.match('[\?]')){ 
+                return url+'&'+replaceText; 
+            }else{ 
+                return url+'?'+replaceText; 
+            } 
+        }
+    }
 </script>
 </body>
 </html>

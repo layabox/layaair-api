@@ -1,5 +1,6 @@
 #laya_content {
     padding: 0 24px;
+    overflow: auto;
 }
 
 section .classnav {
@@ -61,7 +62,7 @@ section .classbox {
     width: 100%;
     float: right;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 section .classbox #ldc_content {
@@ -91,27 +92,31 @@ section .classbox #ldc_content .row footer {
     margin-right: 15px;
 }
 
-#packageGroup li {
-    width: 33.33%;
+.category-tag-box .packageGroup li {
+    width: auto;
     padding-left: 20px;
     padding-right: 10px;
 }
 
-#packageGroup .swich {
+.packageGroup .swich {
     background-color: #F0F0F0;
 }
 
-#packageGroup li a {
+.category-tag-box .packageGroup li a {
     color: #6090BC;
 }
 
-#packageGroup li:hover {
+.category-tag-box .packageGroup li:hover {
     background-color: #F0F0F0;
     opacity: 0.9;
+}
+.category-tag-box .packageGroup li a:hover {
+    color: #6090BC;
 }
 
 #allClassList li a {
     color: #474747;
+    display: block;
 }
 
 #allClassList li:hover {
@@ -149,9 +154,7 @@ section .classbox #ldc_content .row footer {
     border: 1px solid #E3E6E5;
 }
 
-.part {
-    height: 160px;
-}
+
 
 #classGroup,
 #allClassList {
@@ -160,6 +163,7 @@ section .classbox #ldc_content .row footer {
 }
 
 #classGroup li a {
+    display: block;
     color: #555555;
 }
 
@@ -232,7 +236,7 @@ section .classbox #ldc_content .row footer {
         width: 80%;
     }
 
-    section .classnav #packageGroup li {
+    section .classnav .packageGroup li {
         text-align: center;
     }
 
@@ -268,4 +272,8 @@ section .classbox #ldc_content .row footer {
 
 .part-02 {
     padding: 0;
+}
+
+.part-02 ul {
+    max-height: 300px;
 }

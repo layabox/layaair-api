@@ -2,7 +2,7 @@
 html {
 	font-size: 14px;
 	font-family: "arial", "sans-serif", "微软雅黑", "宋体", "Microsoft YaHei";
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 a {
@@ -178,7 +178,7 @@ h6,
 }
 
 .part {
-	height: 160px;
+	/* height: 160px; */
 	border-bottom: 1px solid white;
 }
 
@@ -232,13 +232,14 @@ h6,
 	margin-left: 10%;
 }
 
-#ldc_content {
+/* #ldc_content {
 	overflow: auto;
-}
+} */
 
 .allclassesDiv {
 	height: 100%;
 	clear: both;
+	overflow: auto;
 }
 
 .allclassesDiv ul li {
@@ -332,4 +333,89 @@ h6,
 	.byline a {
 		font-size: 1em;
 	}
+}
+
+/* --- 下拉框  ---- */
+.select-group {
+	background-color: #c5c5c5;
+	color: #333;
+	padding: 8px 0;
+	margin-bottom: 8px;
+	z-index: 99;
+}
+.select-group .select-tit {
+	float: left;
+	line-height: 26px;
+	font-size: 16px;
+	padding-left: 25px;
+}
+.select-group .select-con {
+	position: relative;
+	z-index: 99;
+	user-select: none;
+	padding: 0 25px;
+	font-size: 16px;
+	line-height: 26px;
+}
+.select-group .select-selected {
+	margin-left: 3em;
+	cursor: pointer;
+}
+.select-group .select-icon {
+	float: right;
+}
+.select-group .select-icon svg {
+	margin-top: 5px;
+	display: block;
+}
+
+.select-group .select-list {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 34px;
+	width: 100%;
+	background: #e6e6e6;
+}
+
+.select-group .select-selected.active~.select-list {
+	display: block;
+}
+.select-group .select-list li {
+	width: 100%;
+	line-height: 30px;
+	font-size: 14px;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+	color: #777;
+}
+.select-group .select-list li:hover {
+	color: #333;
+}
+
+
+/* ---- 分类tab切换  ----- */
+.category-tab .category-tab-tit {
+	display: flex;
+}
+.category-tab .category-tab-tit span {
+	flex: 1;
+	line-height: 26px;
+	text-align: center;
+	background-color: #39f;
+	color: #fff;
+	border-right: 1px solid #fff;
+	cursor: pointer;
+}
+.category-tab .category-tab-tit span.active {
+	background-color: #17d;
+}
+.category-tab .category-tab-tit span:last-child {
+	border-right:0;
+}
+.category-tag-box .part {
+	display: none;
+}
+.category-tag-box .part.active {
+	display: block;
 }

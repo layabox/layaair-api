@@ -249,20 +249,20 @@ if (isset($tr_url)) {
     SyntaxHighlighter.defaults['toolbar'] = false;
     function api_resize() {
         $("section").css("height", $(window).height() - 90);
-        $(".classnav").css("height", $(window).height() - 90);
-        $("#laya-siderbar").css("height", $(window).height() - 92);
-        $("#classGroup").css("height", $("#laya-siderbar").height() - 265);
-        $("#allClassList").css("height", $("#laya-siderbar").height() - 99);
+        // $(".classnav").css("height", $(window).height() - 90);
+        // $("#laya-siderbar").css("height", $(window).height() - 92);
+        // $("#classGroup").css("height", $("#laya-siderbar").height() - 265);
+        // $("#allClassList").css("height", $("#laya-siderbar").height() - 99);
         $(".classbox").css("height", $(window).height() - 90);
         $(".classbox").css("width", $(window).width() - 393);
-        $("#ldc_content").css("height", $(".classbox").height() - 24);
+        // $("#ldc_content").css("height", $(".classbox").height() - 24);
         if ($(window).width() <= 767) {
-            $(".classnav").css("height", 460);
-            $("#laya-siderbar").css("height", 460);
-            $("#classGroup").css("height", 200);
-            $("#allClassList").css("height", 370);
+            // $(".classnav").css("height", 460);
+            // $("#laya-siderbar").css("height", 460);
+            // $("#classGroup").css("height", 200);
+            // $("#allClassList").css("height", 370);
             $(".classbox").css("width", "100%");
-            $("#ldc_content").css("height", $(window).height() - 105);
+            // $("#ldc_content").css("height", $(window).height() - 105);
         }
     }
     $("#packageGroup li a").click(function () {
