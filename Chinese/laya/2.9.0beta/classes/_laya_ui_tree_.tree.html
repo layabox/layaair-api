@@ -81,24 +81,24 @@
 								import laya.ui.Tree;
 								import laya.utils.Browser;
 							import laya.utils.Handler;</p>
-							<pre><code>    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tree_Example</span>
-    </span>{
+							<pre><code>    public <span class="hljs-keyword">class</span> Tree_Example
+    {
 
-        <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Tree_Example</span>(<span class="hljs-params"></span>)
-        </span>{
-            Laya.init(<span class="hljs-number">640</span>, <span class="hljs-number">800</span>);
-            Laya.stage.bgColor = <span class="hljs-string">&quot;#efefef&quot;</span>;<span class="hljs-comment">//设置画布的背景颜色。</span>
-            Laya.loader.load([<span class="hljs-string">&quot;resource/ui/vscroll.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-subst">$bar</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-subst">$down</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-subst">$up</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_selectBox.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_tree_folder.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_tree_arrow.png&quot;</span>], Handler.create(this, onLoadComplete));
+        public <span class="hljs-keyword">function</span> <span class="hljs-constructor">Tree_Example()</span>
+        {
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Laya</span>.</span></span>init(<span class="hljs-number">640</span>, <span class="hljs-number">800</span>);
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Laya</span>.</span></span>stage.bgColor = <span class="hljs-string">&quot;#efefef&quot;</span>;<span class="hljs-comment">//设置画布的背景颜色。</span>
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Laya</span>.</span></span>loader.load(<span class="hljs-literal">[&quot;<span class="hljs-identifier">resource</span><span class="hljs-operator">/</span><span class="hljs-identifier">ui</span><span class="hljs-operator">/</span><span class="hljs-identifier">vscroll</span>.<span class="hljs-identifier">png</span>&quot;, &quot;<span class="hljs-identifier">resource</span><span class="hljs-operator">/</span><span class="hljs-identifier">ui</span><span class="hljs-operator">/</span><span class="hljs-identifier">vscroll$bar</span>.<span class="hljs-identifier">png</span>&quot;, &quot;<span class="hljs-identifier">resource</span><span class="hljs-operator">/</span><span class="hljs-identifier">ui</span><span class="hljs-operator">/</span><span class="hljs-identifier">vscroll$down</span>.<span class="hljs-identifier">png</span>&quot;, &quot;<span class="hljs-identifier">resource</span><span class="hljs-operator">/</span><span class="hljs-identifier">ui</span><span class="hljs-operator">/</span><span class="hljs-identifier">vscroll$up</span>.<span class="hljs-identifier">png</span>&quot;, &quot;<span class="hljs-identifier">resource</span><span class="hljs-operator">/</span><span class="hljs-identifier">ui</span><span class="hljs-operator">/</span><span class="hljs-identifier">clip_selectBox</span>.<span class="hljs-identifier">png</span>&quot;, &quot;<span class="hljs-identifier">resource</span><span class="hljs-operator">/</span><span class="hljs-identifier">ui</span><span class="hljs-operator">/</span><span class="hljs-identifier">clip_tree_folder</span>.<span class="hljs-identifier">png</span>&quot;, &quot;<span class="hljs-identifier">resource</span><span class="hljs-operator">/</span><span class="hljs-identifier">ui</span><span class="hljs-operator">/</span><span class="hljs-identifier">clip_tree_arrow</span>.<span class="hljs-identifier">png</span>&quot;]</span>, <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Handler</span>.</span></span>create(this, onLoadComplete));
         }
 
-        <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onLoadComplete</span>(<span class="hljs-params"></span>):<span class="hljs-title">void</span>
-        </span>{
-            <span class="hljs-keyword">var</span> xmlString:<span class="hljs-keyword">String</span>;<span class="hljs-comment">//创建一个xml字符串，用于存储树结构数据。</span>
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">function</span> on<span class="hljs-constructor">LoadComplete()</span>:void
+        {
+            var xmlString:String;<span class="hljs-comment">//创建一个xml字符串，用于存储树结构数据。</span>
             xmlString = <span class="hljs-string">&quot;&amp;lt;root&amp;gt;&amp;lt;item label=&#x27;box1&#x27;&amp;gt;&amp;lt;abc label=&#x27;child1&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child2&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child3&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child4&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child5&#x27;/&amp;gt;&amp;lt;/item&amp;gt;&amp;lt;item label=&#x27;box2&#x27;&amp;gt;&amp;lt;abc label=&#x27;child1&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child2&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child3&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child4&#x27;/&amp;gt;&amp;lt;/item&amp;gt;&amp;lt;/root&amp;gt;&quot;</span>;
-            <span class="hljs-keyword">var</span> domParser:* = <span class="hljs-keyword">new</span> Browser.window.DOMParser();<span class="hljs-comment">//创建一个DOMParser实例domParser。</span>
-            <span class="hljs-keyword">var</span> xml:* = domParser.parseFromString(xmlString, <span class="hljs-string">&quot;text/xml&quot;</span>);<span class="hljs-comment">//解析xml字符。</span>
+            var domParser:* = <span class="hljs-keyword">new</span> <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Browser</span>.</span></span>window.<span class="hljs-constructor">DOMParser()</span>;<span class="hljs-comment">//创建一个DOMParser实例domParser。</span>
+            var xml:* = domParser.parse<span class="hljs-constructor">FromString(<span class="hljs-params">xmlString</span>, <span class="hljs-string">&quot;text/xml&quot;</span>)</span>;<span class="hljs-comment">//解析xml字符。</span>
 
-            <span class="hljs-keyword">var</span> tree:Tree = <span class="hljs-keyword">new</span> Tree();<span class="hljs-comment">//创建一个 Tree 类的实例对象 tree 。</span>
+            var tree:Tree = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Tree()</span>;<span class="hljs-comment">//创建一个 Tree 类的实例对象 tree 。</span>
             tree.scrollBarSkin = <span class="hljs-string">&quot;resource/ui/vscroll.png&quot;</span>;<span class="hljs-comment">//设置 tree 的皮肤。</span>
             tree.itemRender = Item;<span class="hljs-comment">//设置 tree 的项渲染器。</span>
             tree.xml = xml;<span class="hljs-comment">//设置 tree 的树结构数据。</span>
@@ -106,7 +106,7 @@
             tree.y = <span class="hljs-number">100</span>;<span class="hljs-comment">//设置 tree 对象的属性 y 的值，用于控制 tree 对象的显示位置。</span>
             tree.width = <span class="hljs-number">200</span>;<span class="hljs-comment">//设置 tree 的宽度。</span>
             tree.height = <span class="hljs-number">100</span>;<span class="hljs-comment">//设置 tree 的高度。</span>
-            Laya.stage.addChild(tree);<span class="hljs-comment">//将 tree 添加到显示列表。</span>
+            <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">Laya</span>.</span></span>stage.add<span class="hljs-constructor">Child(<span class="hljs-params">tree</span>)</span>;<span class="hljs-comment">//将 tree 添加到显示列表。</span>
         }
     }
 }</code></pre>
@@ -217,18 +217,18 @@ Laya.stage.addChild(<span class="hljs-built_in">tree</span>);//将 <span class="
 								import Browser = laya.utils.Browser;
 								import Handler = laya.utils.Handler;
 							class Tree_Example {</p>
-							<pre><code>constructor() {
-    Laya.init(<span class="hljs-number">640</span>, <span class="hljs-number">800</span>);
+							<pre><code><span class="hljs-keyword">constructor</span>() {
+    Laya.<span class="hljs-keyword">init</span>(<span class="hljs-number">640</span>, <span class="hljs-number">800</span>);
     Laya.stage.bgColor = <span class="hljs-string">&quot;#efefef&quot;</span>;<span class="hljs-comment">//设置画布的背景颜色。</span>
-    Laya.loader.load([<span class="hljs-string">&quot;resource/ui/vscroll.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-subst">$bar</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-subst">$down</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-subst">$up</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-subst">$up</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_selectBox.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_tree_folder * . * png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_tree_arrow.png&quot;</span>], Handler.create(<span class="hljs-keyword">this</span>, <span class="hljs-keyword">this</span>.onLoadComplete));
+    Laya.loader.load([<span class="hljs-string">&quot;resource/ui/vscroll.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-variable">$bar</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-variable">$down</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-variable">$up</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/vscroll<span class="hljs-variable">$up</span>.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_selectBox.png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_tree_folder * . * png&quot;</span>, <span class="hljs-string">&quot;resource/ui/clip_tree_arrow.png&quot;</span>], Handler.create(<span class="hljs-keyword">this</span>, <span class="hljs-keyword">this</span>.onLoadComplete));
 }
-private onLoadComplete(): <span class="hljs-keyword">void</span> {
-    <span class="hljs-keyword">var</span> xmlString: <span class="hljs-built_in">String</span>;<span class="hljs-comment">//创建一个xml字符串，用于存储树结构数据。</span>
+<span class="hljs-keyword">private</span> onLoadComplete(): void {
+    <span class="hljs-keyword">var</span> xmlString: String;<span class="hljs-comment">//创建一个xml字符串，用于存储树结构数据。</span>
     xmlString = <span class="hljs-string">&quot;&amp;lt;root&amp;gt;&amp;lt;item label=&#x27;box1&#x27;&amp;gt;&amp;lt;abc label=&#x27;child1&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child2&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child3&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child4&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child5&#x27;/&amp;gt;&amp;lt;/item&amp;gt;&amp;lt;item label=&#x27;box2&#x27;&amp;gt;&amp;lt;abc  * label=&#x27;child1&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child2&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child3&#x27;/&amp;gt;&amp;lt;abc label=&#x27;child4&#x27;/&amp;gt;&amp;lt;/item&amp;gt;&amp;lt;/root&amp;gt;&quot;</span>;
-    <span class="hljs-keyword">var</span> domParser: any = <span class="hljs-keyword">new</span> Browser.<span class="hljs-built_in">window</span>.DOMParser();<span class="hljs-comment">//创建一个DOMParser实例domParser。</span>
+    <span class="hljs-keyword">var</span> domParser: any = new Browser.window.DOMParser();<span class="hljs-comment">//创建一个DOMParser实例domParser。</span>
     <span class="hljs-keyword">var</span> xml: any = domParser.parseFromString(xmlString, <span class="hljs-string">&quot;text/xml&quot;</span>);<span class="hljs-comment">//解析xml字符。</span>
 
-    <span class="hljs-keyword">var</span> tree: Tree = <span class="hljs-keyword">new</span> Tree();<span class="hljs-comment">//创建一个 Tree 类的实例对象 tree 。</span>
+    <span class="hljs-keyword">var</span> tree: Tree = new Tree();<span class="hljs-comment">//创建一个 Tree 类的实例对象 tree 。</span>
     tree.scrollBarSkin = <span class="hljs-string">&quot;resource/ui/vscroll.png&quot;</span>;<span class="hljs-comment">//设置 tree 的皮肤。</span>
     tree.itemRender = Item;<span class="hljs-comment">//设置 tree 的项渲染器。</span>
     tree.xml = xml;<span class="hljs-comment">//设置 tree 的树结构数据。</span>
