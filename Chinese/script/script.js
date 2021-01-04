@@ -3,7 +3,7 @@ var classList = {};
 var type = "";
 
 var versionList = [
-    "2.9.0beta"
+    "2.10.0beta"
 ];
 var version = versionList[0];
 
