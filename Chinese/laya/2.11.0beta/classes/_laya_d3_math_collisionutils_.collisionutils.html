@@ -1,0 +1,1866 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CollisionUtils | ts</title>
+	<meta name="description" content="Documentation for ts">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">ts</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_laya_d3_math_collisionutils_.html">&quot;laya/d3/math/CollisionUtils&quot;</a>
+				</li>
+				<li>
+					<a href="_laya_d3_math_collisionutils_.collisionutils.html">CollisionUtils</a>
+				</li>
+			</ul>
+			<h1>Class CollisionUtils</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p><code>Collision</code> 类用于检测碰撞。</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">CollisionUtils</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_laya_d3_math_collisionutils_.collisionutils.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#boxcontainsbox" class="tsd-kind-icon">box<wbr>Contains<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#boxcontainspoint" class="tsd-kind-icon">box<wbr>Contains<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#boxcontainssphere" class="tsd-kind-icon">box<wbr>Contains<wbr>Sphere</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointboxpoint" class="tsd-kind-icon">closest<wbr>Point<wbr>Box<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointplanepoint" class="tsd-kind-icon">closest<wbr>Point<wbr>Plane<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointpointtriangle" class="tsd-kind-icon">closest<wbr>Point<wbr>Point<wbr>Triangle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointspherepoint" class="tsd-kind-icon">closest<wbr>Point<wbr>Sphere<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointspheresphere" class="tsd-kind-icon">closest<wbr>Point<wbr>Sphere<wbr>Sphere</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#distanceboxtobox" class="tsd-kind-icon">distance<wbr>Box<wbr>ToBox</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#distanceboxtopoint" class="tsd-kind-icon">distance<wbr>Box<wbr>ToPoint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#distanceplanetopoint" class="tsd-kind-icon">distance<wbr>Plane<wbr>ToPoint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#distancespheretopoint" class="tsd-kind-icon">distance<wbr>Sphere<wbr>ToPoint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#distancespheretosphere" class="tsd-kind-icon">distance<wbr>Sphere<wbr>ToSphere</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsboxandbox" class="tsd-kind-icon">intersects<wbr>Box<wbr>And<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsboxandsphere" class="tsd-kind-icon">intersects<wbr>Box<wbr>And<wbr>Sphere</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandbox" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandplane" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Plane</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandplanerl" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>PlaneRL</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandpoint" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandsphere" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Sphere</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandtriangle" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Triangle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandboxrd" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>BoxRD</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandboxrp" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>BoxRP</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandplanerd" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>PlaneRD</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandplanerp" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>PlaneRP</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandpoint" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandray" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>Ray</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandsphererd" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>SphereRD</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandsphererp" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>SphereRP</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandtrianglerd" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>TriangleRD</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandtrianglerp" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>TriangleRP</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectssphereandsphere" class="tsd-kind-icon">intersects<wbr>Sphere<wbr>And<wbr>Sphere</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectssphereandtriangle" class="tsd-kind-icon">intersects<wbr>Sphere<wbr>And<wbr>Triangle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#spherecontainsbox" class="tsd-kind-icon">sphere<wbr>Contains<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#spherecontainspoint" class="tsd-kind-icon">sphere<wbr>Contains<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#spherecontainssphere" class="tsd-kind-icon">sphere<wbr>Contains<wbr>Sphere</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_laya_d3_math_collisionutils_.collisionutils.html#spherecontainstriangle" class="tsd-kind-icon">sphere<wbr>Contains<wbr>Triangle</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Collision<wbr>Utils<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_collisionutils_.collisionutils.html" class="tsd-signature-type">CollisionUtils</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:26</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>创建一个 <code>Collision</code> 实例。</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_laya_d3_math_collisionutils_.collisionutils.html" class="tsd-signature-type">CollisionUtils</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="boxcontainsbox" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> box<wbr>Contains<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">box<wbr>Contains<wbr>Box<span class="tsd-signature-symbol">(</span>box1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, box2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:901</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围盒是否包含另一个包围盒</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>box1: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒1</p>
+									</div>
+								</li>
+								<li>
+									<h5>box2: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒2</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>位置关系:0 不想交,1 包含, 2 相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="boxcontainspoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> box<wbr>Contains<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">box<wbr>Contains<wbr>Point<span class="tsd-signature-symbol">(</span>box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:887</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围盒是否包含另一个点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>位置关系:0 不想交,1 包含, 2 相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="boxcontainssphere" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> box<wbr>Contains<wbr>Sphere</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">box<wbr>Contains<wbr>Sphere<span class="tsd-signature-symbol">(</span>box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:946</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围盒是否包含另一个包围球</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>位置关系:0 不想交,1 包含, 2 相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="closestpointboxpoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> closest<wbr>Point<wbr>Box<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">closest<wbr>Point<wbr>Box<wbr>Point<span class="tsd-signature-symbol">(</span>box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:1219</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围盒与一点的最近点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>最近点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="closestpointplanepoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> closest<wbr>Point<wbr>Plane<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">closest<wbr>Point<wbr>Plane<wbr>Point<span class="tsd-signature-symbol">(</span>plane<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:1204</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中平面与一点的最近点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>最近点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="closestpointpointtriangle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> closest<wbr>Point<wbr>Point<wbr>Triangle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">closest<wbr>Point<wbr>Point<wbr>Triangle<span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex3<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:1133</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中点与三角面的最近点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex1: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点1</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex2: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点2</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex3: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点3</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>最近点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="closestpointspherepoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> closest<wbr>Point<wbr>Sphere<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">closest<wbr>Point<wbr>Sphere<wbr>Point<span class="tsd-signature-symbol">(</span>sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:1230</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球与一点的最近点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>最近点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="closestpointspheresphere" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> closest<wbr>Point<wbr>Sphere<wbr>Sphere</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">closest<wbr>Point<wbr>Sphere<wbr>Sphere<span class="tsd-signature-symbol">(</span>sphere1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, sphere2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:1246</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球与包围球的最近点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere1: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球1</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere2: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球2</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>最近点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="distanceboxtobox" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> distance<wbr>Box<wbr>ToBox</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">distance<wbr>Box<wbr>ToBox<span class="tsd-signature-symbol">(</span>box1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, box2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:94</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围盒到包围盒的距离</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>box1: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒1</p>
+									</div>
+								</li>
+								<li>
+									<h5>box2: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒2</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="distanceboxtopoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> distance<wbr>Box<wbr>ToPoint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">distance<wbr>Box<wbr>ToPoint<span class="tsd-signature-symbol">(</span>box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:53</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中点到包围盒的距离</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="distanceplanetopoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> distance<wbr>Plane<wbr>ToPoint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">distance<wbr>Plane<wbr>ToPoint<span class="tsd-signature-symbol">(</span>plane<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:42</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中点到平面的距离</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="distancespheretopoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> distance<wbr>Sphere<wbr>ToPoint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">distance<wbr>Sphere<wbr>ToPoint<span class="tsd-signature-symbol">(</span>sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:157</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中点到包围球的距离</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="distancespheretosphere" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> distance<wbr>Sphere<wbr>ToSphere</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">distance<wbr>Sphere<wbr>ToSphere<span class="tsd-signature-symbol">(</span>sphere1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, sphere2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:170</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球到包围球的距离</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere1: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球1</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere2: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球2</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsboxandbox" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Box<wbr>And<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Box<wbr>And<wbr>Box<span class="tsd-signature-symbol">(</span>box1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, box2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:837</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围盒和包围盒是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>box1: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒1</p>
+									</div>
+								</li>
+								<li>
+									<h5>box2: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒2</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsboxandsphere" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Box<wbr>And<wbr>Sphere</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Box<wbr>And<wbr>Sphere<span class="tsd-signature-symbol">(</span>box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:859</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围盒和包围球是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsplaneandbox" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Plane<wbr>And<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Box<span class="tsd-signature-symbol">(</span>plane<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:775</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中平面和包围盒是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面</p>
+									</div>
+								</li>
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>碰撞状态</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsplaneandplane" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Plane<wbr>And<wbr>Plane</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Plane<span class="tsd-signature-symbol">(</span>plane1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, plane2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:728</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中平面和平面是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane1: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面1</p>
+									</div>
+								</li>
+								<li>
+									<h5>plane2: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面2</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsplaneandplanerl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Plane<wbr>And<wbr>PlaneRL</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>PlaneRL<span class="tsd-signature-symbol">(</span>plane1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, plane2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, line<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:747</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中平面和平面是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane1: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面1</p>
+									</div>
+								</li>
+								<li>
+									<h5>plane2: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面2</p>
+									</div>
+								</li>
+								<li>
+									<h5>line: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相交线</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsplaneandpoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Plane<wbr>And<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Point<span class="tsd-signature-symbol">(</span>plane<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:713</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中点和平面是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>碰撞状态</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsplaneandsphere" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Plane<wbr>And<wbr>Sphere</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Sphere<span class="tsd-signature-symbol">(</span>plane<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:819</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中平面和包围球是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>碰撞状态</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsplaneandtriangle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Plane<wbr>And<wbr>Triangle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Triangle<span class="tsd-signature-symbol">(</span>plane<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, vertex1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex3<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:423</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中平面和三角面是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex1: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点1</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex2: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点2</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex3: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点3</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>返回空间位置关系</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandboxrd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>BoxRD</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>BoxRD<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:491</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和包围盒是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线</p>
+									</div>
+								</li>
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandboxrp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>BoxRP</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>BoxRP<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:616</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和包围盒是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线</p>
+									</div>
+								</li>
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相交点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandplanerd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>PlaneRD</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>PlaneRD<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, plane<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:444</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>射线和平面是否相交,并返回相交距离。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线。</p>
+									</div>
+								</li>
+								<li>
+									<h5>plane: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面。</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>相交距离,-1为不相交。</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandplanerp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>PlaneRP</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>PlaneRP<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, plane<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:470</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和平面是否相交，并返回相交点。</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线。</p>
+									</div>
+								</li>
+								<li>
+									<h5>plane: <a href="_laya_d3_math_plane_.plane.html" class="tsd-signature-type">Plane</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>平面。</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相交点。</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandpoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>Point<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:321</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和点是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandray" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>Ray</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>Ray<span class="tsd-signature-symbol">(</span>ray1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, ray2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:342</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和射线是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray1: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线1</p>
+									</div>
+								</li>
+								<li>
+									<h5>ray2: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线2</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相交点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandsphererd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>SphereRD</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>SphereRD<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:638</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和包围球是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>相交距离,-1表示不相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandsphererp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>SphereRP</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>SphereRP<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:672</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和包围球是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相交点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>相交距离,-1表示不相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandtrianglerd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>TriangleRD</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>TriangleRD<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, vertex1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex3<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, out<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:188</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和三角面是否相交,输出距离</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex1: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点1</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex2: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点2</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex3: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点3</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点和三角面的距离</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectsrayandtrianglerp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Ray<wbr>And<wbr>TriangleRP</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>TriangleRP<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a>, vertex1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex3<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, out<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:302</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中射线和三角面是否相交,输出相交点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray: <a href="_laya_d3_math_ray_.ray.html" class="tsd-signature-type">Ray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>射线</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex1: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点1</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex2: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点2</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex3: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点3</p>
+									</div>
+								</li>
+								<li>
+									<h5>out: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>相交点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectssphereandsphere" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Sphere<wbr>And<wbr>Sphere</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Sphere<wbr>And<wbr>Sphere<span class="tsd-signature-symbol">(</span>sphere1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, sphere2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:874</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球和包围球是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere1: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球1</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere2: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球2</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>是否相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="intersectssphereandtriangle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> intersects<wbr>Sphere<wbr>And<wbr>Triangle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">intersects<wbr>Sphere<wbr>And<wbr>Triangle<span class="tsd-signature-symbol">(</span>sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, vertex1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex3<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:694</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球和三角面是否相交</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex1: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点1</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex2: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点2</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex3: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点3</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>返回是否相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="spherecontainsbox" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> sphere<wbr>Contains<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">sphere<wbr>Contains<wbr>Box<span class="tsd-signature-symbol">(</span>sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, box<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:1021</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球是否包含另一包围盒</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+								<li>
+									<h5>box: <a href="_laya_d3_math_boundbox_.boundbox.html" class="tsd-signature-type">BoundBox</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围盒</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>位置关系:0 不想交,1 包含, 2 相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="spherecontainspoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> sphere<wbr>Contains<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">sphere<wbr>Contains<wbr>Point<span class="tsd-signature-symbol">(</span>sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, point<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:985</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球是否包含另一个点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+								<li>
+									<h5>point: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>点</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>位置关系:0 不想交,1 包含, 2 相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="spherecontainssphere" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> sphere<wbr>Contains<wbr>Sphere</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">sphere<wbr>Contains<wbr>Sphere<span class="tsd-signature-symbol">(</span>sphere1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, sphere2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:1108</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球是否包含另一包围球</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere1: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+								<li>
+									<h5>sphere2: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>包围球</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>位置关系:0 不想交,1 包含, 2 相交</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="spherecontainstriangle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> sphere<wbr>Contains<wbr>Triangle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">sphere<wbr>Contains<wbr>Triangle<span class="tsd-signature-symbol">(</span>sphere<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a>, vertex1<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex2<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a>, vertex3<span class="tsd-signature-symbol">: </span><a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in laya/d3/math/CollisionUtils.ts:1001</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>空间中包围球是否包含另一个三角面</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sphere: <a href="_laya_d3_math_boundsphere_.boundsphere.html" class="tsd-signature-type">BoundSphere</a></h5>
+								</li>
+								<li>
+									<h5>vertex1: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点1</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex2: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点2</p>
+									</div>
+								</li>
+								<li>
+									<h5>vertex3: <a href="_laya_d3_math_vector3_.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>三角面顶点3</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>返回空间位置关系</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_laya_d3_math_collisionutils_.html">&quot;laya/d3/math/<wbr>Collision<wbr>Utils&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_laya_d3_math_collisionutils_.collisionutils.html" class="tsd-kind-icon">Collision<wbr>Utils</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#boxcontainsbox" class="tsd-kind-icon">box<wbr>Contains<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#boxcontainspoint" class="tsd-kind-icon">box<wbr>Contains<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#boxcontainssphere" class="tsd-kind-icon">box<wbr>Contains<wbr>Sphere</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointboxpoint" class="tsd-kind-icon">closest<wbr>Point<wbr>Box<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointplanepoint" class="tsd-kind-icon">closest<wbr>Point<wbr>Plane<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointpointtriangle" class="tsd-kind-icon">closest<wbr>Point<wbr>Point<wbr>Triangle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointspherepoint" class="tsd-kind-icon">closest<wbr>Point<wbr>Sphere<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#closestpointspheresphere" class="tsd-kind-icon">closest<wbr>Point<wbr>Sphere<wbr>Sphere</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#distanceboxtobox" class="tsd-kind-icon">distance<wbr>Box<wbr>ToBox</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#distanceboxtopoint" class="tsd-kind-icon">distance<wbr>Box<wbr>ToPoint</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#distanceplanetopoint" class="tsd-kind-icon">distance<wbr>Plane<wbr>ToPoint</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#distancespheretopoint" class="tsd-kind-icon">distance<wbr>Sphere<wbr>ToPoint</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#distancespheretosphere" class="tsd-kind-icon">distance<wbr>Sphere<wbr>ToSphere</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsboxandbox" class="tsd-kind-icon">intersects<wbr>Box<wbr>And<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsboxandsphere" class="tsd-kind-icon">intersects<wbr>Box<wbr>And<wbr>Sphere</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandbox" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandplane" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Plane</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandplanerl" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>PlaneRL</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandpoint" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandsphere" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Sphere</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsplaneandtriangle" class="tsd-kind-icon">intersects<wbr>Plane<wbr>And<wbr>Triangle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandboxrd" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>BoxRD</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandboxrp" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>BoxRP</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandplanerd" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>PlaneRD</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandplanerp" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>PlaneRP</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandpoint" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandray" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>Ray</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandsphererd" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>SphereRD</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandsphererp" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>SphereRP</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandtrianglerd" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>TriangleRD</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectsrayandtrianglerp" class="tsd-kind-icon">intersects<wbr>Ray<wbr>And<wbr>TriangleRP</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectssphereandsphere" class="tsd-kind-icon">intersects<wbr>Sphere<wbr>And<wbr>Sphere</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#intersectssphereandtriangle" class="tsd-kind-icon">intersects<wbr>Sphere<wbr>And<wbr>Triangle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#spherecontainsbox" class="tsd-kind-icon">sphere<wbr>Contains<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#spherecontainspoint" class="tsd-kind-icon">sphere<wbr>Contains<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#spherecontainssphere" class="tsd-kind-icon">sphere<wbr>Contains<wbr>Sphere</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_laya_d3_math_collisionutils_.collisionutils.html#spherecontainstriangle" class="tsd-kind-icon">sphere<wbr>Contains<wbr>Triangle</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
