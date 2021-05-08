@@ -4,7 +4,7 @@ var type = "";
 
 var versionList = [
     "2.11.0beta",
-    "2.10.0",
+    //"2.10.0",
     "2.9.0"
 ];
 var version = versionList[0];
